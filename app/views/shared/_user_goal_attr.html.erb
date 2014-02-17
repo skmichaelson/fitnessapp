@@ -1,0 +1,43 @@
+<p>
+<label>Current Weight:
+  <input type="text"
+    name="user[current_wt]"
+    value="<%= @user.current_wt %>">
+</label>
+</p>
+
+<p>
+<label>Goal Weight:
+  <input type="text"
+    name="user[goal_wt]"
+    value="<%= @user.goal_wt %>">
+</label>
+</p>
+
+<p>
+<label>Height:
+  <select name="user[height]">
+    <% (24..99).each do |num| %>
+      <option value="<%= num %>"><%= num %></option>
+    <% end %>
+  </select>
+</label>
+</p>
+
+<p>Activity Level
+  <br>
+  <input type="radio" name="user[activity_level]" value="0" id="sedentary">
+  <label for="sedentary">Sedentary</label>: little to no exercise
+
+  <br>
+  <input type="radio" name="user[activity_level]" value="1" id="light_active">
+  <label for="light_active">Light Activity</label>: light exercise or sports 1-3 days per week
+
+  <br>
+  <input type="radio" name="user[activity_level]" value="2" id="moderate">
+  <label for="moderate">Moderate Activity</label>: moderate exercise or sports 3-5 days per week
+
+  <br>
+  <input type="radio" name="user[activity_level]" value="3" id="very_active">
+  <label for="very_active">Very Active</label>: heavy exercise or sports 6-7 days per week
+</p>
