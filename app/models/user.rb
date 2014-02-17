@@ -49,6 +49,10 @@ class User < ActiveRecord::Base
     user.try(:is_password?, password) ? user : nil
   end
 
+  def self.find_by_session_token(session_token)
+    User.where("session_token = ?", session_token).first
+  end
+
   private
 
   def ensure_session_token
