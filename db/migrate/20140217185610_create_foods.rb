@@ -3,10 +3,10 @@ class CreateFoods < ActiveRecord::Migration
     create_table :foods do |t|
       t.string :name, null: false
       t.integer :usda_id, null: false, default: 0
-      t.integer :calories, null: false, default: 0
-      t.float :protein, null: false, default: 0
-      t.float :fat, null: false, default: 0
-      t.float :carbohydrates, null: false, default: 0
+      t.integer :calories, null: false
+      t.float :protein, null: false
+      t.float :fat, null: false
+      t.float :carbohydrates, null: false
       t.float :fiber, null: false, default: 0
       t.integer :calcium, default: 0
       t.float :iron, default: 0

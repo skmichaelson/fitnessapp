@@ -6,7 +6,6 @@ describe Food do
 
     it "validates presence of vital info" do
       expect(invalid_food).to have(1).error_on(:name)
-      expect(invalid_food).to have(1).error_on(:usda_id)
       expect(invalid_food).to have(1).error_on(:calories)
       expect(invalid_food).to have(1).error_on(:protein)
       expect(invalid_food).to have(1).error_on(:fat)

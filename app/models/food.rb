@@ -21,6 +21,8 @@ class Food < ActiveRecord::Base
                   :common_serving_2
 
   before_validation :ensure_default_values
+  validates :name, presence: true, uniqueness: true
+  validates :calories, :protein, :fat, :carbohydrates, :usda_id, presence: true
 
   private
 
