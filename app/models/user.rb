@@ -18,13 +18,16 @@ class User < ActiveRecord::Base
 
   before_validation :ensure_session_token
 
-  validates :username, presence: true, uniqueness: true
+  validates :username, presence: { message: "Please choose a username" }, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true }
   validates :password_digest, presence: true
   validates :session_token, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
-  validates :gender, presence: true, inclusion: { in: %w(M F) }
-  validates :current_wt, :goal_wt, :height, :activity_level, :birthday, presence: true
+  validates :gender, presence: true, inclusion: { in: %w(M F), message: nil }
+  validates :current_wt, presence: { message: "Please enter your current weight" }
+  validates :goal_wt, :height, :activity_level, :birthday, presence: true
+
+  # TODO: Fix messages!
 
   def password=(password)
     @password = password
