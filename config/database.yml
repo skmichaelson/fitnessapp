@@ -16,14 +16,14 @@ development:
   adapter: postgresql
   encoding: unicode
   database: FitnessApp_development
-  pool: 5
+  host: localhost
   username: appacademy
 
 test:
   adapter: postgresql
   encoding: unicode
   database: FitnessApp_test
-  pool: 5
+  host: localhost
   username: appacademy
 
 production:
