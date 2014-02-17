@@ -11,15 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140217185610) do
+ActiveRecord::Schema.define(:version => 20140217214618) do
 
   create_table "foods", :force => true do |t|
     t.string   "name",                              :null => false
     t.integer  "usda_id",          :default => 0,   :null => false
-    t.integer  "calories",         :default => 0,   :null => false
-    t.float    "protein",          :default => 0.0, :null => false
-    t.float    "fat",              :default => 0.0, :null => false
-    t.float    "carbohydrates",    :default => 0.0, :null => false
+    t.integer  "calories",                          :null => false
+    t.float    "protein",                           :null => false
+    t.float    "fat",                               :null => false
+    t.float    "carbohydrates",                     :null => false
     t.float    "fiber",            :default => 0.0, :null => false
     t.integer  "calcium",          :default => 0
     t.float    "iron",             :default => 0.0
@@ -53,6 +53,9 @@ ActiveRecord::Schema.define(:version => 20140217185610) do
     t.date     "birthday",        :null => false
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zipcode"
   end
 
 end

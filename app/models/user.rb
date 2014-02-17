@@ -10,7 +10,10 @@ class User < ActiveRecord::Base
                   :about_me,
                   :my_inspiration,
                   :session_token,
-                  :gender
+                  :gender,
+                  :city,
+                  :state,
+                  :zipcode
   attr_reader :password
 
   before_validation :ensure_session_token
