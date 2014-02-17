@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
                   :gender
   attr_reader :password
 
-  before_validation :ensure_session_token!
+  before_validation :ensure_session_token
 
   validates :username, presence: true, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true }
@@ -28,13 +28,30 @@ class User < ActiveRecord::Base
     self.password_digest = BCrypt::Password.create(password)
   end
 
+  def is_password?(password)
+    storedPassword = BCrypt::Password.new(self.password_digest)
+    storedPassword.is_password?(password)
+  end
+
+  def reset_session_token!
+    self.session_token = User.generate_session_token
+    self.save!
+  end
+
   def self.generate_session_token
     SecureRandom::urlsafe_base64(16)
   end
 
+  def self.find_by_credentials(unique_id, password)
+    user = User.where("username = ?", unique_id).first
+    user ||= User.where("email = ?", unique_id).first
+
+    user.try(:is_password?, password) ? user : nil
+  end
+
   private
 
-  def ensure_session_token!
+  def ensure_session_token
     self.session_token ||= User.generate_session_token
   end
 end
