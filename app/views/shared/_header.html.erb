@@ -1,6 +1,8 @@
 <header>
-<%= link_to "<img id=\"logo\"
-  src=\"app/assets/images/logo.png\">".html_safe, root_url %>
+  <div id="imageToHome">
+    <%= link_to image_tag("logo.png", size: "340x126"), root_url %>
+  </div>
+
   <ul>
     <li>Hi, <%= current_user.username %>!</li>
     <li>Link to Messages (with image)</li>

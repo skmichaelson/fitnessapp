@@ -11,7 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140217145749) do
+ActiveRecord::Schema.define(:version => 20140217185610) do
+
+  create_table "foods", :force => true do |t|
+    t.string   "name",                              :null => false
+    t.integer  "usda_id",          :default => 0,   :null => false
+    t.integer  "calories",         :default => 0,   :null => false
+    t.float    "protein",          :default => 0.0, :null => false
+    t.float    "fat",              :default => 0.0, :null => false
+    t.float    "carbohydrates",    :default => 0.0, :null => false
+    t.float    "fiber",            :default => 0.0, :null => false
+    t.integer  "calcium",          :default => 0
+    t.float    "iron",             :default => 0.0
+    t.integer  "potassium",        :default => 0
+    t.integer  "sodium",           :default => 0
+    t.float    "vitamin_c",        :default => 0.0
+    t.integer  "vitamin_a",        :default => 0
+    t.integer  "vitamin_e",        :default => 0
+    t.float    "saturated_fat",    :default => 0.0
+    t.integer  "cholesterol",      :default => 0
+    t.float    "common_weight_1",  :default => 0.0
+    t.string   "common_serving_1", :default => "0"
+    t.float    "common_weight_2",  :default => 0.0
+    t.string   "common_serving_2", :default => "0"
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username",        :null => false
