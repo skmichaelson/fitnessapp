@@ -14,18 +14,18 @@
 ActiveRecord::Schema.define(:version => 20140217145749) do
 
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "email"
-    t.string   "password_digest"
-    t.string   "gender"
-    t.string   "session_token"
+    t.string   "username",        :null => false
+    t.string   "email",           :null => false
+    t.string   "password_digest", :null => false
+    t.string   "gender",          :null => false
+    t.string   "session_token",   :null => false
     t.text     "about_me"
     t.text     "my_inspiration"
-    t.integer  "current_wt"
-    t.integer  "goal_wt"
-    t.integer  "height"
-    t.integer  "activity_level"
-    t.date     "birthday"
+    t.integer  "current_wt",      :null => false
+    t.integer  "goal_wt",         :null => false
+    t.integer  "height",          :null => false
+    t.integer  "activity_level",  :null => false
+    t.date     "birthday",        :null => false
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
