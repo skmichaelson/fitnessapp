@@ -1,0 +1,10 @@
+<header>
+<img id="logo" src="app/assets/images/logo.png">
+  <ul>
+    <li>Hi, <%= current_user.username %>!</li>
+    <li>Link to messages</li>
+    <li>Link to Help Page</li>
+    <li>Link to Settings</li>
+    <li><%= link_to "Sign Out", session_url, method: :delete %></li>
+  </ul>
+</header>
