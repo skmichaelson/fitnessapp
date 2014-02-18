@@ -7,12 +7,13 @@
     <ul>
       <% if current_user %>
         <li>Hi, <%= current_user.username %>!</li>
-        <li>Link to Messages (with image)</li>
-        <li>Link to Help Page</li>
-        <li>Link to Settings</li>
+        <li>Messages</li>
+        <li>Help</li>
+        <li>Settings</li>
         <li><%= link_to "Sign Out", session_url, method: :delete %></li>
       <% else %>
         <li><%= link_to "Sign In", new_session_url %></li>
+        <li><%= link_to "Sign Up", new_user_url %></li>
       <% end %>
     </ul>
   </section>

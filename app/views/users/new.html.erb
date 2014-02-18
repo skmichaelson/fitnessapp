@@ -1,68 +1,71 @@
-<h1>Create your free account!</h1>
+<form action="<%= users_url %>" method="post">
+  <%= form_auth %>
+
+  <h2>Create your free account!</h2>
 
 <%= render 'shared/errors' %>
 
-<form id="newUser" action="<%= users_url %>" method="post">
-  <%= form_auth %>
-
   <p>
-  <label>Username:
+  <label for="username">Username</label>
     <input type="text"
       name="user[username]"
-      value="<%= @user.username %>">
-  </label>
+      value="<%= @user.username %>"
+      id="username">
   </p>
 
   <p>
-  <label>Email:
+  <label for="email">Email</label>
     <input type="text"
       name="user[email]"
-      value="<%= @user.email %>">
-  </label>
+      value="<%= @user.email %>"
+      id="email">
   </p>
 
   <p>
-  <label>Password:
+  <label for="password">Password</label>
     <input type="password"
-      name="user[password]">
-  </label>
+      name="user[password]"
+      id="password">
   </p>
 
   <p>
-    <label>Birthday
-      <input type="date" name="user[birthday]">
-    </label>
+    <label for="birthday">Birthday</label>
+      <input type="date"
+        name="user[birthday]"
+        id="birthday">
   </p>
 
   <p>
-    <label>City
-      <input type="text" name="user[city]">
-    </label>
+    <label for="city">City</label>
+      <input type="text"
+        name="user[city]"
+        id="city">
   </p>
 
   <p>
-    <label>State
-      <input type="text" name="user[state]">
-    </label>
+    <label for="state">State</label>
+      <input type="text"
+        name="user[state]"
+        id="state">
   </p>
 
   <p>
-    <label>Zip Code
-      <input type="text" name="user[zipcode]">
-    </label>
+    <label for="zipcode">Zip Code</label>
+      <input type="text"
+        name="user[zipcode]"
+        id="zipcode">
   </p>
 
 
   <h2>Tell us about yourself</h2>
-  We can build a custom plan for you!
 
   <%= render 'shared/user_goal_attr' %>
 
   <p>Gender
     <input type="radio" name="user[gender]" value="M" id="male">
-    <label for="male">Male</label>
+    <label class="radio" for="male">Male</label>
     <input type="radio" name="user[gender]" value="F" id="female">
-    <label for="female">Female</label>
+    <label class="radio" for="female">Female</label>
   </p>
 
   <p><input type="submit" value="Continue &rarr;"></p>

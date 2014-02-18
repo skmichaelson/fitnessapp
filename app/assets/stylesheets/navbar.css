@@ -9,20 +9,36 @@ html, body, header, nav, h1, ul, li {
   background-color: blue;
   color: white;
   display: block;
+  margin-bottom: 10px;
+  font-family: sans-serif;
 }
 
-#mainNav > section > ul {
+#navContent {
+  width: 650px;
+  margin: auto;
+  float: left;
+}
+
+#navContent > ul {
   list-style-type: none;
-  margin: 0px auto;
+  float: left;
+  margin: auto;
+  display: inline;
+  padding: 5px 20px;
 }
 
-#mainNav > section > ul > li {
+#navContent > ul > li {
+  float: left;
   display: inline;
+  position: relative;
+  text-align: center;
+  width: 100px;
 }
 
 .subNav {
-  display: block;
+  display: none;
   background-color: #122499;
+  position: absolute;
 }
 
 .subNav > li {

@@ -9,6 +9,7 @@ header {
   display: block;
   background-color: white;
   height: 79px;
+  font-family: sans-serif;
 }
 
 header > section {
