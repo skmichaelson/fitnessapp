@@ -1,6 +1,8 @@
-<div class="container" id="home">
-  <h2>This is the home page!</h2>
+<main class="group content">
 
+<h2>This is the home page!</h2>
+
+<% if current_user %>
   <article class="group full">
     <h3>Daily Summary</h3>
   </article>
@@ -8,4 +10,6 @@
   <article class="group full">
     <h3>News Feed</h3>
   </article>
-</div>
+<% end %>
+
+</main>
