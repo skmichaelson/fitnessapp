@@ -1,22 +1,22 @@
 require 'spec_helper'
 
 describe User do
-  context "missing vital properties" do
-    let(:invalid_user) {User.new}
+  it { should validate_presence_of(:password_digest) }
+  it { should validate_presence_of(:email) }
+  it { should validate_presence_of(:goal_wt) }
+  it { should validate_presence_of(:height) }
+  it { should validate_presence_of(:activity_level) }
+  it { should validate_presence_of(:birthday) }
+  it { should validate_presence_of(:gender) }
 
-    it "validates presence of vital info" do
-      expect(invalid_user).to have(1).error_on(:username)
-      expect(invalid_user).to have(1).error_on(:password_digest)
-      expect(invalid_user).to have(1).error_on(:email)
-      expect(invalid_user).to have(1).error_on(:current_wt)
-      expect(invalid_user).to have(1).error_on(:goal_wt)
-      expect(invalid_user).to have(1).error_on(:height)
-      expect(invalid_user).to have(1).error_on(:activity_level)
-      expect(invalid_user).to have(1).error_on(:birthday)
-      expect(invalid_user).to have(2).error_on(:gender)
-    end
+  it "should have custom error messages" do
+    invalid_user = User.create
+    e = invalid_user.errors.messages
+    expect(e[:username]).to include("Please choose a username")
+    expect(e[:current_wt]).to include("Please enter your current weight")
+  end
 
-    it "checks for uniqueness on username and email" do
+  it "checks for uniqueness on username and email" do
       user1 = User.create!({username: "user",
         password: "password",
         email: "user1@example.com",
@@ -54,7 +54,7 @@ describe User do
         expect(user3).not_to be_valid
     end
 
-    it "assigns a session token upon creation of a user" do
+  it "assigns a session token upon creation of a user" do
       user1 = User.create!({username: "user",
         password: "password",
         email: "user1@example.com",
@@ -69,5 +69,8 @@ describe User do
       expect(user1.session_token).not_to be_nil
     end
 
+  describe "associations" do
+    it { should have_one(:goal) }
   end
+
 end
