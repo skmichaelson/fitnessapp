@@ -1,17 +1,19 @@
 <header>
   <div id="imageToHome">
-    <%= link_to image_tag("logo.png", size: "340x126"), root_url %>
+    <%= link_to image_tag("logo.png", size: "128x75"), root_url %>
   </div>
 
-  <ul>
-    <% if current_user %>
-      <li>Hi, <%= current_user.username %>!</li>
-      <li>Link to Messages (with image)</li>
-      <li>Link to Help Page</li>
-      <li>Link to Settings</li>
-      <li><%= link_to "Sign Out", session_url, method: :delete %></li>
-    <% else %>
-      <li><%= link_to "Sign In", new_session_url %></li>
-    <% end %>
-  </ul>
+  <section>
+    <ul>
+      <% if current_user %>
+        <li>Hi, <%= current_user.username %>!</li>
+        <li>Link to Messages (with image)</li>
+        <li>Link to Help Page</li>
+        <li>Link to Settings</li>
+        <li><%= link_to "Sign Out", session_url, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign In", new_session_url %></li>
+      <% end %>
+    </ul>
+  </section>
 </header>

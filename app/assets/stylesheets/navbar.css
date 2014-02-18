@@ -1,0 +1,32 @@
+html, body, header, nav, h1, ul, li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+#mainNav {
+  background-color: blue;
+  color: white;
+  display: block;
+}
+
+#mainNav > section > ul {
+  list-style-type: none;
+  margin: 0px auto;
+}
+
+#mainNav > section > ul > li {
+  display: inline;
+}
+
+.subNav {
+  display: block;
+  background-color: #122499;
+}
+
+.subNav > li {
+  display: inline;
+  margin: 0px auto;
+  padding: 5px;
+}
