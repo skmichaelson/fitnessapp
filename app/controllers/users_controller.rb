@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :require_logged_in, only: [:show, :update, :destroy, :find]
 
   def new
     @user = User.new
@@ -15,4 +16,13 @@ class UsersController < ApplicationController
       render :new
     end
   end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
+  def index
+    @user = User.new
+  end
+
 end

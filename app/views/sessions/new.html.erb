@@ -4,7 +4,7 @@ Insert Navbar here -->
 <h2>Welcome! Please sign in</h2>
 
 <form id="login" action="<%= session_url %>" method="post">
-  <%= auth_token %>
+  <%= form_auth %>
   <p>
   <label>Username or E-mail Address
     <input type="text" name="user[identifier]">

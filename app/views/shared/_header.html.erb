@@ -4,10 +4,14 @@
   </div>
 
   <ul>
-    <li>Hi, <%= current_user.username %>!</li>
-    <li>Link to Messages (with image)</li>
-    <li>Link to Help Page</li>
-    <li>Link to Settings</li>
-    <li><%= link_to "Sign Out", session_url, method: :delete %></li>
+    <% if current_user %>
+      <li>Hi, <%= current_user.username %>!</li>
+      <li>Link to Messages (with image)</li>
+      <li>Link to Help Page</li>
+      <li>Link to Settings</li>
+      <li><%= link_to "Sign Out", session_url, method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Sign In", new_session_url %></li>
+    <% end %>
   </ul>
 </header>
