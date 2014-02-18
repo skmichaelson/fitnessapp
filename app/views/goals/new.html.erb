@@ -1,0 +1,39 @@
+<main class="group content">
+  <form class="group"
+    action="<%= user_goals_url(current_user) %>"
+    method="POST">
+  <h2>Create a new goal</h2>
+
+    <%= form_auth %>
+
+    <label for="workouts">Workouts per week</label>
+      <select id="workouts" name="goals[workouts_per_week]">
+        <% (1..7).each do |num| %>
+          <option value="<%= num %>">
+            <%= num %>
+          </option>
+        <% end %>
+      </select>
+
+    <label for="duration">Minutes per workout</label>
+    <input type="text"
+      name="goals[minutes_per_workout]"
+      id="duration">
+
+    <label for="mygoal">I would like to:</label>
+      <select id="mygoal" name="goals[weight_loss_rate]">
+        <option value="-20">Gain two pounds per week</option>
+        <option value="-10">Gain one pound per week</option>
+        <option value="-5">Gain a half pound per week</option>
+        <option value="0" selected>Maintain my current weight</option>
+        <option value="5">Lose a half pound per week</option>
+        <option value="10">Lose one pound per week</option>
+        <option value="20">Lose two pounds per week</option>
+      </select>
+
+    <p>
+      <input type="submit" class="button" value="Create a Goal">
+    </p>
+
+  </form>
+</main>

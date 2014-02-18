@@ -28,7 +28,7 @@ class User < ActiveRecord::Base
   validates :current_wt, presence: { message: "Please enter your current weight" }
   validates :goal_wt, :height, :activity_level, :birthday, presence: true
 
-  has_one :goal, inverse_of: :user
+  has_one :goal, inverse_of: :user, dependent: :destroy
   # TODO: Fix messages!
 
   def password=(password)
