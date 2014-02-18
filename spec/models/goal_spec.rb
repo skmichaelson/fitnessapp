@@ -35,7 +35,7 @@ describe Goal do
     new_goal = Goal.new(user_id: 1,
         workouts_per_week: 3,
         minutes_per_workout: 30,
-        weight_loss_rate: 1,
+        weight_loss_rate: 5,
         user_gender: "F",
         user_age: 30,
         user_height: 62,
@@ -49,7 +49,7 @@ describe Goal do
 
     it "should calculate calorie goal" do
       new_goal.save
-      expect(new_goal.calorie_goal).to eq(1385)
+      expect(new_goal.calorie_goal).to eq(1635)
     end
   end
 

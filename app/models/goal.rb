@@ -62,15 +62,15 @@ class Goal < ActiveRecord::Base
 
   def calculate_bmr
     if @user_gender == "F"
-      bmr = (4.7 * @user_height)
-        + (4.35 * @user_weight)
-        - (4.7 * @user_age)
-        + 655
+      bmr = (4.7 * @user_height) +
+        (4.35 * @user_weight) -
+        (4.7 * @user_age) +
+        655
     else
-      bmr = (12.7 * @user_height)
-      + (6.23 * @user_weight)
-      - (6.8 * @user_age)
-      + 66
+      bmr = (12.7 * @user_height) +
+        (6.23 * @user_weight) -
+        (6.8 * @user_age) +
+        66
     end
 
     bmr.round
