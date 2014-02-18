@@ -1,0 +1,235 @@
+usda_id,name,calories,protein,fat,carbohydrates,fiber,sugar,calcium,iron,potassium,sodium,vitamin_c,vitamin_a,vitamin_e,saturated_fat,cholesterol,common_weight_1,common_serving_1,common_weight_2,common_serving_2
+9400,"APPLE juice,canned OR bottled,unsweetened,with ADDED VIT C",46,0.1,0.13,11.3,0.2,9.62,8,0.12,101,4,38.5,1,0.01,0.022,0,248,1 cup,31,1 fl oz
+9016,"APPLE juice,canned OR bottled,unsweetened,without ADDED VIT C",46,0.1,0.13,11.3,0.2,9.62,8,0.12,101,4,0.9,1,0.01,0.022,0,248,1 cup,31,1 fl oz
+9018,"APPLE juice,frozen concentrate,unsweetened,DIL with VOLUME H2O without VIT C",47,0.14,0.1,11.54,0.1,10.93,6,0.26,126,7,0.6,0,0.01,0.018,0,239,1 cup,29.9,1 fl oz
+9411,"APPLE juice,frozen concentrate,unsweetened,DIL with VOLUME H2O,with VIT C",47,0.14,0.1,11.54,0.1,,6,0.26,126,7,25,0,,0.018,0,239,1 cup,29.9,1 fl oz
+9410,"APPLE juice,frozen concentrate,unsweetened,undiluted,with VIT C",166,0.51,0.37,41,,38.83,20,0.91,448,25,88.9,0,,0.06,0,211,"1 can,  (6 fl oz)",,
+9017,"APPLE juice,frozen concentrate,unsweetened,undiluted,without VIT C",166,0.51,0.37,41,0.4,38.83,20,0.91,448,25,2.1,0,0.04,0.06,0,211,"1 can,  (6 fl oz)",,
+9008,"APPLES,canned,sweetened,SLICED,drained,heated",67,0.18,0.43,16.84,2,14.84,4,0.24,70,3,0.2,56,0.21,0.07,0,204,"1 cup, slices",,
+9007,"APPLES,canned,sweetened,SLICED,drained,UNheated",67,0.18,0.49,16.7,1.7,15,4,0.23,68,3,0.4,51,0.21,0.08,0,204,"1 cup, slices",,
+9010,"APPLES,dehydratedrated,SULFURED,stewed",74,0.28,0.12,19.91,2.6,,4,0.43,136,26,0.6,19,,0.02,0,193,1 cup,,
+9009,"APPLES,dehydratedrated,SULFURED,uncooked",346,1.32,0.58,93.53,12.4,81.13,19,2,640,124,2.2,81,0.75,0.095,0,60,1 cup,,
+9013,"APPLES,DRIED,SULFURED,stewed,with SUGAR",83,0.2,0.07,20.73,1.9,,3,0.31,98,19,0.9,16,,0.011,0,280,1 cup,,
+9012,"APPLES,DRIED,SULFURED,stewed,without SUGAR",57,0.22,0.07,15.32,2,13.32,3,0.33,105,20,1,17,0.12,0.012,0,255,1 cup,,
+9011,"APPLES,DRIED,SULFURED,uncooked",243,0.93,0.32,65.89,8.7,57.19,14,1.4,450,87,3.9,0,0.53,0.052,0,86,1 cup,6.4,1 ring
+9015,"APPLES,frozen,unsweetened,heated",47,0.29,0.33,12,1.3,,5,0.19,76,3,0.4,20,,0.053,0,206,"1 cup, slices",,
+9014,"APPLES,frozen,unsweetened,UNheated",48,0.28,0.32,12.31,1.3,,4,0.18,77,3,0.1,34,,0.053,0,173,"1 cup, slices",,
+9501,"APPLES,RAW,GOLDEN DELICIOUS,with skin",57,0.28,0.15,13.6,2.4,10.04,6,0.13,100,2,,51,0.18,,,109,"1 cup, sliced",215,1 large
+9003,"APPLES,RAW,WITH SKIN",52,0.26,0.17,13.81,2.4,10.39,6,0.12,107,1,4.6,54,0.18,0.028,0,125,"1 cup, quartered or chopped",109,"1 cup, slices"
+9004,"APPLES,RAW,WITHOUT SKIN",48,0.27,0.13,12.76,1.3,10.1,5,0.07,90,0,4,38,0.05,0.021,0,110,"1 cup, slices",216,"1 large,  (3-1/4"" dia)"
+9006,"APPLES,RAW,without skin,cooked,MICROWAVE",56,0.28,0.42,14.41,2.8,11.61,5,0.17,93,1,0.3,40,0.05,0.068,0,170,"1 cup, slices",,
+9005,"APPLES,RAW,withoutskin,cooked,boiled",53,0.26,0.36,13.64,2.4,11.01,5,0.19,88,1,0.2,44,0.05,0.058,0,171,"1 cup, slices",,
+9402,"APPLESAUCE,canned,sweetened,withSALT",76,0.18,0.18,19.91,1.2,,4,0.35,61,28,1.7,11,,0.03,0,255,1 cup,,
+9020,"APPLESAUCE,canned,sweetened,without SALT (INCLUDES USDA COMMODITY)",68,0.16,0.17,17.49,1.2,14.67,3,0.12,75,2,1.7,6,0.18,0.03,0,246,1 cup,,
+9401,"APPLESAUCE,canned,unsweetened,with VIT C",42,0.17,0.1,11.27,1.1,9.39,4,0.23,74,2,21.2,29,0.16,0.008,0,244,1 cup,,
+9019,"APPLESAUCE,canned,unsweetened,withoutADDED VIT C (INCLUDES USDA COMMOD)",42,0.17,0.1,11.27,1.1,9.39,4,0.23,74,2,1,29,0.16,0.008,0,244,1 cup,,
+9403,"APRICOT NECTAR,canned,with VIT C",56,0.37,0.09,14.39,0.6,,7,0.38,114,3,54.4,1316,,0.006,0,251,1 cup,31.4,1 fl oz
+9036,"APRICOT NECTAR,canned,without VIT C",56,0.37,0.09,14.39,0.6,13.79,7,0.38,114,3,0.6,1316,0.31,0.006,0,251,1 cup,31.4,1 fl oz
+9029,"APRICOTS,canned,packed in extra heavy syrup,withoutskin,solids and liquids",96,0.55,0.04,24.85,1.6,,8,0.62,126,13,2.4,1471,,0.003,0,246,"1 cup, whole, without pits",,
+9025,"APRICOTS,canned,packed in extra light syrup,withskin,solids and liquids",49,0.6,0.1,12.5,1.6,,10,0.3,140,2,4,1271,,0.007,0,247,"1 cup,  halves",,
+9022,"APRICOTS,canned,packed in water,withskin,solids and liquids",27,0.71,0.16,6.39,1.6,4.79,8,0.32,192,3,3.4,1959,0.6,0.011,0,243,"1 cup,  halves",36,"1 apricot, half with liquid"
+9023,"APRICOTS,canned,packed in water,withoutskin,solids and liquids",22,0.69,0.03,5.48,1.1,,8,0.54,154,11,1.8,1810,,0.002,0,227,"1 cup, whole, without pits",,
+9027,"APRICOTS,canned,packed in heavy syrup,withskin,solids and liquids",83,0.53,0.08,21.47,1.6,19.87,9,0.3,140,4,3.1,1230,0.6,0.005,0,258,"1 cup,  halves",240,"1 cup, whole"
+9028,"APRICOTS,canned,packed in heavy syrup,withoutskin,solids and liquids",83,0.51,0.09,21.45,1.6,,9,0.43,134,11,2.8,1240,,0.006,0,258,"1 cup, whole, without pits",,
+9357,"APRICOTS,canned,heavy syrup,drained",83,0.64,0.11,21.31,2.7,18.65,10,0.3,143,4,3.1,2924,0.89,0.007,0,219,"1 cup,  halves",182,"1 cup, whole"
+9024,"APRICOTS,canned,packed in juice,withskin,solids and liquids",48,0.63,0.04,12.34,1.6,10.74,12,0.3,165,4,4.9,1691,0.6,0.003,0,244,"1 cup,  halves",36,"1 apricot, half with liquid"
+9026,"APRICOTS,canned,packed in light syrup,withskin,solids and liquids",63,0.53,0.05,16.49,1.6,14.89,11,0.39,138,4,2.7,1322,0.6,0.003,0,253,"1 cup,  halves",40,"1 apricot, half with liquid"
+9031,"APRICOTS,dehydratedrated,SULFURED,stewed",126,1.93,0.24,32.62,,,24,2.48,728,5,7.1,4407,,0.017,0,249,1 cup,,
+9030,"APRICOTS,dehydratedrated,SULFURED,uncooked",320,4.9,0.62,82.89,,,61,6.31,1850,13,9.5,12669,,0.043,0,119,1 cup,,
+9034,"APRICOTS,DRIED,SULFURED,stewed,with SUGAR",113,1.17,0.15,29.26,4.1,,15,1.52,443,3,1.4,2139,,0.01,0,270,"1 cup,  halves",,
+9033,"APRICOTS,DRIED,SULFURED,stewed,without SUGAR",85,1.2,0.18,22.15,2.6,19.57,19,0.94,411,4,0.3,1275,1.53,0.006,0,250,"1 cup,  halves",,
+9032,"APRICOTS,DRIED,SULFURED,uncooked",241,3.39,0.51,62.64,7.3,53.44,55,2.66,1162,10,1,3604,4.33,0.017,0,130,"1 cup,  halves",3.5,1 half
+9035,"APRICOTS,FROZEN,SWEETENED",98,0.7,0.1,25.1,2.2,,10,0.9,229,4,9,1680,,0.007,0,242,1 cup,,
+9021,"APRICOTS,RAW",48,1.4,0.39,11.12,2,9.24,13,0.39,259,1,10,1926,0.89,0.027,0,155,"1 cup,  halves",165,"1 cup, sliced"
+9038,"AVOCADOS,RAW,CALIFORNIA",167,1.96,15.41,8.64,6.8,0.3,13,0.61,507,8,8.8,147,1.97,2.126,0,230,"1 cup, pureed",136,"1 fruit, without skin and seed"
+9039,"AVOCADOS,RAW,FLORIDA",120,2.23,10.06,7.82,5.6,2.42,10,0.17,351,2,17.4,140,2.66,1.96,0,230,"1 cup, pureed",304,"1 fruit, without skin and seeds"
+9041,"BANANAS,dehydrated",346,3.89,1.81,88.28,9.9,47.3,22,1.15,1491,3,7,248,0.39,0.698,0,100,1 cup,6.2,1 tbsp
+9040,"BANANAS,RAW",89,1.09,0.33,22.84,2.6,12.23,5,0.26,358,1,8.7,64,0.1,0.112,0,225,"1 cup, mashed",150,"1 cup, sliced"
+9046,"BLACKBERRIES,canned,heavy syrup,solids and liquids",92,1.31,0.14,23.1,3.4,19.7,21,0.65,99,3,2.8,219,0.78,0.005,0,256,1 cup,,
+9048,"BLACKBERRIES,frozen,unsweetened",64,1.18,0.43,15.67,5,10.67,29,0.8,140,1,3.1,114,1.17,0.015,0,151,"1 cup, unthawed",510,"1 package,  (18 oz)"
+9042,"BLACKBERRIES,RAW",43,1.39,0.49,9.61,5.3,4.88,29,0.62,162,1,21,214,1.17,0.014,0,144,1 cup,,
+9043,"BLACKBERRY juice,canned",38,0.3,0.6,7.8,0.1,7.7,12,0.48,135,1,11.3,123,0.9,0.018,0,250,1 cup,,
+9052,"BLUEBERRIES,canned,heavy syrup,solids and liquids",88,0.65,0.33,22.06,1.6,20.46,5,0.33,40,3,1.1,36,0.38,0.027,0,256,1 cup,,
+9352,"BLUEBERRIES,canned,light SYRUP,drained",88,1.04,0.4,22.66,2.6,17.45,6,0.43,54,3,0.5,36,1.38,0.028,0,244,1 cup,,
+9055,"BLUEBERRIES,frozen,sweetened",85,0.4,0.13,21.95,2.2,19.72,6,0.39,60,1,1,49,0.52,0.011,0,230,"1 cup, thawed",284,"1 package,  (10 oz)"
+9054,"BLUEBERRIES,frozen,unsweetened",51,0.42,0.64,12.17,2.7,8.45,8,0.18,54,1,2.5,46,0.48,0.053,0,155,"1 cup, unthawed",567,"1 package,  (20 oz)"
+9050,"BLUEBERRIES,RAW",57,0.74,0.33,14.49,2.4,9.96,6,0.28,77,1,9.7,54,0.57,0.028,0,148,1 cup,68,50 berries
+9353,"BLUEBERRIES,WILD,canned,heavy syrup,drained",107,0.56,0.34,28.32,4.9,19.28,19,2.2,46,1,0.3,,,,,319,1 cup,,
+9053,"BLUEBERRIES,WILD,frozen",51,0,0.16,13.85,4.4,,17,0.58,68,3,1.7,59,0.26,0.03,,140,"1 cup, frozen",,
+9056,"BOYSENBERRIES,canned,heavy syrup",88,0.99,0.12,22.31,2.6,,18,0.43,90,3,6.2,40,,0.004,0,256,1 cup,,
+9057,"BOYSENBERRIES,frozen,unsweetened",50,1.1,0.26,12.19,5.3,6.89,27,0.85,139,1,3.1,67,0.87,0.009,0,132,"1 cup, unthawed",284,"1 package,  (10 oz)"
+9064,"CHERRIES,SOUR,RED,canned,packed in water,solids and liquids",36,0.77,0.1,8.94,1.1,7.6,11,1.37,98,7,2.1,754,0.23,0.023,0,244,1 cup,,
+9067,"CHERRIES,SOUR,RED,canned,packed in extra heavy syrup,solids and liquids",114,0.71,0.09,29.23,0.8,,10,1.26,91,7,1.9,696,,0.021,0,261,1 cup,,
+9066,"CHERRIES,SOUR,RED,canned,packed in heavy syrup,solids and liquids",91,0.73,0.1,23.27,1.1,22.17,10,1.3,93,7,2,714,0.23,0.021,0,256,1 cup,,
+9065,"CHERRIES,SOUR,RED,canned,packed in light syrup,solids and liquids",75,0.74,0.1,19.3,0.8,,10,1.32,95,7,2,726,,0.022,0,252,1 cup,,
+9068,"CHERRIES,SOUR,RED,frozen,unsweetened",46,0.92,0.44,11.02,1.6,9.02,13,0.53,124,1,1.7,870,0.05,0.1,0,155,"1 cup, unthawed",510,"1 package,  (18 oz)"
+9063,"CHERRIES,SOUR,RED,RAW",50,1,0.3,12.18,1.6,8.49,16,0.32,173,3,10,1283,0.07,0.068,0,155,"1 cup, without pits",103,"1 cup, with pits yields"
+9070,"CHERRIES,SWEET,RAW",63,1.06,0.2,16.01,2.1,12.82,13,0.36,222,0,7,64,0.07,0.038,0,138,"1 cup, with pits yields",154,"1 cup, without pits"
+9075,"CHERRIES,SWT,canned,packed in extra heavy syrup,solids and liquids",102,0.59,0.15,26.23,1.5,,9,0.35,142,3,3.6,151,,0.033,0,261,"1 cup,  pitted",,
+9071,"CHERRIES,SWT,canned,packed in water,solids and liquids",46,0.77,0.13,11.76,1.5,10.26,11,0.36,131,1,2.2,160,0.23,0.028,0,248,"1 cup,  pitted",,
+9072,"CHERRIES,SWT,canned,packed in juice,solids and liquids",54,0.91,0.02,13.81,1.5,12.31,14,0.58,131,3,2.5,125,0.23,0.004,0,250,"1 cup, pitted",,
+9073,"CHERRIES,SWT,canned,packed in light syrup,solids and liquids",67,0.61,0.15,17.29,1.5,15.79,9,0.36,148,3,3.7,157,0.23,0.034,0,252,"1 cup, pitted",,
+9074,"CHERRIES,SWT,canned,PITTED,packed in heavy syrup, solids and liquids",83,0.6,0.15,21.27,1.4,16.18,9,0.35,145,3,3.6,154,0.17,0.034,0,253,1 cup,,
+9367,"CHERRIES,SWT,canned,PITTED,heavy syrup,drained",83,0.73,0.21,21.07,2.3,16.18,10,0.35,148,3,3.6,237,0.17,0.041,0,179,1 cup,,
+9076,"CHERRIES,SWT,frozen,sweetened",89,1.15,0.13,22.36,2.1,20.26,12,0.35,199,1,1,189,0.07,0.03,0,259,"1 cup, thawed",284,"1 package,  (10 oz)"
+9433,"CLEMENTINES,RAW",47,0.85,0.15,12.02,1.7,9.18,30,0.14,177,1,48.8,,0.2,,,74,1 fruit,,
+9077,"CRABAPPLES,RAW",76,0.4,0.3,19.95,,,18,0.36,194,1,8,40,,0.048,0,110,"1 cup, slices",,
+9079,"CRANBERRIES,DRIED,sweetened",308,0.07,1.37,82.36,5.7,65,10,0.53,40,3,0.2,0,1.07,0.103,0,40,.33 cup,,
+9078,"CRANBERRIES,RAW",46,0.39,0.13,12.2,4.6,4.04,8,0.25,85,2,13.3,60,1.2,0.011,0,110,"1 cup, chopped",100,"1 cup, whole"
+9081,"CRANBERRY SAU,canned,sweetened",151,0.2,0.15,38.9,1,37.9,4,0.22,26,29,2,42,0.83,0.013,0,277,1 cup,57,"1 slice,  (1/2"" thick, approx 8 slices per can)"
+9082,"CRANBERRY-ORANGE RELISH,canned",178,0.3,0.1,46.2,0,,11,0.2,38,32,18,70,,0.012,0,275,1 cup,,
+9083,"CURRANTS,EUROPEAN BLACK,RAW",63,1.4,0.41,15.38,,,55,1.54,322,2,181,230,1,0.034,0,112,1 cup,,
+9084,"CURRANTS,RED&WHITE,RAW",56,1.4,0.2,13.8,4.3,7.37,33,1,275,1,41,42,0.1,0.017,0,112,1 cup,,
+9085,"CURRANTS,ZANTE,DRIED",283,4.08,0.27,74.08,6.8,67.28,86,3.26,892,8,4.7,73,0.11,0.028,0,144,1 cup,,
+9087,"DATES,DEGLET NOOR",282,2.45,0.39,75.03,8,63.35,39,1.02,656,2,0.4,10,0.05,0.032,0,147,"1 cup, chopped",7.1,"1 date, pitted"
+9421,"DATES,MEDJOOL",277,1.81,0.15,74.97,6.7,66.47,64,0.9,696,1,0,149,,,,24,"1 date, pitted",,
+9422,"DURIAN,RAW OR FROZEN",147,1.47,5.33,27.09,3.8,,6,0.43,436,2,19.7,44,,,0,243,"1 cup, chopped or diced",602,1 fruit
+9088,"ELDERBERRIES,RAW",73,0.66,0.5,18.4,7,,38,1.6,280,6,36,600,,0.023,0,145,1 cup,,
+9093,"FIGS,canned,packed in extra heavy syrup,solids and liquids",107,0.38,0.1,27.86,,,26,0.28,97,1,1,36,,0.02,0,261,1 cup,,
+9090,"FIGS,canned,packed in water,solids and liquids",53,0.4,0.1,13.99,2.2,11.79,28,0.29,103,1,1,38,0.08,0.02,0,248,1 cup,27,"1 fig, with liquid"
+9092,"FIGS,canned,packed in heavy syrup,solids and liquids",88,0.38,0.1,22.9,2.2,20.7,27,0.28,99,1,1,37,0.12,0.02,0,259,1 cup,28,"1 fig, with liquid"
+9091,"FIGS,canned,packed in light syrup,solids and liquids",69,0.39,0.1,17.95,1.8,16.15,27,0.29,102,1,1,37,0.1,0.02,0,252,1 cup,28,"1 fig, with liquid"
+9095,"FIGS,DRIED,STEWED",107,1.42,0.4,27.57,4.2,23.35,70,0.88,294,4,4.4,4,0.15,0.062,0,259,1 cup,,
+9094,"FIGS,DRIED,UNCOOKED",249,3.3,0.93,63.87,9.8,47.92,162,2.03,680,10,1.2,10,0.35,0.144,0,149,1 cup,8.4,1 fig
+9089,"FIGS,RAW",74,0.75,0.3,19.18,2.9,16.26,35,0.37,232,1,2,142,0.11,0.06,0,64,"1 large,  (2-1/2"" dia)",50,"1 medium,  (2-1/4"" dia)"
+9101,"FRUIT COCKTAIL,canned,EXtra heavy syrup,solids and liquids",88,0.39,0.07,22.89,1.1,,6,0.28,86,6,1.9,201,,0.01,0,260,1 cup,130,.5 cup
+9098,"FRUIT COCKTAIL,canned,EXtra LighT SYRUP,solids and liquids",45,0.4,0.07,11.63,1.1,,8,0.3,104,4,3,233,,0.01,0,123,.5 cup,,
+9096,"FRUIT COCKTAIL,canned,packed in water,solids and liquids",32,0.42,0.05,8.51,1,7.51,5,0.25,94,4,2.1,250,0.4,0.006,0,237,1 cup,,
+9351,"FRUIT COCKTAIL,canned,heavy syrup,drained",70,0.47,0.1,18.8,1.7,17.14,7,0.29,90,6,1.9,273,0.6,0.014,0,214,1 cup,,
+9100,"FRUIT COCKTAIL,canned,heavy syrup,solids and liquids",73,0.39,0.07,18.91,1,17.91,6,0.29,88,6,1.9,205,0.4,0.01,0,248,1 cup,,
+9097,"FRUIT COCKTAIL,canned,packed in juice,solids and liquids",46,0.46,0.01,11.86,1,10.86,8,0.21,95,4,2.7,305,0.4,0.001,0,237,1 cup,,
+9099,"FRUIT COCKTAIL,canned,LighT SYRUP,solids and liquids",57,0.4,0.07,14.93,1,13.93,6,0.29,89,6,1.9,208,0.5,0.01,0,242,1 cup,,
+9106,"FRUIT SALAD,canned,EXtra heavy syrup,solids and liquids",88,0.33,0.06,22.77,1,,6,0.28,80,5,2.1,637,,0.009,0,259,1 cup,,
+9102,"FRUIT SALAD,canned,packed in water,solids and liquids",30,0.35,0.07,7.87,1,,7,0.3,78,3,1.9,440,,0.009,0,245,1 cup,,
+9105,"FRUIT SALAD,canned,heavy syrup,solids and liquids",73,0.34,0.07,19.11,1,18.11,6,0.28,80,6,2.4,504,0.4,0.01,0,255,1 cup,,
+9103,"FRUIT SALAD,canned,packed in juice,solids and liquids",50,0.51,0.03,13.05,1,,11,0.25,116,5,3.3,600,,0.004,0,249,1 cup,,
+9104,"FRUIT SALAD,canned,LighT SYRUP,solids and liquids",58,0.34,0.07,15.14,1,,7,0.29,82,6,2.5,429,,0.009,0,252,1 cup,,
+9325,"FRUIT SALAD,TROPICAL,canned,heavy syrup,solids and liquids",86,0.41,0.1,22.36,1.3,,13,0.52,131,2,17.5,127,,0.019,0,257,1 cup,,
+9109,"GOOSEBERRIES,canned,packed in light syrup,solids and liquids",73,0.65,0.2,18.75,2.4,,16,0.33,77,2,10,138,,0.013,0,252,1 cup,,
+9107,"GOOSEBERRIES,RAW",44,0.88,0.58,10.18,4.3,,25,0.31,198,1,27.7,290,0.37,0.038,0,150,1 cup,,
+9124,"GRAPEFRUIT juice,WHITE,canned,sweetened",46,0.58,0.09,11.13,0.1,11.03,8,0.36,162,2,26.9,7,0.04,0.012,0,250,1 cup,31.2,1 fl oz
+9123,"GRAPEFRUIT juice,WHITE,canned,unsweetened",38,0.52,0.1,8.96,0.1,8.86,7,0.2,153,1,29.2,7,0.04,0.013,0,247,1 cup,30.9,1 fl oz
+9126,"GRAPEFRUIT juice,WHITE,frozen concentrate,unsweetened,diluted with 3 VOLUME H2O",41,0.55,0.13,9.73,0.1,9.63,8,0.14,136,1,33.7,9,0.04,0.019,0,247,1 cup,30.9,1 fl oz
+9125,"GRAPEFRUIT juice,WHITE,frozen concentrate,unsweetened,undiluted",146,1.97,0.48,34.56,0.4,34.16,27,0.49,484,3,119.8,31,0.14,0.064,0,207,"1 can,  (6 fl oz)",,
+9128,"GRAPEFRUIT juice,WHITE,RAW",39,0.5,0.1,9.2,0.1,9.1,9,0.2,162,1,38,10,0.22,0.014,0,247,1 cup,30.9,1 fl oz
+9404,"GRAPEFRUIT JUICE,PINK,RAW",39,0.5,0.1,9.2,,,9,0.2,162,1,38,440,,0.014,0,247,1 cup,196,"1 fruit,  yields"
+9114,"GRAPEFRUIT,RAW,PINK & RED,FLORIDA",30,0.55,0.1,7.5,1.1,,15,0.12,127,0,37,259,,0.014,0,230,"1 cup, sections with juice",123,".5 fruit,  (3-3/4"" dia)"
+9112,"GRAPEFRUIT,RAW,PINK&RED,ALL AREAS",42,0.77,0.14,10.66,1.6,6.89,22,0.08,135,0,31.2,1150,0.13,0.021,0,230,"1 cup, sections with juice",123,".5 fruit,  (3-3/4"" dia)"
+9113,"GRAPEFRUIT,RAW,PINK&RED,CALIFORNIA&ARIZONA",37,0.5,0.1,9.69,,,11,0.08,147,1,38.1,259,,0.014,0,230,"1 cup, sections with juice",123,".5 fruit,  (3-3/4"" dia)"
+9111,"GRAPEFRUIT,RAW,PINK&RED&WHITE,ALL AREAS",32,0.63,0.1,8.08,1.1,6.98,12,0.09,139,0,34.4,927,0.13,0.014,0,230,"1 cup, sections with juice",166,".5 large,  (approx 4-1/2"" dia)"
+9116,"GRAPEFRUIT,RAW,WHITE,ALL AREAS",33,0.69,0.1,8.41,1.1,7.31,12,0.06,148,0,33.3,33,0.13,0.014,0,230,"1 cup, sections with juice",118,".5 fruit,  (3-3/4"" dia)"
+9117,"GRAPEFRUIT,RAW,WHITE,CALIFORNIA",37,0.88,0.1,9.09,,,12,0.08,143,0,33.3,10,,0.014,0,230,"1 cup, sections with juice",118,".5 fruit,  (3-3/4"" dia)"
+9118,"GRAPEFRUIT,RAW,WHITE,FLORIDA",32,0.63,0.1,8.19,,,15,0.05,150,0,37,10,,0.014,0,230,"1 cup, sections with juice",118,".5 fruit,  (3-3/4"" dia)"
+9119,"GRAPEFRUIT,SECTIONS,canned,packed in water,solids and liquids",36,0.58,0.1,9.15,0.4,8.75,15,0.41,132,2,21.8,0,0.09,0.014,0,244,1 cup,,
+9120,"GRAPEFRUIT,SECTIONS,canned,packed in juice,solids and liquids",37,0.7,0.09,9.21,0.4,8.8,15,0.21,169,7,33.9,0,0.09,0.012,0,249,1 cup,,
+9121,"GRAPEFRUIT,SECTIONS,canned,packed in light syrup,solids and liquids",60,0.56,0.1,15.44,0.4,15.04,14,0.4,129,2,21.3,0,0.09,0.014,0,254,1 cup,,
+9133,"GRAPES,canned,THOMPSON SEEDLESS,packed in water,solids and liquids",40,0.5,0.11,10.3,0.6,9.7,10,0.98,107,6,1,45,0.13,0.035,0,245,1 cup,,
+9134,"GRAPES,canned,THOMPSON SEEDLESS,packed in heavy syrup,solids and liquids",76,0.48,0.1,19.65,0.6,19.05,10,0.94,103,5,1,64,0.13,0.033,0,256,1 cup,,
+9129,"GRAPES,MUSCADINE,RAW",57,0.81,0.47,13.93,3.9,,37,0.26,203,1,,67,,,,6,1 grape,,
+9132,"GRAPES,RED OR GREEN, RAW",69,0.72,0.16,18.1,0.9,15.48,10,0.36,191,2,3.2,66,0.19,0.054,0,151,1 cup,49,10 grapes
+9144,"JACKFRUIT,RAW",95,1.72,0.64,23.25,1.5,19.08,24,0.23,448,2,13.7,110,0.34,0.195,0,165,"1 cup, sliced",151,"1 cup, 1"" pieces"
+9145,"JAVA-PLUM,(JAMBOLAN),RAW",60,0.72,0.23,15.56,,,19,0.19,79,14,14.3,3,,,0,135,1 cup,9,3 fruit
+9156,"LEMON PEEL,RAW",47,1.5,0.3,16,10.6,4.17,134,0.8,160,6,129,50,0.25,0.039,0,6,1 tbsp,2,1 tsp
+9150,"LEMONS,RAW,WITHOUT PEEL",29,1.1,0.3,9.32,2.8,2.5,26,0.6,138,2,53,22,0.15,0.039,0,212,"1 cup, sections",58,"1 fruit,  (2-1/8"" dia)"
+9161,"LIME juice,canned OR bottled,unsweetened",21,0.25,0.23,6.69,0.4,1.37,12,0.23,75,16,6.4,16,0.12,0.026,0,246,1 cup,30.8,1 fl oz
+9159,"LIMES,RAW",30,0.7,0.2,10.54,2.8,1.69,33,0.6,102,2,29.1,50,0.22,0.022,0,67,"1 fruit,  (2"" dia)",67,1 NLEA serving
+9165,"LITCHIS,DRIED",277,3.8,1.2,70.7,4.6,66.1,33,1.7,1110,3,183,0,0.31,0.27,0,2.5,1 fruit,,
+9167,"LOGANBERRIES,FROZEN",55,1.52,0.31,13.02,5.3,7.7,26,0.64,145,1,15.3,35,0.87,0.011,0,147,"1 cup, unthawed",,
+9164,"LITCHIS,RAW",66,0.83,0.44,16.53,1.3,15.23,5,0.31,171,1,71.5,0,0.07,0.099,0,190,1 cup,9.6,"1 fruit, without refuse"
+9436,"MANGO NECTAR,canned",51,0.11,0.06,13.12,0.3,12.45,17,0.36,24,5,15.2,692,0.21,0.014,0,251,1 cup,,
+9176,"MANGOS,RAW",60,0.82,0.38,14.98,1.6,13.66,11,0.16,168,1,36.4,1082,0.9,0.092,0,165,"1 cup, pieces",336,"1 fruit, without refuse"
+9177,"MANGOSTEEN,canned,SYRUP packed",73,0.41,0.58,17.91,1.8,,12,0.3,48,7,2.9,35,,,0,196,"1 cup,  drained",216,1 cup
+9328,"MARASCHINO CHERRIES,canned,drained",165,0.22,0.21,41.97,3.2,38.77,54,0.43,21,4,0,45,0.05,0.039,0,5,"1 cherry,  (NLEA serving)",,
+9185,"MELON BALLS,FROZEN",33,0.84,0.25,7.94,0.7,,10,0.29,280,31,6.2,1774,,0.064,0,173,"1 cup, unthawed",,
+9181,"MELONS,CANTALOUPE,RAW",34,0.84,0.19,8.16,0.9,7.86,9,0.21,267,16,36.7,3382,0.05,0.051,0,177,"1 cup, balls",160,"1 cup, cubes"
+9183,"MELONS,CASABA,RAW",28,1.11,0.1,6.58,0.9,5.69,11,0.34,182,9,21.8,0,0.05,0.025,0,170,"1 cup, cubes",1640,1 melon
+9184,"MELONS,HONEYDEW,RAW",36,0.54,0.14,9.09,0.8,8.12,6,0.17,228,18,18,50,0.02,0.038,0,177,"1 cup, balls",170,"1 cup, diced (approx 20 pieces per cup)"
+9190,"MULBERRIES,RAW",43,1.44,0.39,9.8,1.7,8.1,39,1.85,194,10,36.4,25,0.87,0.027,0,140,1 cup,15,10 fruit
+9191,"NECTARINES,RAW",44,1.06,0.32,10.55,1.7,7.89,6,0.28,201,0,5.4,332,0.77,0.025,0,143,"1 cup, slices",129,"1 small,  (2-1/3"" dia)"
+9216,"ORANGE PEEL,RAW",97,1.5,0.2,25,10.6,,161,0.8,212,3,136,420,0.25,0.024,0,6,1 tbsp,2,1 tsp
+9200,"ORANGES,RAW",47,0.94,0.12,11.75,2.4,9.35,40,0.1,181,0,53.2,225,0.18,0.015,0,180,"1 cup, sections",184,"1 large,  (3-1/16"" dia)"
+9201,"ORANGES,RAW,CALIFORNIA,VALENCIAS",49,1.04,0.3,11.89,2.5,,40,0.09,179,0,48.5,230,,0.035,0,180,"1 cup, sections without membranes",121,"1 fruit,  (2-5/8"" dia)"
+9203,"ORANGES,RAW,FLORIDA",46,0.7,0.21,11.54,2.4,9.14,43,0.09,169,0,45,225,0.18,0.025,0,185,"1 cup, sections without membranes",141,"1 fruit,  (2-5/8"" dia)"
+9202,"ORANGES,RAW,NAVELS",49,0.91,0.15,12.54,2.2,8.5,43,0.13,166,1,59.1,247,0.15,0.017,0,165,"1 cup, sections without membranes",140,"1 fruit,  (2-7/8"" dia)"
+9226,"PAPAYAS,RAW",43,0.47,0.26,10.82,1.7,7.82,20,0.25,182,8,60.9,950,0.3,0.081,0,145,"1 cup, 1"" pieces",230,"1 cup, mashed"
+9242,"PEACHES,canned,packed in extra heavy syrup,solids and liquids",96,0.47,0.03,26.06,1,,3,0.29,83,8,1.2,131,,0.003,0,262,"1 cup, halves or slices",,
+9239,"PEACHES,canned, packed in extra light syrup,solids and liquids",42,0.4,0.1,11.1,1,,5,0.3,74,5,3,270,,0.011,0,247,"1 cup, halves or slices",,
+9237,"PEACHES,canned,packed in water,solids and liquids",24,0.44,0.06,6.11,1.3,4.81,2,0.32,99,3,2.9,532,0.49,0.006,0,244,"1 cup, halves or slices",98,"1 half, with liquid"
+9241,"PEACHES,canned,packed in heavy syrup,solids and liquids",74,0.45,0.1,19.94,1.3,18.64,3,0.27,92,6,2.8,332,0.49,0.01,0,262,1 cup,98,"1 half, with liquid"
+9370,"PEACHES,canned,heavy syrup,drained",72,0.52,0.18,18.43,1.2,14.66,3,0.27,94,6,0.7,626,1.19,0.013,0,222,1 cup,73,1 half
+9238,"PEACHES,canned,packed in juice,solids and liquids",44,0.63,0.03,11.57,1.3,10.27,6,0.27,128,4,3.6,381,0.49,0.004,0,250,1 cup,248,"1 cup, halves or slices"
+9240,"PEACHES,canned,packed in light syrup,solids and liquids",54,0.45,0.03,14.55,1.3,13.25,3,0.36,97,5,2.4,354,0.49,0.003,0,251,"1 cup, halves or slices",98,"1 half, with liquid"
+9245,"PEACHES,dehydrated,SULFURED,stewed",133,2.01,0.42,34.14,,,16,2.26,554,4,6.8,396,,0.045,0,242,1 cup,,
+9244,"PEACHES,dehydrated,SULFURED,uncooked",325,4.89,1.03,83.18,,,38,5.51,1351,10,10.6,1417,,0.111,0,116,1 cup,,
+9248,"PEACHES,DRIED,SULFURED,stewed,with SUGAR",103,1.06,0.22,26.6,2.4,,8,1.2,292,2,3.4,180,,0.024,0,270,1 cup,,
+9247,"PEACHES,DRIED,SULFURED,stewed,without SUGAR",77,1.16,0.25,19.69,2.7,16.99,9,1.31,320,2,3.7,197,0.06,0.026,0,258,1 cup,,
+9246,"PEACHES,DRIED,SULFURED,uncooked",239,3.61,0.76,61.33,8.2,41.74,28,4.06,996,7,4.8,2163,0.19,0.082,0,160,"1 cup,  halves",13,1 half
+9250,"PEACHES,frozen,SLICED,sweetened",94,0.63,0.13,23.98,1.8,22.18,3,0.37,130,6,94.2,284,0.62,0.014,0,250,"1 cup, thawed",155,10 slices
+9236,"PEACHES,RAW",39,0.91,0.25,9.54,1.5,8.39,6,0.25,190,0,6.6,326,0.73,0.019,0,154,"1 cup, slices",130,"1 small,  (2-1/2"" dia)"
+9243,"PEACHES,SPICED,canned,packed in heavy syrup,solids and liquids",75,0.41,0.1,20.08,1.3,18.78,6,0.28,85,4,5.3,317,0.49,0.011,0,242,"1 cup, whole",,
+9408,"PEAR NECTAR,canned,with VIT C",60,0.11,0.01,15.76,0.6,,5,0.26,13,4,27,1,,0.001,0,250,1 cup,31.2,1 fl oz
+9262,"PEAR NECTAR,canned,without VIT C",60,0.11,0.01,15.76,0.6,15.16,5,0.26,13,4,1.1,1,0.05,0.001,0,250,1 cup,31.2,1 fl oz
+9340,"PEARS,ASIAN,RAW",42,0.5,0.23,10.65,3.6,7.05,4,0,121,0,3.8,0,0.12,0.012,0,122,"1 fruit,  2-1/4"" high x 2-1/2"" dia",275,"1 fruit,  3-3/8"" high x 3"" diameter"
+9258,"PEARS,canned,packed in extra heavy syrup,solids and liquids",97,0.19,0.13,25.25,1.6,,5,0.22,64,5,1.1,0,,0.007,0,266,"1 cup,  halves",79,"1 half,  with liquid"
+9255,"PEARS,canned,packed in extra light syrup,solids and liquids",47,0.3,0.1,12.2,1.6,,7,0.2,45,2,2,0,,0.006,0,247,"1 cup,  halves",76,"1 half, with liquid"
+9253,"PEARS,canned,packed in water,solids and liquids",29,0.19,0.03,7.81,1.6,6.1,4,0.21,53,2,1,0,0.08,0.002,0,244,"1 cup,  halves",76,"1 half, with liquid"
+9257,"PEARS,canned,packed in heavy syrup,solids and liquids",74,0.2,0.13,19.17,1.6,15.2,5,0.22,65,5,1.1,0,0.08,0.007,0,266,1 cup,76,"1 half, with liquid"
+9374,"PEARS,canned,heavy syrup,drained",74,0.24,0.18,19.08,2.7,16.42,6,0.22,66,5,1.1,8,0.12,0.01,0,201,1 cup,48,1 half
+9254,"PEARS,canned,packed in juice,solids and liquids",50,0.34,0.07,12.94,1.6,9.7,9,0.29,96,4,1.6,6,0.08,0.004,0,248,"1 cup,  halves",76,"1 half, with liquid"
+9256,"PEARS,canned,packed in light syrup,solids and liquids",57,0.19,0.03,15.17,1.6,12.1,5,0.28,66,5,0.7,0,0.08,0.002,0,251,"1 cup,  halves",76,"1 half, with liquid"
+9261,"PEARS,DRIED,SULFURED,stewed,with SUGAR",140,0.86,0.29,37.14,5.8,,15,0.97,245,3,3.8,40,,0.016,0,280,"1 cup,  halves",,
+9260,"PEARS,DRIED,SULFURED,stewed,without SUGAR",127,0.91,0.31,33.81,6.4,27.41,16,1.02,258,3,4,42,0.03,0.017,0,255,"1 cup,  halves",,
+9259,"PEARS,DRIED,SULFURED,uncooked",262,1.87,0.63,69.7,7.5,62.2,34,2.1,533,6,7,3,0.06,0.035,0,180,"1 cup,  halves",18,1 half
+9252,"PEARS,RAW",57,0.36,0.14,15.23,3.1,9.75,9,0.18,116,1,4.3,25,0.12,0.022,0,148,1 small,178,1 medium
+9412,"PEARS,RAW,BARTLETT",63,0.39,0.16,15.01,3.1,9.69,9,0.19,101,1,4.4,28,0.12,,,152,1 small,177,1 medium
+9271,"PINEAPPLE,canned,packed in extra heavy syrup,solids and liquids",83,0.34,0.11,21.5,0.8,,14,0.38,102,1,7.3,14,,0.009,0,260,"1 cup, crushed, sliced, or chunks",,
+9267,"PINEAPPLE,canned,packed in water,solids and liquids",32,0.43,0.09,8.3,0.8,7.5,15,0.4,127,1,7.7,38,0.01,0.006,0,246,"1 cup, crushed, sliced, or chunks",47,"1 slice,  or ring (3"" dia) with liquid"
+9270,"PINEAPPLE,canned,packed in heavy syrup,solids and liquids",78,0.35,0.11,20.2,0.8,16.9,14,0.38,104,1,7.4,14,0.01,0.009,0,254,"1 cup, crushed, sliced, or chunks",49,"1 slice,  or ring (3"" dia) with liquid"
+9354,"PINEAPPLE,canned,packed in juice,drained",60,0.51,0.11,15.56,1.3,14.26,16,0.28,124,1,9.4,50,0.02,0.008,0,181,"1 cup, chunks",195,"1 cup, crushed"
+9268,"PINEAPPLE,canned,packed in juice,solids and liquids",60,0.42,0.08,15.7,0.8,14.45,14,0.28,122,1,9.5,38,0.01,0.006,0,249,"1 cup, crushed, sliced, or chunks",47,"1 slice,  or ring (3"" dia) with liquid"
+9269,"PINEAPPLE,canned,packed in light syrup,solids and liquids",52,0.36,0.12,13.45,0.8,12.65,14,0.39,105,1,7.5,38,0.01,0.009,0,252,"1 cup, crushed, sliced, or chunks",48,"1 slice,  or ring (3"" dia) with liquid"
+9272,"PINEAPPLE,frozen,CHUNKS,sweetened",86,0.4,0.1,22.2,1.1,21.1,9,0.4,100,2,8,30,0.02,0.007,0,245,"1 cup, chunks",,
+9266,"PINEAPPLE,RAW,ALL VARieties",50,0.54,0.12,13.12,1.4,9.85,13,0.29,109,1,47.8,58,0.02,0.009,0,165,"1 cup, chunks",905,1 fruit
+9430,"PINEAPPLE,RAW,EX SWeeT VARiety",51,0.53,0.11,13.5,1.4,10.32,13,0.28,108,1,56.4,57,0.02,,,165,"1 cup, chunks",166,"1 slice,  (4-2/3"" dia x 3/4"" thick)"
+9429,"PINEAPPLE,RAW,TRADITIONAL VARiety",45,0.55,0.13,11.82,,8.29,13,0.25,125,1,16.9,52,,,,165,"1 cup, chunks",175,"1 slice,  (4-2/3"" dia x 3/4"" thick)"
+9278,"PLANTAINS,COOKED",116,0.79,0.18,31.15,2.3,14,2,0.58,465,5,10.9,909,0.13,0.069,0,200,"1 cup, mashed",154,"1 cup, slices"
+9446,"PLANTAINS,GReeN,FRIED",309,1.5,11.81,49.17,3.5,3.63,4,0.67,482,2,3.4,1192,,3.69,,118,1 cup,53,"10 slices,  (1/4"" thick)"
+9277,"PLANTAINS,RAW",122,1.3,0.37,31.89,2.3,15,3,0.6,499,4,18.4,1127,0.14,0.143,0,148,"1 cup, sliced",179,1 medium
+9447,"PLANTAINS,YElLow,FRIED",236,1.42,7.51,40.77,3.2,21.76,6,0.62,507,6,,1318,1.1,1.816,,169,1 cup,,
+9379,"PLUMS,canned,heavy syrup,drained",89,0.44,0.14,23.12,1.5,21.58,10,0.84,93,19,0.4,399,0.26,0.011,0,183,"1 cup, with pits yields",,
+9285,"PLUMS,canned,PURPLE,packed in extra heavy syrup,solids and liquids",101,0.36,0.1,26.31,1,,9,0.82,89,19,0.4,254,,0.008,0,261,"1 cup,  pitted",,
+9281,"PLUMS,canned,PURPLE,packed in water,solids and liquids",41,0.39,0.01,11.03,0.9,10.1,7,0.16,126,1,2.7,914,0.18,0.001,0,249,"1 cup,  pitted",46,"1 plum,  with liquid"
+9284,"PLUMS,canned,PURPLE,packed in heavy syrup,solids and liquids",89,0.36,0.1,23.24,0.9,22.31,9,0.84,91,19,0.4,259,0.18,0.008,0,258,"1 cup,  pitted",46,"1 plum,  with liquid"
+9282,"PLUMS,canned,PURPLE,packed in juice,solids and liquids",58,0.51,0.02,15.15,0.9,14.22,10,0.34,154,1,2.8,1009,0.18,0.002,0,252,"1 cup,  pitted",46,"1 plum,  with liquid"
+9283,"PLUMS,canned,PURPLE,packed in light syrup,solids and liquids",63,0.37,0.1,16.28,0.9,15.35,9,0.86,93,20,0.4,231,0.18,0.008,0,252,"1 cup,  pitted",46,"1 plum,  with liquid"
+9293,"PLUMS,DRIED (PRUNES),stewed,with ADDED SUGAR",124,1.09,0.22,32.88,3.8,,21,1.04,312,2,2.7,285,,0.017,0,248,"1 cup,  pitted",,
+9292,"PLUMS,DRIED (PRUNES),stewed,without ADDED SUGAR",107,0.96,0.16,28.08,3.1,24.98,19,0.41,321,1,2.9,342,0.19,0.01,0,248,"1 cup,  pitted",,
+9291,"PLUMS,DRIED (PRUNES),uncooked",240,2.18,0.38,63.88,7.1,38.13,43,0.93,732,2,0.6,781,0.43,0.088,0,174,"1 cup, pitted",9.5,"1 prune, pitted"
+9279,"PLUMS,RAW",46,0.7,0.28,11.42,1.4,9.92,6,0.17,157,0,9.5,345,0.26,0.017,0,165,"1 cup, sliced",66,"1 fruit,  (2-1/8"" dia)"
+9286,"POMEGRANATES,RAW",83,1.67,1.17,18.7,4,13.67,10,0.3,236,3,10.2,0,0.6,0.12,0,282,"1 pomegranate,  (4"" dia)",87,".5 cup, arils (seed/juice sacs)"
+9287,"PRICKLY PEARS,RAW",41,0.73,0.51,9.57,3.6,,56,0.3,220,5,14,43,,0.067,0,149,1 cup,103,"1 fruit, without refuse"
+9423,PRUNE PUREE,257,2.1,0.2,65.1,3.3,39,31,2.8,852,23,4.3,2000,,0.016,0,36,2 tbsp,,
+9288,"PRUNES,canned,packed in heavy syrup,solids and liquids",105,0.87,0.2,27.8,3.8,,17,0.41,226,3,2.8,797,,0.016,0,234,1 cup,86,"5 prunes,  with liquid"
+9290,"PRUNES,dehydrated,stewed",113,1.23,0.24,29.7,,,24,1.17,353,2,0,523,,0.02,0,280,1 cup,,
+9289,"PRUNES,dehydrated,uncooked",339,3.7,0.73,89.07,,,72,3.52,1058,5,0,1762,,0.059,0,132,1 cup,,
+9295,"PUMMELO,RAW",38,0.76,0.04,9.62,1,,4,0.11,216,1,61,8,,,0,190,"1 cup, sections",609,"1 fruit, without refuse"
+9297,"RAISINS,GOLDEN SEEDLESS",302,3.39,0.46,79.52,4,59.19,53,1.79,746,12,3.2,0,0.12,0.151,0,165,"1 cup,  packed",145,"1 cup,  (not packed)"
+9299,"RAISINS,SEEDED",296,2.52,0.54,78.47,6.8,,28,2.59,825,28,5.4,0,,0.178,0,165,"1 cup,  packed",145,"1 cup,  (not packed)"
+9298,"RAISINS,SEEDLESS",299,3.07,0.46,79.18,3.7,59.19,50,1.88,749,11,2.3,0,0.12,0.058,0,165,"1 cup,  packed",145,"1 cup,  (not packed)"
+9304,"RASPBERRIES,canned,RED,packed in heavy syrup,solids and liquids",91,0.83,0.12,23.36,3.3,20.06,11,0.42,94,3,8.7,33,0.59,0.005,0,256,1 cup,,
+9306,"RASPBERRIES,frozen,RED,sweetened",103,0.7,0.16,26.16,4.4,21.76,15,0.65,114,1,16.5,60,0.72,0.005,0,250,"1 cup, unthawed",284,"1 package,  (10 oz)"
+9302,"RASPBERRIES,RAW",52,1.2,0.65,11.94,6.5,4.42,25,0.69,151,1,26.2,33,0.87,0.019,0,123,1 cup,312,"1 pint,  as purchased, yields"
+9309,"RHUBARB,FROZEN,UNCOOKED",21,0.55,0.11,5.1,1.8,1.1,194,0.29,108,2,4.8,107,0.27,0.029,0,137,"1 cup, diced",,
+9310,"RHUBARB,frozen,cooked,withSUGAR",116,0.39,0.05,31.2,2,28.7,145,0.21,96,1,3.3,73,0.19,0.014,0,240,1 cup,,
+9307,"RHUBARB,RAW",21,0.9,0.2,4.54,1.8,1.1,86,0.22,288,4,8,102,0.27,0.053,0,122,"1 cup, diced",51,1 stalk
+9317,"STRAWBERRIES,canned,packed in heavy syrup,solids and liquids",92,0.56,0.26,23.53,1.7,21.83,13,0.49,86,4,31.7,26,0.19,0.014,0,254,1 cup,,
+9320,"STRAWBERRIES,frozen,sweetened,SLICED",96,0.53,0.13,25.92,1.9,24.01,11,0.59,98,3,41.4,24,0.23,0.007,0,255,"1 cup, thawed",284,"1 package,  (10 oz)"
+9319,"STRAWBERRIES,frozen,sweetened,WHole",78,0.52,0.14,21,1.9,18.61,11,0.47,98,1,39.5,27,0.24,0.007,0,255,"1 cup, thawed",284,"1 package,  (10 oz)"
+9318,"STRAWBERRIES,frozen,unsweetened",35,0.43,0.11,9.13,2.1,4.56,16,0.75,148,2,41.2,45,0.29,0.006,0,221,"1 cup, thawed",149,"1 cup, unthawed"
+9316,"STRAWBERRIES,RAW",32,0.67,0.3,7.68,2,4.89,16,0.41,153,1,58.8,12,0.29,0.015,0,152,"1 cup,  halves",232,"1 cup, pureed"
+9221,"TANGERINE JUICE,RAW",43,0.5,0.2,10.1,0.2,9.9,18,0.2,178,1,31,253,0.13,0.024,0,247,1 cup,30.9,1 fl oz
+9219,"TANGERINES,(MANDARIN ORANGES),canned,packed in juice",37,0.62,0.03,9.57,0.7,8.87,11,0.27,133,5,34.2,852,0.1,0.003,0,249,1 cup,,
+9383,"TANGERINES,(MANDARIN ORANGES),canned,packed in juice,drained",38,0.75,0.04,9.41,1.2,8.25,12,0.27,136,5,33.9,1312,0.15,0.004,0,189,1 cup,,
+9220,"TANGERINES,(MANDARIN ORANGES),canned,packed in light syrup",61,0.45,0.1,16.19,0.7,15.49,7,0.37,78,6,19.8,840,0.1,0.012,0,252,1 cup,,
+9218,"TANGERINES,(MANDARIN ORANGES),RAW",53,0.81,0.31,13.34,1.8,10.58,37,0.15,166,2,26.7,681,0.2,0.039,0,195,"1 cup, sections",76,"1 small,  (2-1/4"" dia)"
+9326,"WATERMELON,RAW",30,0.61,0.15,7.55,0.4,6.2,7,0.24,112,1,8.1,569,0.05,0.016,0,154,"1 cup, balls",152,"1 cup, diced"

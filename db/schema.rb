@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140217214618) do
+ActiveRecord::Schema.define(:version => 20140217220406) do
 
   create_table "foods", :force => true do |t|
     t.string   "name",                              :null => false
@@ -37,6 +37,29 @@ ActiveRecord::Schema.define(:version => 20140217214618) do
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
   end
+
+  create_table "goals", :force => true do |t|
+    t.integer  "user_id",             :null => false
+    t.integer  "bmr",                 :null => false
+    t.integer  "calorie_goal",        :null => false
+    t.integer  "fat_ratio",           :null => false
+    t.integer  "carb_ratio",          :null => false
+    t.integer  "protein_ratio",       :null => false
+    t.integer  "sodium",              :null => false
+    t.integer  "potassium",           :null => false
+    t.integer  "cholesterol",         :null => false
+    t.integer  "calcium",             :null => false
+    t.integer  "vitamin_a",           :null => false
+    t.integer  "vitamin_c",           :null => false
+    t.integer  "iron",                :null => false
+    t.integer  "workouts_per_week",   :null => false
+    t.integer  "minutes_per_workout", :null => false
+    t.integer  "weight_loss_rate",    :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  add_index "goals", ["user_id"], :name => "index_goals_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "username",        :null => false
