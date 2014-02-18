@@ -13,7 +13,8 @@ class User < ActiveRecord::Base
                   :gender,
                   :city,
                   :state,
-                  :zipcode
+                  :zipcode,
+                  :age
   attr_reader :password
 
   before_validation :ensure_session_token
@@ -27,6 +28,7 @@ class User < ActiveRecord::Base
   validates :current_wt, presence: { message: "Please enter your current weight" }
   validates :goal_wt, :height, :activity_level, :birthday, presence: true
 
+  has_one :goal
   # TODO: Fix messages!
 
   def password=(password)
