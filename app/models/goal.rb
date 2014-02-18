@@ -30,7 +30,7 @@ class Goal < ActiveRecord::Base
                   :activity_level
 
   before_validation :ensure_default_values
-  before_save :assign_calculated_values
+  before_create :assign_calculated_values
 
   validates :fat_ratio, :carb_ratio, :protein_ratio, presence: true
   validates :sodium, :potassium, presence: true
@@ -38,7 +38,7 @@ class Goal < ActiveRecord::Base
   validates :vitamin_a, :vitamin_c, presence: true
   validates :workouts_per_week, :minutes_per_workout, presence: true
 
-  belongs_to :user
+  belongs_to :user, inverse_of: :goal
 
   def user_gender=(gender)
     @user_gender = gender

@@ -6,7 +6,7 @@
   <section>
     <ul>
       <% if current_user %>
-        <li>Hi, <%= current_user.username %>!</li>
+        <li>Hi, <%= link_to current_user.username, user_url(current_user) %>!</li>
         <li>Messages</li>
         <li>Help</li>
         <li>Settings</li>
