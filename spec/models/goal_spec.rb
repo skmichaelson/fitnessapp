@@ -1,22 +1,6 @@
 require 'spec_helper'
 
 describe Goal do
-  it { should validate_presence_of(:user_id) }
-  it { should validate_presence_of(:bmr) }
-  it { should validate_presence_of(:calorie_goal) }
-  it { should validate_presence_of(:fat_ratio) }
-  it { should validate_presence_of(:carb_ratio) }
-  it { should validate_presence_of(:protein_ratio) }
-  it { should validate_presence_of(:sodium) }
-  it { should validate_presence_of(:potassium) }
-  it { should validate_presence_of(:cholesterol) }
-  it { should validate_presence_of(:calcium) }
-  it { should validate_presence_of(:vitamin_a) }
-  it { should validate_presence_of(:vitamin_c) }
-  it { should validate_presence_of(:iron) }
-  it { should validate_presence_of(:workouts_per_week) }
-  it { should validate_presence_of(:mintues_per_workout) }
-  it { should validate_presence_of(:weight_loss_rate) }
 
   context "setting defaults" do
     let(:new_goal) {
@@ -25,6 +9,11 @@ describe Goal do
         calorie_goal: 1600,
         workouts_per_week: 3,
         minutes_per_workout: 30,
+        user_gender: "F",
+        user_age: 30,
+        user_height: 62,
+        user_weight: 130,
+        activity_level: 1,
         weight_loss_rate: 1)
     }
 
@@ -43,8 +32,7 @@ describe Goal do
   end
 
   context "autogenerating values" do
-    let(:new_goal) {
-      Goal.new(user_id: 1,
+    new_goal = Goal.new(user_id: 1,
         workouts_per_week: 3,
         minutes_per_workout: 30,
         weight_loss_rate: 1,
@@ -53,22 +41,14 @@ describe Goal do
         user_height: 62,
         user_weight: 130,
         activity_level: 1)
-    }
-    before { new_goal.save }
-
-    it "should assign iron based on gender" do
-      new_goal.update_attributes(user_gender: "F")
-      expect(new_goal.iron).to eq(18)
-
-      new_goal.update_attributes(user_gender: "M")
-      expect(new_goal.iron).to eq(8)
-    end
 
     it "should calculate BMR to the nearest integer" do
+      new_goal.save
       expect(new_goal.bmr).to eq(1371)
     end
 
     it "should calculate calorie goal" do
+      new_goal.save
       expect(new_goal.calorie_goal).to eq(1385)
     end
   end
