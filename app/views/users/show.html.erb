@@ -23,7 +23,9 @@
       <li><%= @user.username %></li>
       <li><%= @user.age %></li>
       <li><%= @user.gender %></li>
+      <% if @user.city && @user.state %>
       <li><%= @user.city.capitalize %>, <%= @user.state.upcase %></li>
+      <% end %>
     </ul>
   </div>
 
