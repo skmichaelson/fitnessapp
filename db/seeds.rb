@@ -98,10 +98,10 @@ user8 = {username: "grandpapa",
 
 all_users = [user1, user2, user3, user4, user5, user6, user7, user8]
 
-all_users.each do |user|
-  u = User.new(user)
-  next unless u.save
-end
+# all_users.each do |user|
+#   u = User.new(user)
+#   next unless u.save
+# end
 
 def get_food_from_csv(file)
   contents = CSV.open file, headers: true, header_converters: :symbol
@@ -136,8 +136,10 @@ end
 
 food1 = get_food_from_csv("db/dairy0217.csv")
 food2 = get_food_from_csv("db/fruits0217.csv")
+food3 = get_food_from_csv("db/meat0218.csv")
+food4 = get_food_from_csv("db/cereal0218.csv")
 
-food_list = [food1, food2]
+food_list = [food4, food3]
 
 food_list.each do |list|
   list.each do |food|

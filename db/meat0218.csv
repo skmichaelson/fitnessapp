@@ -1,0 +1,293 @@
+usda_id,name,calories,protein,fat,carbohydrates,fiber,sugar,calcium,iron,potassium,sodium,vitamin_c,vitamin_a,vitamin_e,saturated_fat,cholesterol,common_weight_1,common_serving_1,common_weight_2,common_serving_2
+35007,"BEAR,BLACK,MEAT (ALASKA NATIVE)",155,20.1,8.3,0,,,,7.2,,,,260,,,,,,,
+35008,"BEAR,POLAR,MEAT,RAW (ALASKA NATIVE)",130,25.6,3.1,0,,,17,6.1,40,,2,1400,,0.63,,,,,
+7956,"BEEF SAUSAGE,fresh,cooked",332,18.21,27.98,0.35,0,0,11,1.57,258,813,0,81,0.24,10.905,82,43,1 serving,,
+7954,"BEEF SAUSAGE,raw",405,15.5,37.57,0.03,0,0,15,1.53,234,822,0.7,114,0.49,15.098,83,48,1 serving,,
+13595,"BEEF,BRISKET,FLAT HALF, boneless, trimmed of visible fat,raw",132,21.47,5.11,0,0,0,13,2.06,362,83,0,6,1.844,2,67,1855,1 piece,,
+13370,"BEEF,BRISKET,FLAT HALF, trimmed of visible fat,cooked,braised",205,33.26,6.99,0,0,0,16,2.82,267,54,0,0,2.647,0,100,270,"1 steak,  (yield from 418g raw meat)",85,3 oz
+13372,"BEEF,BRISKET,POINT HALF, trimmed of visible fat,cooked,braised",244,28.05,13.8,0,0,0,6,2.79,273,77,0,0,5.18,0,91,232,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13368,"BEEF,BRISKET, whole, trimmed of visible fat,cooked,braised",218,29.75,10.08,0,0,0,6,2.81,285,70,0,0,3.63,0,93,85,3 oz,264,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)"
+13023,"BEEF,BRISKET,WHole, lean, raw",155,20.72,7.37,0,0,0,5,1.92,330,79,0,0,2.59,0,62,28.35,1 oz,453.6,1 lb
+13954,"BEEF, bottom SIRLOIN,tri-tip roast, trimmed of visible fat,raw",165,20.64,8.55,0,0,0,25,1.49,317,52,0,0,3.14,0,66,261,1 roast,,
+13987,"BEEF, bottom SIRLOIN,TRI-TIP STEAK,trimmed of visible fat,cooked,broiled",250,30.68,13.16,0,0,0,12,3.74,449,73,0,0,4.87,0,107,85,"3 oz,  ( 1 serving )",453.6,1 lb
+13810,"BEEF,CHUCK,ARM POT RST,cooked,braised",302,30.12,19.22,0,0,0,17,2.53,242,50,0,0,7.62,0,120,258,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13809,"BEEF,CHUCK,ARM POT RST,raw",244,19.23,17.98,0,0,0,17,1.67,290,62,0,0,7.254,0,91,28.35,1 oz,453.6,1 lb
+13816,"BEEF,CHUCK,BLADE RST,cooked,braised",341,26.78,25.12,0,0,0,13,3.13,233,65,0,0,10,0,104,247,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13815,"BEEF,CHUCK,BLADE RST,fat,raw",248,17.16,19.41,0,0,0,10,2.04,271,68,0,0,7.82,0,71,28.35,1 oz,453.6,1 lb
+13347,"BEEF,CURED,CORNED beef,BRISKET,cooked",251,18.17,18.98,0.47,0,0,8,1.86,145,973,0,0,6.34,0,98,320,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13346,"BEEF,CURED,CORNED beef,BRISKET,RAW",198,14.68,14.9,0.14,0,,7,1.69,297,1217,27,0,4.73,0,54,28.35,1 oz,453.6,1 lb
+13348,"BEEF,CURED,CORNED beef,canned",250,27.1,14.93,0,0,0,12,2.08,136,897,0,0,6.18,0,86,28.35,1 oz,21,"1 slice,  (3/4 oz)"
+13350,"BEEF,CURED,DRIED",153,31.1,1.94,2.76,0,2.7,8,2.42,235,2790,0,0,0.95,0,79,28,10 slices,,
+13353,"BEEF,CURED,LUNCHEON MEAT,JELLIED",111,19,3.3,0,0,,10,3.45,402,1322,0,0,1.41,0,34,28,"1 slice,  (1 oz) (4"" x 4"" x 3/32"" thick)",,
+13355,"BEEF,CURED,PASTRAMI",147,21.8,5.82,0.36,0,0.1,10,2.22,210,1078,0.3,42,2.681,2,68,71,"1 package, 2.5 oz",28,"1 slice,  (1 oz)"
+13357,"BEEF,CURED,SAUSAGE,cooked,SMOKED",312,14.11,26.91,2.42,0,,7,1.76,176,1131,0,0,11.44,0,67,43,1 sausage,28.35,1 oz
+13358,"BEEF,CURED,SMOKED,chopped beef",133,20.19,4.42,1.86,0,,8,2.85,377,1258,0,0,1.81,0,46,28,"1 slice,  (1 oz)",,
+13360,"BEEF,CURED,THIN-SLICED beef",176,28.11,3.84,5.71,0,0,11,2.7,429,1439,0,0,1.65,0,41,28.35,1 oz,21,5 slices
+13948,"BEEF,FLANK,STEAK,trimmed of visible fat,cooked,broiled",192,27.66,8.23,0,0,0,20,1.74,339,56,0,0,3.395,0,79,383,"1 steak,  (yield from 475 g raw meat)",,
+13970,"BEEF,FLANK,STEAK,trimmed of visible fat,raw",155,21.22,7.17,0,0,0,25,1.55,328,54,0,0,2.978,0,65,188,1 steak,,
+13047,"BEEF,GRASS-FED,GROUND,RAW",192,19.42,12.73,0,0,0,12,1.99,289,68,0,0,5.335,0,62,85,1 serving,,
+13000,"BEEF,GRASS-FED,STRIP STEAKS,LN,RAW",117,23.07,2.69,0,0,0,9,1.85,342,55,0,0,1.032,0,55,214,1 steak,,
+13494,"BEEF,GROUND,70/30,cooked,PAN-BROWNED",270,25.56,17.86,0,0,0,41,2.48,328,96,0,0,7.191,0,88,85,"1 serving,  (3 oz )",139,"1 portion,  (yield from 1/2 lb raw meat )"
+13498,"BEEF,GROUND,70/30,RAW",332,14.35,30,0,0,0,24,1.64,218,67,0,0,11.289,0,78,28,1 ounce,453.6,1 lb
+13317,"BEEF,GROUND,PATTIES,frozen,cooked,broiled",295,23.05,21.83,0,0,0,11,2.42,305,77,0,0,8.805,0,84,313,"1 unit, cooked (yield from 1 lb raw meat)",85,3 oz
+13840,"BEEF,RIB,large END (RIBS 6-9),trimmed to 1/8"" fat,cooked",355,23.01,28.51,0,0,0,10,2.35,293,64,0,0,11.5,0,85,292,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13838,"BEEF,RIB,large END (RIBS 6-9),trimmed to 1/8"" fat,raw",316,16.26,27.29,0,0,,8,1.71,260,55,0,0,11.29,0,71,28.35,1 oz,453.6,1 lb
+13851,"BEEF,RIB,small END (RIBS 10-12),trimmed to 1/8"" fat,cooked",291,25.85,20.04,0,0,0,19,1.66,323,53,0,0,7.894,0,97,268,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13850,"BEEF,RIB,small END (RIBS 10-12),trimmed to 1/8"" fat,raw",254,19.33,19.06,0,0,0,23,1.39,295,49,0,0,7.692,0,81,28.35,1 oz,453.6,1 lb
+13826,"BEEF,RIB, whole (RIBS 6-12),trimmed to 1/8"" fat,cooked",351,22.77,28.11,0,0,,11,2.37,305,64,0,0,11.33,,84,289,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13824,"BEEF,RIB, whole (RIBS 6-12),trimmed to 1/8"" fat,raw",306,16.53,26.1,0,0,,9,1.74,272,55,0,0,10.76,,70,28.35,1 oz,453.6,1 lb
+13834,"BEEF,RIB, whole (RIBS 6-12),trimmed to 1/8"" fat,PRIME,cooked",386,21.95,32.38,0,0,,11,2.13,310,62,0,0,13.42,0,85,274,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13833,"BEEF,RIB, whole (RIBS 6-12),trimmed to 1/8"" fat,PRIME,RAW",355,16.15,31.66,0,0,,9,1.7,263,53,0,0,13.22,,72,28.35,1 oz,453.6,1 lb
+13869,"BEEF,round, bottom round,STEAK,1/8"" FAT,cooked,braised",247,32.76,11.87,0,0,0,8,2.67,266,43,0,0,4.506,0,100,281,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13868,"BEEF,round, bottom round,STEAK,1/8"" FAT,raw",192,20.7,11.54,0,0,0,20,1.74,327,56,0,0,4.544,0,73,28.35,1 oz,453.6,1 lb
+13878,"BEEF,round,EYE OF round,roast,1/8"" FAT,cooked",208,28.31,9.65,0,0,0,7,2.29,227,37,0,0,3.664,0,84,333,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13877,"BEEF,round,EYE OF round,roast,1/8"" FAT,raw",166,21.49,8.24,0,0,0,20,1.81,340,58,0,0,3.245,0,68,28.35,1 oz,453.6,1 lb
+13421,"BEEF,round,TIP round,roast,trimmed of visible fat,cooked,roasted",188,26.79,8.21,0,0,0,6,2.18,217,35,0,0,3.007,0,78,330,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13486,"BEEF,round,TIP round,roast,trimmed of visible fat,raw",151,20.48,7.01,0,0,0,19,1.69,318,55,0,0,2.778,0,62,1289,1 roast,,
+13891,"BEEF,round,TOP round,STEAK,1/8"" FAT,raw",166,22.06,7.93,0,0,0,21,1.85,349,60,0,0,3.123,0,69,28.35,1 oz,453.6,1 lb
+13491,"BEEF,round,TOP round,STEAK,LN,trimmed of visible fat,cooked,broiled",186,31.7,5.63,0,0,0,7,2.68,262,42,0,0,1.965,0,84,277,1 steak,,
+13500,"BEEF,shoulder TOP BLADE STEAK, boneless,trimmed of visible fat,cooked",196,28.15,9.23,0,0,0,14,3.14,390,87,0,6,3.771,2,95,186,1 steak,,
+13519,"BEEF,shoulder TOP BLADE STEAK, boneless,trimmed of visible fat,raw",139,20.36,6.42,0,0,0,12,2.51,338,83,0,6,2.817,2,69,1438,1 steak,,
+13466,"BEEF,SHRT LOIN,porterhouse STEAK,trimmed of visible fat,cooked,broiled",212,26.07,11.18,0,0,0,6,3.24,328,69,0,0,3.912,0,62,85,"3 oz,  ( 1 serving )",453.6,1 lb
+13459,"BEEF,SHRT LOIN,porterhouse,trimmed of visible fat,cooked,broiled",276,23.96,19.27,0,0,0,7,2.94,299,65,0,0,7.271,0,67,85,"3 oz,  ( 1 serving )",453.6,1 lb
+13480,"BEEF,SHRT LOIN,T-BONE STEAK,trimmed of visible fat,cooked,broiled",189,25.99,8.69,0,0,0,4,3.66,327,71,0,0,3.087,0,55,85,"3 oz,  ( 1 serving )",453.6,1 lb
+13473,"BEEF,SHRT LOIN,T-BONE steak,trimmed of visible fat,cooked,broiled",247,24.18,15.93,0,0,0,5,3.35,302,67,0,0,6.074,0,60,85,"3 oz,  ( 1 serving )",453.6,1 lb
+13448,"BEEF,SHRT LOIN,TOP LOIN,STEAK,LN,trimmed of visible fat,cooked,broiled",182,29.25,6.37,0,0,0,19,1.84,370,60,0,0,2.425,0,79,150,"1 steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 223 g)",85,3 oz
+13445,"BEEF,SHRT LOIN,TOP LOIN,steak,trimmed of visible fat,cooked,broiled",193,28.87,7.68,0,0,0,21,1.83,356,59,0,0,2.981,0,81,85,3 oz,155,"1 steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 223 g)"
+13918,"BEEF,TENDERLOIN,STEAK,1/8"" FAT,cooked,broiled",267,26.46,17.12,0,0,0,19,1.69,329,54,0,0,6.743,0,97,85,3 oz,104,"1 steak, excluding refuse (yield from 1 raw steak, with refuse, weighing 154 g)"
+13917,"BEEF,TENDERLOIN,STEAK,1/8"" FAT,raw",247,19.61,18.16,0,0,0,23,1.42,302,50,0,0,7.327,0,85,164,1 steak,28.35,1 oz
+13451,"BEEF,TOP SIRLOIN,STEAK,trimmed of visible fat,cooked,broiled",212,29.33,9.67,0,0,0,22,1.89,368,61,0,0,3.754,0,88,384,"1 steak,  (yield from 518 g raw meat)",85,3 oz
+13930,"BEEF,TOP SIRLOIN,STEAK,1/8"" FAT,cooked,broiled",243,26.96,14.23,0,0,0,20,1.73,336,56,0,0,5.603,0,92,306,"1 piece, cooked, excluding refuse (yield from 1 lb raw meat with refuse)",85,3 oz
+13929,"BEEF,TOP SIRLOIN,STEAK,1/8"" FAT,raw",201,20.3,12.71,0,0,0,24,1.48,315,52,0,0,5.127,0,75,608,1 steak,28.35,1 oz
+7931,BEERWURST  PORK and beef,276,14,22.53,4.27,0.9,0,27,1.73,244,732,0.6,10,,8.438,62,56,"1 serving,  2 oz",,
+7003,"BEERWURST,BEER SALAMI,PORK",238,14.24,18.8,2.06,0,,8,0.76,253,1240,0,0,,6.28,59,23,"1 slice,  (4"" dia x 1/8"" thick)",6,"1 slice,  (2-3/4"" dia x 1/16"")"
+7002,"BEERWURST,BEER SALAMI,PORK and beef",277,14,22.53,3.76,0.9,0,27,1.73,244,881,0.6,10,0.19,8.438,62,56,2 oz,,
+7005,BLOOD SAUSAGE,379,14.6,34.5,1.29,0,1.29,6,6.4,38,680,0,0,0.13,13.4,120,100,4 slices,,
+7937,BOLOGNA  PORK  TURKEY and beef,336,11.56,29.25,6.66,0,1.35,31,1.2,222,1055,11,0,0,11.7,75,28.35,1 oz,,
+7936,BOLOGNA  PORK and TURKEY  LITE,211,13.06,16.06,3.45,0,0,48,1.15,138,716,0,2,,5.46,79,56,"1 serving,  2 oz",,
+7011,BOLOGNA  TURKEY,209,11.42,16.05,4.68,0.5,2.9,123,3,135,1071,13.3,32,0.45,4.355,75,28,".99 oz,  1 serving",28,1 serving
+42161,"BOLOGNA,BEEF,LOW FAT",204,11.8,14.8,5.2,0,0,9,1,147,821,1,0,0.19,5.464,44,28,1 slice,14,1 cubic inch
+7007,"BOLOGNA,beef",299,10.91,26.13,4.29,0,2.05,21,1.29,351,1013,15.2,90,0.56,10.487,57,30,1 slice,28,1 serving
+7008,"BOLOGNA,beef and PORK",308,15.2,24.59,5.49,0,4.42,85,1.21,315,960,0.8,84,0,9.301,60,100,3.527 oz,,
+42129,"BOLOGNA,beef and PORK,LOFAT",230,11.5,19.3,2.6,0,0,11,0.66,156,1108,0,0,0.22,7.308,39,138,"1 cup, pieces",14,1 cubic inch
+7960,"BOLOGNA,chicken,PORK",336,10.31,30.61,4.19,0,0,196,1.12,162,1240,13.2,75,0.64,9.863,87,28,1 serving,28,1 slice
+7959,"BOLOGNA,chicken,PORK,beef",272,11.33,22.73,5.61,0,0,92,1.25,313,1120,15.8,75,0.25,6.997,83,28,1 serving,28,1 slice
+7952,"BOLOGNA,chicken,TURKEY,PORK",298,9.88,26.18,5.65,0,0,82,1.16,152,922,19.7,75,0.41,7.99,80,28,1 serving,28,1 slice
+7010,"BOLOGNA,PORK",247,15.3,19.87,0.73,0,0,11,0.77,281,907,0,0,0.26,6.839,59,28,"1 slice,  medium (4-1/2"" dia x 1/8"" thick) (1 oz)",23,"1 slice,  (4"" dia x 1/8"" thick)"
+7922,BRATWURST  beef and PORK  SMOKED,297,12.2,26.34,2,0,0,7,1,283,848,0,0,,6.08,78,66,"1 serving,  2.33 oz",,
+7924,BRATWURST  PORK  beef and TURKEY  LITE  SMOKED,186,14.45,13.53,1.62,0,1.57,14,0.94,246,982,0,1,,,56,66,"1 serving,  2.33 oz",,
+7910,BRATWURST  VEAL  cooked,341,13.99,31.7,0,0,0,11,0.74,231,60,0,0,,14.94,79,84,"1 serving,  2.96 oz",,
+7923,"BRATWURST,chicken,cooked",176,19.44,10.35,0,0,0,11,0.87,211,72,2,101,,,71,84,"1 serving,  2.96 oz",,
+7013,"BRATWURST,PORK,cooked",333,13.72,29.18,2.85,0,0,28,0.53,348,846,0,6,0.26,9.998,74,85,"1 link, cooked",,
+7015,"BROTWURST,PORK,beef,LINK",323,14.3,27.8,2.93,0,2.98,48,1.03,281,1112,0,0,0.27,9.93,63,70,1 link,,
+35176,"BUFFALO,FREE RANGE,TOP round STEAK,cooked (SHOSHONE BANNOCK)",146,32.51,1.8,0,,,4,3.76,376,41,,,0.59,0.595,82,,,,
+35174,"BUFFALO,FREE RANGE,TOP round STEAK,RAW (SHOSHONE BANNOCK)",97,21.44,1.3,0,,,3,2.61,355,43,,,,0.418,,,,,
+7269,"BUTCHER BOY MEATS,INC.,TURKEY FRANKS",239,13.45,18.17,4.66,0.2,2.49,148,1.83,189,1162,0.8,297,,5.86,104,56,1 serving,,
+35021,"CARIBOU,BONE MARROW,RAW (ALASKA NATIVE)",786,6.7,84.4,0,,,,4.5,,,,240,,,,,,,
+35022,"CARIBOU,EYE,RAW (ALASKA NATIVE)",326,10.8,31.4,0,,,19,4.7,,,,400,,,,,,,
+35162,"CARIBOU,HIND QUARTER MEAT,RAW (ALASKA NATIVE)",122,22.63,3.37,0,0,0,5,4.1,320,52,0,312,0.69,1.27,81,,,,
+35211,"CARIBOU,HIND QUARTER,MEAT,cooked (ALASKA NATIVE)",159,28.81,4.82,0,0,0,5,4.8,245,45,0,312,0.88,1.88,107,66,.5 cup,102,1 piece
+35023,"CARIBOU,LIVER,RAW (ALASKA NATIVE)",122,15,3.9,6.8,,,4,15.7,,,,28800,,,,,,,
+35160,"CARIBOU,RUMP MEAT,HALF DRIED (ALASKA NATIVE)",255,52.06,5.23,0,0,0,14,11,710,390,0,173,0.09,1.55,141,,,,
+35161,"CARIBOU,shoulder MEAT,DRIED (ALASKA NATIVE)",271,59.38,3.67,0,0,0,14,11,810,950,0,37,0.07,1.586,164,,,,
+35025,"CARIBOU,TONGUE,RAW (ALASKA NATIVE)",260,13.7,22.8,0,,,6,2.8,,,,190,,,,,,,
+35172,"ELK,FREE RANGE,GROUND,cooked PATTIES (SHOSHONE BANNOCK)",143,29.45,2.8,0,,0,5,9.06,379,56,0,0,0.79,1.138,70,,,,
+35173,"ELK,FREE RANGE,GROUND,RAW (SHOSHONE BANNOCK)",97,20.14,1.8,0,0,0,4,7.17,328,49,,0,,0.706,,,,,
+35178,"ELK,FREE RANGE,RST,EYE OF round,cooked (SHOSHONE BANNOCK)",148,30.56,2.85,0,0,0,4,2.68,369,50,0,0,0.47,1.125,63,,,,
+35177,"ELK,FREE RANGE,RST,EYE OF round,RAW (SHOSHONE BANNOCK)",98,19.74,2.1,0,0,0,4,2.27,367,43,0,0,,0.828,,,,,
+5624,"EMU,FAN FILLET,cooked,broiled",154,31.27,2.3,0,0,0,6,4.56,397,53,0,0,0.23,0.583,82,394,1 steak,85,"1 serving,  ( 3 oz )"
+5623,"EMU,FAN FILLET,RAW",103,22.5,0.8,0,0,0,3,4.5,300,120,0,0,0.22,0.201,71,513,1 fan fillet,85,"1 serving,  ( 3 oz )"
+5625,"EMU,FLAT FILLET,RAW",102,22.25,0.74,0,0,0,3,5,240,150,0,0,0.22,0.187,71,354,1 flat fillet,,
+5627,"EMU,FULL RUMP,cooked,broiled",168,33.67,2.68,0,0,0,7,6.89,324,110,0,11,0.26,0.87,129,496,"1 full rump, cooked ( yield from 695 g raw meat )",85,"1 serving,  ( 3 oz )"
+5626,"EMU,FULL RUMP,RAW",112,22.83,1.64,0,0,0,4,4.96,330,90,0,15,0.23,0.448,85,695,1 full rump,,
+5622,"EMU,GROUND,cooked,PAN-BROILED",163,28.43,4.65,0,0,0,8,5.01,375,65,0,0,0.24,1.242,87,109,"1 patty,  (yield from 135.8 g raw meat)",85,"1 serving,  ( 3 oz )"
+5621,"EMU,GROUND,RAW",134,22.77,4.03,0,0,0,7,4.02,320,56,0,0,0.24,1.022,69,117,1 patty,,
+5628,"EMU,INSIDE DRUM,RAW",108,22.22,1.49,0,0,0,4,5.23,318,102,0,17,0.22,0.386,67,572,1 inside drum,,
+5629,"EMU,INSIDE DRUMS,cooked,broiled",156,32.38,2.01,0,0,0,6,7.27,312,118,0,10,0.25,0.654,91,416,"1 inside drum, cooked ( yield from 572 g raw meat )",85,"1 serving,  ( 3 oz )"
+5630,"EMU,OUTSIDE DRUM,RAW",103,23.08,0.48,0,0,0,3,4.5,320,100,0,0,0.17,0.122,78,422,1 outside drum,,
+5631,"EMU,OYSTER,RAW",141,22.81,4.86,0,0,0,4,5.5,250,150,0,0,0.24,1.231,81,300,1 steak,,
+5632,"EMU,TOP LOIN,cooked,broiled",152,29.07,3.13,0,0,0,9,5.07,374,58,0,0,0.23,0.794,88,244,1 steak,85,"1 serving,  ( 3 oz )"
+7023,FRANKFURTER  beef and PORK,305,11.53,27.64,1.72,0,0,11,1.15,167,819,0,58,0.25,10.77,50,45,1 frankfurter,,
+42188,"FRANKFURTER,beef and PORK,low fat",152,11,10,4.4,0,0,10,1.2,150,1257,0,0,0.08,3.692,44,151,"1 cup, sliced",57,1 frankfurter
+42179,"FRANKFURTER,beef,low fat",230,12,19.5,1.6,0,0,8,1.15,129,1041,1,0,0.18,8.1,40,151,"1 cup, sliced",57,1 frankfurter
+7905,"FRANKFURTER,beef,PORK, and  TURKEY,FAT FREE",109,12.5,1.59,11.21,0,0,54,1.78,220,880,24,0,0,0.5,41,57,"1 frank,  1 NLEA serving",,
+7024,"FRANKFURTER,chicken",223,15.51,16.19,2.74,0.4,0.53,74,1.17,202,756,0,0,0.22,3.856,96,45,1 link,,
+42280,"FRANKFURTER,MEAT and POULTRY,low fat",121,15.5,2.8,8.4,0.1,0,12,0.91,261,983,0.4,3,0.2,0.97,44,143,"1 cup, sliced",,
+43130,"FRANKFURTER,MEATLESS",233,19.61,13.73,7.7,3.9,0,33,1.41,98,471,0,0,1.92,1.961,0,140,"1 cup, sliced",70,1 frankfurter
+7939,"FRANKFURTER,PORK",269,12.81,23.68,0.28,0.1,0,267,3.7,264,816,2,263,,8.719,66,76,1 link,,
+7025,"FRANKFURTER,TURKEY",223,12.23,17.29,3.81,0,1.21,148,1.47,392,911,0,0,0.62,4.028,77,28.35,1 oz,45,1 frankfurter
+7938,HAM  HONEY  SMOKED  cooked,122,17.93,2.37,7.27,0,0,6,0.39,165,900,0.6,0,,1.167,22,55,"1.94 oz,  (1 serving)",,
+7026,"HAM,CHOPPED,CANNED",239,16.06,18.83,0.26,0,0,7,0.95,284,1280,2,0,0.25,6.291,49,28.35,1 oz,21,"1 slice,  (4-1/4"" x 4-1/4"" x 1/16"")"
+7027,"HAM,CHOPPED,NOT CANNED",180,16.5,10.3,4.2,0,0,7,0.83,319,1039,0,0,0.23,3.422,59,28,"1 slice,  (1 oz) (4"" x 4"" x 3/32"" thick)",21,"1 slice,  (4-1/4"" x 4-1/4"" x 1/16"")"
+7030,"HAM,MINCED",263,16.28,20.68,1.84,0,0,10,0.79,311,1245,0,0,0.27,7.181,70,28.35,1 oz,21,"1 slice,  (4-1/4"" x 4-1/4"" x 1/16"")"
+7028,"HAM,SLICED,PREPACKAGED (96% FAT FREE,water ADDED)",107,16.59,3.8,0.5,0,1.12,5,0.56,623,1130,0,0,0.29,1.062,41,23,1 slice,,
+7029,"HAM,SLICED,REG (APPROX 11% FAT)",163,16.6,8.6,3.83,1.3,0,24,1.02,287,1143,4,0,0.08,2.936,57,56,"56 grams,  1 serving",28,1 slice
+7032,HAM and cheese LOAF OR ROLL,241,13.6,18.7,4,0,0,58,0.91,294,1000,0,0,0.27,6.966,58,28,"1 slice,  (1 oz) (4"" x 4"" x 3/32"" thick)",57,2 slices
+7934,"KIELBASA,POLISH,TURKEY and beef,SMOKED",226,13.1,17.6,3.9,0,0,,1.24,,1200,14.8,0,,6.23,70,56,"1 serving,  2 oz",,
+7042,"LUNCHEON MEAT,BEEF,LOAVED",308,14.4,26.2,2.9,0,0,11,2.32,208,1125,0,0,0.22,11.214,64,28,"1 slice,  (1 oz) (4"" x 4"" x 3/32"" thick)",57,2 slices
+7043,"LUNCHEON MEAT,beef,THIN SLICED",117,17.94,3.4,2.59,0,0,6,2.04,308,883,0,0,0.19,1.101,48,9.3,"1 slice, oval",13.8,"1 slice, rectangle"
+7047,"LUNCHEON MEAT,PORK,BEEF",353,12.59,32.16,2.33,0,0,9,0.86,202,1293,0,0,0.22,11.59,55,28,"1 slice,  (1 oz)",57,"1 slice,  (4"" x 4"" x 3/32"" thick)"
+7045,"LUNCHEON MEAT,PORK,CANNED",334,12.5,30.3,2.1,0,0,6,0.72,215,1289,1,0,0.26,10.79,62,28.35,1 oz,21,"1 slice,  (4-1/4"" x 4-1/4"" x 1/16"")"
+5643,"OSTRICH,FAN,RAW",117,21.81,2.65,0,0,0,6,4.38,308,75,0,0,0.2,0.95,73,85,"1 serving,  ( cooked from 4oz raw)",28.35,1 oz
+5642,"OSTRICH,GROUND,cooked,PAN-BROILED",175,26.15,7.07,0,0,0,8,3.43,323,80,0,0,0.24,1.793,83,93,1 patty,85,"1 serving,  ( 3 oz )"
+5641,"OSTRICH,GROUND,RAW",165,20.22,8.7,0,0,0,7,2.91,291,72,0,0,0.24,2.177,71,109,1 patty,435,4 patty
+5645,"OSTRICH,INSIDE LEG,cooked",141,29.01,1.94,0,0,0,6,3.12,352,83,0,0,0.22,0.7,73,85,"1 serving,  ( 3 oz )",,
+5644,"OSTRICH,INSIDE LEG,RAW",111,22.39,1.72,0,0,0,5,2.3,320,72,0,0,0.2,0.6,66,85,"1 serving,  ( cooked from 4 oz raw )",28.35,1 oz
+5647,"OSTRICH,INSIDE STRIP,cooked",164,29.37,4.26,0,0,0,5,4.8,366,73,0,0,0.24,1.71,97,85,"1 serving,  ( 3 oz )",,
+5646,"OSTRICH,INSIDE STRIP,RAW",127,23.69,2.87,0,0,0,5,4.2,330,76,0,0,0.21,0.923,73,85,"1 serving,  (cooked from 4 oz raw)",28.35,1 oz
+5648,"OSTRICH,OUTSIDE LEG,RAW",115,22.86,1.96,0,0,0,5,2.65,322,90,0,0,0.2,0.61,65,85,"1 serving,  (cooked from 4 oz raw)",28.35,1 oz
+5650,"OSTRICH,OUTSIDE STRIP,cooked",156,28.55,3.83,0,0,0,5,4.3,367,72,0,0,0.24,1.43,93,85,"1 serving,  ( 3 oz )",,
+5649,"OSTRICH,OUTSIDE STRIP,RAW",120,23.36,2.21,0,0,0,5,3.69,333,70,0,0,0.21,0.771,79,85,"1 serving,  (cooked from 4 oz raw)",28.35,1 oz
+5652,"OSTRICH,OYSTER,cooked",159,28.81,3.97,0,0,0,6,4.9,409,81,0,0,0.23,1.69,90,85,"1 serving,  ( 3 oz )",,
+5651,"OSTRICH,OYSTER,RAW",125,21.55,3.67,0,0,0,6,3.86,297,83,0,0,0.2,1.22,73,85,"1 serving,  ( cooked from 4 oz raw)",28.35,1 oz
+5653,"OSTRICH,round,RAW",116,21.99,2.4,0,0,0,5,3.54,315,72,0,0,0.2,0.81,71,85,"1 serving,  (cooked from 4 oz raw)",28.35,1 oz
+5654,"OSTRICH,TENDERLOIN,RAW",123,22.07,3.19,0,0,0,6,4.88,320,86,0,0,0.21,1.17,80,85,"1 serving,  (cooked from 4 oz raw)",456,1 lb
+5656,"OSTRICH,TIP cooked",145,28.49,2.57,0,0,0,6,2.79,362,80,0,0,0.23,1,85,85,"1 serving,  ( 3 oz )",,
+5655,"OSTRICH,TIP RAW",114,21.85,2.3,0,0,0,5,2.86,310,67,0,0,0.2,0.86,72,85,"1 serving,  ( cooked from 4 oz raw)",28.35,1 oz
+5658,"OSTRICH,TOP LOIN,cooked",155,28.12,3.87,0,0,0,6,3.31,353,77,0,0,0.23,1.32,93,85,"1 serving,  ( 3 oz )",,
+5657,"OSTRICH,TOP LOIN,RAW",119,21.67,2.95,0,0,0,6,3.13,312,81,0,0,0.2,1.2,75,85,"1 serving,  (cooked from 4 oz raw)",28.35,1 oz
+7935,OVEN-ROASTED chicken BREAST ROLL,134,14.59,7.65,1.79,0,0.43,6,0.32,324,883,0,0,0.07,2.48,39,56,"1 serving,  2 oz",,
+7059,"POLISH SAUSAGE,PORK",326,14.1,28.72,1.63,0,,12,1.44,237,876,1,0,,10.33,70,227,"1 sausage,  (10"" long x 1-1/4"" dia)",28.35,1 oz
+10060,"Pork, fresh, tenderloin, lean only, raw",109,20.95,2.17,0,0,0,5,0.98,399,53,0,0,0.22,0.698,65,505,1 roast,,
+7064,"PORK SAUSAGE,fresh,cooked",339,19.43,28.36,0,0,0,13,1.36,294,895,0.7,41,0.55,9.153,84,48,1 serving,,
+7063,"PORK SAUSAGE,fresh,RAW",304,15.09,26.53,0,0,0,9,1.11,248,636,0.7,75,0.19,8.796,72,48,1 serving,,
+7953,"PORK SAUSAGE,PRE-COOKED",378,14.49,35.04,0,0,0,137,0.92,307,752,0.7,94,0.53,11.662,74,48,1 serving,,
+10864,"PORK,BACON,RENDERED FAT,cooked",898,0.07,99.5,0,0,0,1,0.13,15,27,0,37,0,31.991,97,85,3 oz,,
+10860,"PORK,CURED,BACON,cooked,baked",548,35.73,43.27,1.35,0,0,10,1.49,539,2193,0,37,0.32,14.187,107,8.1,"1 slice, cooked",,
+10124,"PORK,CURED,BACON,cooked,broiled,PAN-FRIED OR roasted",541,37.04,41.78,1.43,0,0,11,1.44,565,1717,0,37,0.31,13.739,110,8,"1 slice, cooked",,
+10861,"PORK,CURED,BACON,cooked,MICROWAVED",476,39.01,34.12,0.48,0,0,13,1.14,525,1783,0,,0.48,11.644,111,9.1,"1 slice, cooked",28,"1 slice, raw"
+10123,"PORK,CURED,BACON,UNPREP",417,12.62,39.69,1.28,0,0,5,0.41,198,662,0,37,0.43,13.296,66,28,"1 slice, raw",442,1 package
+10129,"PORK,CURED,BRKFST STRIPS,cooked",459,28.95,36.7,1.05,0,0,14,1.97,466,2099,0,0,0.25,12.77,105,170,"1 package,  (12 oz)",34,"3 slices, cooked (raw product packed 15 per 12-oz bag)"
+10128,"PORK,CURED,BRKFST STRIPS,RAW",388,11.74,37.16,0.7,0,,8,0.94,204,987,27.2,0,,12.91,69,340,"1 package,  (12 oz)",68,3 slices
+10131,"PORK,CURED,CANADIAN-STYLE BACON,GRILLED",185,24.24,8.44,1.35,0,0,10,0.82,390,1546,0,0,0.34,2.84,58,139,"1 package,  (6 oz) yields",47,"2 slices,  (6 per 6-oz pkg.)"
+10130,"PORK,CURED,CANADIAN-STYLE BACON,unheated",157,20.64,6.97,1.68,0,0,8,0.68,344,904,0,0,0.21,2.22,50,170,"1 package,  (6 oz)",57,"2 slices,  (6 per 6-oz pkg.)"
+10913,"PORK,CURED,HAM, water ADDED,RUMP,BONE-IN,heated,roasted",161,20.1,8.56,0.99,0,0.78,8,0.69,244,1101,0,37,0.22,2.897,63,2970,"1 roast, rump",85,"1 serving,  (3 oz)"
+10912,"PORK,CURED,HAM, water ADDED,RUMP,BONE-IN,unheated",172,13.99,12.5,0.8,0,0.62,6,1.02,199,1069,0,32,0.27,4.176,54,28.35,1 oz,453.6,1 lb
+10865,"PORK,CURED,HAM, water ADDED,RUMP,BONE-IN,LN,heated,roasted",121,21.41,3.56,0.87,0,0.84,8,0.71,250,1150,0,37,0.2,1.254,62,2970,"1 roast, rump",85,"1 serving,  (3 oz)"
+10866,"PORK,CURED,HAM, water ADDED,RUMP,BONE-IN,LN,unheated",95,15.43,3.48,0.56,0,0.67,7,1.13,205,1170,0,29,0.16,1.227,53,3455,"1 ham, rump (1 rump unheated or as purchased)",453.6,"1 lb, rump"
+10914,"PORK,CURED,HAM, water ADDED,SHANK,BONE-IN,heated,roasted",200,18.62,13.37,1.35,0,0.79,9,1.37,232,988,0,38,0.29,4.371,66,3054,"1 roast, shank",85,"1 serving,  (3 oz)"
+10911,"PORK,CURED,HAM, water ADDED,SHANK,BONE-IN,unheated",167,16.65,11.02,0.33,0,0.66,7,0.72,219,964,0,32,0.32,3.607,52,28.35,1 oz,453.6,1 lb
+10878,"PORK,CURED,HAM, water ADDED,SLICE, boneless,heated,PAN-BROIL",119,18.82,4.09,1.75,0,1.75,9,0.86,337,1223,0,43,0.24,1.401,54,189,1 slice,85,"1 serving,  (3 oz)"
+10910,"PORK,CURED,HAM, water ADDED,SLICE,BONE-IN,unheated",164,15.73,10.77,1.1,0,1.1,8,0.98,213,1011,0,31,0.29,3.554,55,28.35,1 oz,453.6,1 lb
+10923,"PORK,CURED,HAM W/ NAT JUICES,RUMP,BONE-IN,heated,roasted",177,22.47,9.39,0.6,0,0.45,10,0.99,477,841,0,38,0.27,3.116,72,2673,"1 roast, rump",85,"1 serving,  (3 oz)"
+10904,"PORK,CURED,HAM W/ NAT JUICES,RUMP,BONE-IN,unheated",200,19.7,13.26,0.42,0,0.43,8,0.94,278,838,0,36,0.34,4.373,67,28.35,"1 oz, rump",453.6,"1 lb, rump"
+10873,"PORK,CURED,HAM W/ NAT JUICES,RUMP,BONE-IN,lean only,heated,roasted",137,24.14,4.25,0.43,0,0.48,10,1.04,511,861,0,37,0.27,1.418,72,2673,"1 roast, rump",85,"1 serving,  (3 oz)"
+10890,"PORK,CURED,HAM W/ NAT JUICES,RUMP,BONE-IN,lean only,unheated",122,22.71,3.47,0.06,0,0.43,9,1.05,303,893,0,34,0.24,1.16,68,453.6,"1 lb, rump",28.35,"1 oz, rump"
+10924,"PORK,CURED,HAM W/ NAT JUICES,SHANK,BONE-IN,heated,roasted",191,22.88,10.93,0.26,0,0.33,7,1.11,424,801,0,38,0.3,3.545,74,3170,"1 roast, shank",85,"1 serving,  (3 oz)"
+10903,"PORK,CURED,HAM W/ NAT JUICES,SHANK,BONE-IN,unheated",191,22.35,11.11,0.29,0,0.32,6,1.01,279,779,0,35,0.34,3.614,62,28.35,"1 oz, shank",453.6,"1 lb, shank"
+10875,"PORK,CURED,HAM W/ NAT JUICES,SLICE,BONE-IN,lean only,heated,PAN-BROIL",150,27.75,4.38,0,0,0,12,1.2,358,835,0,45,0.23,1.11,80,445,1 slice,85,"1 serving,  (3 oz)"
+10892,"PORK,CURED,HAM W/ NAT JUICES,SLICE,BONE-IN,lean only,unheated",123,24.34,2.87,0,0,0,9,1.1,300,861,0,39,0.2,0.726,63,430,1 slice,468,2 slice
+10134,"PORK,CURED,HAM,boneless,extra-lean (APPROX 5% FAT),roasted",145,20.93,5.53,1.5,0,0,8,1.48,287,1203,0,0,0.25,1.81,53,140,1 cup,85,3 oz
+10136,"PORK,CURED,HAM,boneless,REG (APPROX 11% FAT),roasted",178,22.62,9.02,0,0,0,8,1.34,409,1500,0,0,0.31,3.12,59,140,1 cup,85,3 oz
+10141,"PORK,CURED,HAM,center SLICE,COUNTRY-STYLE,LN,RAW",195,27.8,8.32,0.3,0,0,10,1.11,510,2695,0,0,0.28,2.78,70,28.35,1 oz,113,4 oz
+10142,"PORK,CURED,HAM,center SLICE,unheated",203,20.17,12.9,0.05,0,,7,0.75,337,1386,0,0,,4.572,54,28.35,1 oz,113,4 oz
+10138,"PORK,CURED,HAM,extra-lean (APPROX 4% FAT),canned,roasted",136,21.16,4.88,0.52,0,,6,0.92,348,1135,0,0,,1.6,30,140,1 cup,85,3 oz
+10137,"PORK,CURED,HAM,extra-lean (APPROX 4% FAT),canned,unheated",120,18.49,4.56,0,0,0,6,0.94,364,1255,0,0,0.17,1.51,38,140,1 cup,28.35,1 oz
+10894,"PORK,CURED,HAM,FAT,boneless,heated",507,8.77,51.57,2,0,0.28,6,0.53,195,677,0,42,0.35,17.048,72,85,3 oz,,
+10895,"PORK,CURED,HAM,FAT,boneless,unheated",515,7.5,53,1.87,0,0.44,4,0.5,174,616,0,44,0.76,17.433,61,117,4 oz,,
+10147,"PORK,CURED,HAM,PATTIES,GRILLED",342,13.3,30.85,1.7,0,0,9,1.61,244,1063,0,0,0.46,11.09,72,60,"1 patty, cooked",413,"1 unit, cooked (yield from 1 lb raw meat)"
+10146,"PORK,CURED,HAM,PATTIES,unheated",315,12.78,28.19,1.69,0,,8,1.05,239,1088,0,0,,10.13,70,28.35,1 oz,65,1 patty
+10140,"PORK,CURED,HAM,REG (APPROX 13% FAT),canned,roasted",226,20.53,15.2,0.42,0,,8,1.37,357,941,14,0,,5.04,62,140,1 cup,85,3 oz
+10139,"PORK,CURED,HAM,REG (APPROX 13% FAT),canned,unheated",190,16.97,12.99,0.02,0,0,6,0.83,316,1107,0,0,0.21,4.25,39,140,1 cup,28.35,1 oz
+10929,"PORK,CURED,HAM,RUMP,BONE-IN,heated,roasted",177,23.95,8.88,0.37,0,0.64,7,1.46,370,826,0,5,0.33,2.85,71,2874,"1 roast, rump",85,"1 serving,  (3 oz)"
+10955,"PORK,CURED,HAM,RUMP,BONE-IN,unheated",176,22.27,9.38,0.52,0,0.06,7,1.01,358,722,0,6,0.32,3.008,62,453.6,"1 lb, rump",28.35,"1 oz, rump"
+10935,"PORK,CURED,HAM,SHANK,BONE-IN,heated,roasted",183,24.39,9.35,0.24,0,0.64,7,1.42,356,810,0,5,0.33,2.019,70,2800,"1 roast, shank",85,"1 serving,  (3 oz)"
+10936,"PORK,CURED,HAM,SHANK,BONE-IN,unheated",177,21.61,9.85,0.41,0,0.06,6,0.92,339,816,0,6,0.31,3.18,61,28.35,1 oz,453.6,1 lb
+10937,"PORK,CURED,HAM,SLICE,BONE-IN,heated,PAN-BROIL",180,25.48,8.48,0.39,0,0.7,14,1.34,405,852,0,4,0.3,1.577,73,366,1 slice,85,"1 serving,  (3 oz)"
+10939,"PORK,CURED,HAM,SLICE,BONE-IN,unheated",173,22.45,9.17,0.21,0,0.05,12,1.15,348,744,0,5,0.34,2.945,65,425,1 slice,85,"1 serving,  (3 oz)"
+10149,"PORK,CURED,HAM,STEAK,boneless,extra-lean,unheated",122,19.56,4.25,0,0,,4,1,325,1269,32.3,0,,1.44,45,28.35,1 oz,57,1 slice
+10151,"PORK,CURED,HAM, whole,roasted",243,21.57,16.77,0,0,0,7,0.87,286,1187,0,0,0.36,5.98,62,140,1 cup,85,3 oz
+10150,"PORK,CURED,HAM, whole,unheated",246,18.49,18.52,0.06,0,0,7,0.71,310,1284,34.9,0,0.27,6.62,56,140,1 cup,28.35,1 oz
+10165,"PORK,CURED,SALT PORK,RAW",748,5.05,80.5,0,0,0,6,0.44,66,2684,0,0,0,29.38,86,28.35,1 oz,227,8 oz
+10168,"PORK,CURED,shoulder,ARM PICNIC,roasted",280,20.43,21.35,0,0,0,10,0.95,258,1072,0,0,0.24,7.67,58,140,1 cup,85,3 oz
+10171,"PORK,CURED,shoulder,BLADE ROLL,roasted",287,17.28,23.48,0.37,0,,7,0.89,194,973,3.2,0,,8.38,67,376,"1 piece, cooked (yield from 1 lb unheated product)",85,3 oz
+10170,"PORK,CURED,shoulder,BLADE ROLL,unheated",269,16.47,21.98,0,0,,7,0.82,295,1250,0.3,0,,7.939,53,28.35,1 oz,113,4 oz
+10004,"PORK,FRESH,BACKFAT,RAW",812,2.92,88.69,0,0,0,2,0.18,65,11,0.1,15,0,32.21,57,28.35,1 oz,453.6,1 lb
+10220,"PORK,FRESH,GROUND,COOKED",297,25.69,20.77,0,0,0,22,1.29,362,73,0.7,8,0.21,7.72,94,313,"1 unit, cooked (yield from 1 lb raw meat)",85,3 oz
+10219,"PORK,FRESH,GROUND,RAW",263,16.88,21.19,0,0,,14,0.88,287,56,0.7,7,,7.87,72,28.35,1 oz,113,4 oz
+10193,"PORK,fresh,BACKRIBS,cooked,roasted",292,23.01,21.51,0,0,0,46,0.92,240,94,0,20,0.25,7.8,84,878,"1 rack,  (Approx length 12 inches, width 4 inches)",,
+10192,"PORK,fresh,BACKRIBS,RAW",224,19.07,16.33,0,0,0,31,0.76,247,87,0,22,0.24,5.783,69,1071,"1 rack,  (Approx length 16 inches, width 4 inches)",,
+10005,"PORK,fresh,BELLY,RAW",518,9.34,53.01,0,0,0,5,0.52,185,32,0.3,10,0.39,19.33,72,28.35,1 oz,453.6,1 lb
+10007,"PORK,fresh,FAT,cooked",626,7.06,66.1,0,0,0,22,0.46,125,56,0,80,0,23.856,79,28.35,1 oz,113,4 oz
+10006,"PORK,fresh,FAT,RAW",632,9.25,65.7,0,0,0,14,0.26,333,47,0,86,0.42,21.979,72,28.35,1 oz,113,4 oz
+10009,"PORK,fresh,LEG (HAM), whole,cooked,roasted",273,26.83,17.61,0,0,0,14,1.01,352,60,0.3,10,0.22,6.47,94,135,"1 cup, diced",85,3 oz
+10008,"PORK,fresh,LEG (HAM), whole,RAW",245,17.43,18.87,0,0,,5,0.85,315,47,0.7,7,,6.54,73,28.35,1 oz,453.6,1 lb
+10982,"PORK,fresh,LOIN,BLADE (CHOPS OR ROASTS), boneless,RAW",123,21.35,3.78,0.82,0,0,6,0.77,375,65,0,9,0.18,1.384,58,176,1 raw pr g,1129,1 roast
+10028,"PORK,fresh,LOIN,BLADE (CHOPS OR ROASTS),BONE-IN,RAW",194,19.56,12.27,0,0,0,35,0.66,288,69,0,20,0.21,4.27,63,263,1 chop,,
+10030,"PORK,fresh,LOIN,BLADE (CHOPS),BONE-IN,cooked,broiled",231,23.72,14.35,0,0,0,56,0.87,315,74,0,15,0.21,4.339,78,219,1 chop,,
+10036,"PORK,fresh,LOIN,center LOIN (CHOPS),BONE-IN,RAW",170,20.71,9.03,0,0,0,19,0.63,343,55,0,6,0.12,2.993,69,199,"1 chop, without refuse (Yield from 1 raw chop, with refuse, weighing 259g)",453.6,1 lb
+10038,"PORK,fresh,LOIN,center LOIN (CHOPS),BONE-IN,cooked,broiled",209,25.61,11.06,0,0,0,24,0.79,344,55,0,6,0.11,3.518,84,157,"1 chop, without refuse (Yield from 1 cooked chop, with refuse, weighing 209g)",85,3 oz
+10205,"PORK,fresh,LOIN,COUNTRY-STYLE RIBS,cooked",273,26.49,17.71,0,0,0,34,1.34,288,58,0,6,0.12,6.302,103,86,"1 rib, without refuse (Yield from 1 cooked rib, with refuse, weighing 140g)",85,3 oz
+10204,"PORK,fresh,LOIN,COUNTRY-STYLE RIBS,RAW",189,19.34,11.82,0,0,0,22,0.85,318,63,0,8,0.23,2.37,74,128,"1 rib, without refuse (Yield from 1 raw rib, with refuse, weighing 196g)",28.35,1 oz
+10214,"PORK,fresh,LOIN,SIRLOIN, boneless,RAW",121,22.81,2.59,0,0,0,9,0.56,354,63,0,7,0.17,0.906,63,901,1 roast,,
+10052,"PORK,fresh,LOIN,SIRLOIN,BONE-IN,RAW",168,20.48,8.96,0,0,0,14,0.82,336,57,0,6,0.22,1.851,70,1327,"1 roast, without refuse (Yield from 1 raw roast, with refuse, weighing 1817g)",453.6,1 lb
+10216,"PORK,fresh,LOIN,SIRLOIN, boneless, cooked",161,28.6,4.36,0,0,0,11,0.88,425,66,0,7,0.26,1.357,76,159,1 chop,,
+10222,"PORK,fresh,LOIN,TENDERLOIN,cooked",147,26.04,3.96,0,0,0,6,1.15,419,57,0,1,0.08,1.358,73,402,1 roast,85,3 oz
+10218,"PORK,fresh,LOIN,TENDERLOIN,RAW",120,20.65,3.53,0,0,0,6,0.97,393,52,0,2,0.22,1.181,65,505,"1 roast,  (Yield from 1 raw roast, with refuse, weighing 504g)",,
+10068,"PORK,fresh,LOIN,TOP LOIN (CHOPS), boneless,cooked",173,27.58,6.08,0,0,0,5,0.63,367,45,0,0,0.1,2.077,72,145,1 chop,,
+10066,"PORK,fresh,LOIN,TOP LOIN (CHOPS), boneless,RAW",127,22.41,3.42,0,0,0,5,0.51,387,49,0,0,0.13,1.208,66,185,1 chop,453.6,1 lb
+10225,"PORK,fresh,LOIN,TOP LOIN (ROASTS), boneless,RAW",132,22.39,4.06,0,0,0,5,0.54,374,49,0,0,0.13,1.248,63,2195,1 roast,453.6,1 lb
+10065,"PORK,fresh,LOIN,TOP LOIN (ROASTS), boneless, cooked",192,26.45,8.82,0,0,0,7,0.64,349,46,0,4,0.11,2.839,80,848,1 roast,85,3 oz
+10023,"PORK,fresh,LOIN, whole,cooked",248,27.09,14.65,0,0,0,19,0.99,408,59,0.6,9,0.19,5.37,82,85,3 oz,89,"1 chop, excluding refuse (yield from 1 raw chop, with refuse, weighing 151 g)"
+10020,"PORK,fresh,LOIN, whole,RAW",198,19.74,12.58,0,0,0,18,0.79,356,50,0.6,7,0.21,4.36,63,453.6,1 lb,117,"1 chop, excluding refuse (yield from 1 raw chop, with refuse, weighing 151 g)"
+10080,"PORK,fresh,shoulder,(BOSTON BUTT),BLADE (STEAKS),RAW",186,17.42,12.36,0,0,0,16,1.12,318,61,0,8,0.22,4.348,62,288,"1 steak, without refuse (Yield from 1 raw steak, with refuse, weighing 380g)",453.6,1 lb
+10081,"PORK,fresh,shoulder,(BOSTON BUTT),BLADE (steakS),cooked",267,25.07,17.69,0,0,0,26,1.75,305,58,0,8,0.12,6.584,98,185,"1 steak, without refuse (Yield from 1 cooked steak, with refuse, weighing 249g)",85,3 oz
+10076,"PORK,fresh,shoulder,ARM PICNIC,cooked",317,23.47,24.01,0,0,,19,1.18,325,70,0.2,8,,8.78,94,135,"1 cup, diced",85,3 oz
+10074,"PORK,fresh,shoulder,ARM PICNIC,RAW",193,18.71,12.51,0,0,0,12,0.57,413,84,0,18,0.21,4.14,63,2745,1 roast,,
+10071,"PORK,fresh,shoulder, whole,cooked,roasted",292,23.28,21.39,0,0,0,24,1.32,329,68,0.5,8,0.19,7.86,90,135,"1 cup, diced",85,3 oz
+10070,"PORK,fresh,shoulder, whole,RAW",236,17.18,17.99,0,0,0,15,1.05,302,65,0.7,7,0.19,6.24,71,28.35,1 oz,453.6,1 lb
+10940,"PORK,fresh,SPARERIBS,cooked,roasted",361,20.89,30.86,0,0,0,19,1.43,265,91,0,0,0.14,9.242,105,1533,1 rack,,
+10088,"PORK,fresh,SPARERIBS,RAW",277,15.47,23.4,0,0,0,15,0.91,242,81,0,0,0.37,7.529,80,1297,"1 rack, without refuse (Yield from 1 raw rack, with refuse, weighing 1852g)",28.35,1 oz
+10974,"PORK,GROUND,72% LN / 28% FAT,cooked,CRUMBLES",393,22.83,32.93,1.39,0,0,20,1.15,280,94,0,0,0.35,11.311,100,113,4 oz,,
+10977,"PORK,GROUND,72% LN / 28% FAT,cooked,PAN-BROILED",377,22.59,31.42,1.08,0,0,20,1.21,275,91,0,0,0.47,10.804,99,85,"3 oz, grilled patties",,
+10971,"PORK,GROUND,72% LN / 28% FAT,RAW",314,14.87,28,0.66,0,0,16,0.9,178,69,0,0,0.61,9.422,76,113,4 oz,,
+10975,"PORK,GROUND,84% LN / 16% FAT,cooked,CRUMBLES",289,26.69,20.04,0.58,0,0,20,1.1,354,89,0,0,0.31,6.631,89,85,"3 oz, grilled patties",,
+10978,"PORK,GROUND,84% LN / 16% FAT,cooked,PAN-BROILED",301,27.14,21.39,0,0,0,20,1.16,345,89,0,0,0.44,7.453,97,85,"3 oz, grilled patties",,
+10972,"PORK,GROUND,84% LN / 16% FAT,RAW",218,17.99,16,0.44,0,0,15,0.88,244,68,0,0,0.45,5.362,68,113,4 oz,,
+10976,"PORK,GROUND,96% LN / 4% FAT,cooked,CRUMBLES",187,30.55,7.15,0,0,0,19,1.05,428,84,0,0,0.26,1.951,78,85,"3 oz, grilled patties",,
+10979,"PORK,GROUND,96% LN / 4% FAT,cooked,PAN-BROILED",185,31.69,6.2,0.57,0,0,20,1.11,415,88,0,0,0.4,2.076,85,85,"3 oz, grilled patties",,
+10973,"PORK,GROUND,96% LN / 4% FAT,RAW",121,21.1,4,0.21,0,0,15,0.86,310,67,0,0,0.29,1.314,59,113,4 oz,,
+7065,"PORK and beef SAUSAGE,fresh,cooked",396,13.8,36.25,2.7,0,0,10,1.13,189,929,0,0,0.22,12.96,71,13,"1 link,  (raw dimensions: 4"" long x 7/8"" dia), cooked",27,"1 patty, cooked (raw dimensions: 3-7/8"" dia x 1/4"" thick)"
+7926,SALAMI  ITALIAN  PORK,425,21.7,37,1.2,0,1.2,10,1.52,340,1890,0,0,,13.1,80,28,1 oz,,
+7941,SALAMI  ITALIAN  PORK and beef  DRY  SLICED  50% LESS NA,350,21.8,26.4,6.4,0,0,8,1.51,378,936,0,0,,9.75,89,28,"1 serving,  5 slices",,
+7913,"Salami, pork and beef, reduced sodium",396,15.01,30.5,15.38,0.2,6.21,94,1.55,1372,623,0.7,12,,10.58,90,100,3.527 oz,,
+7069,"SALAMI,cooked,beef and PORK",336,21.85,25.9,2.4,0,0.96,15,1.56,316,1740,0,0,0.22,9.316,89,12.3,"1 slice, round",,
+7070,"SALAMI,COOKED,TURKEY",172,19.3,9.21,1.55,0.1,1.12,40,1.25,216,1107,0,8,0.24,2.783,76,28,1 serving,,
+7071,"SALAMI,DRY OR HARD,PORK",407,22.58,33.72,1.6,0,,13,1.3,378,2260,0,0,,11.89,79,113,"1 package,  (4 oz)",10,"1 slice,  (3-1/8"" dia x 1/16"" thick)"
+7072,"SALAMI,DRY OR HARD,PORK,beef",374,19.9,31.59,1.18,0,0.2,28,1.43,334,1654,0,36,0.61,11.586,108,9.8,1 slice,28,1 oz
+7004,SAUSAGE  BERLINER  PORK  beef,230,15.27,17.2,2.59,0,2.35,12,1.15,283,1297,0,0,,6.08,46,23,1 slice,28.35,1 oz
+7928,SAUSAGE  chicken  beef  PORK  SKINLESS  SMOKED,216,13.6,14.3,8.1,0,1.9,100,4.8,246,1034,0,0,,4.8,120,84,1 link,,
+7914,SAUSAGE  ITALIAN  sweet  LINKS,149,16.13,8.42,2.1,0,0,25,1.19,194,570,0.2,2,,3.257,30,84,"1 link,  3 oz",,
+7927,SAUSAGE  ITALIAN  TURKEY  SMOKED,158,15.05,8.75,4.65,0.9,3.2,21,9.6,197,928,30.4,144,,3.401,53,56,"1 serving,  2 oz",,
+7915,SAUSAGE  POLISH  beef with chicken  HOT,259,17.6,19.4,3.6,0,0,12,0.88,237,1540,0,0,,8.01,66,55,"1 serving,  5 pieces",55,5 pieces
+7916,SAUSAGE  POLISH  PORK and beef  SMOKED,301,12.07,26.56,1.98,0,0,7,1,189,848,0,0,,9.207,71,76,"1 serving,  2.67 oz",,
+7917,SAUSAGE  PORK and beef  with CHEDDAR cheese  SMOKED,296,12.89,25.84,2.13,0,0.11,57,0.73,206,848,0,0,,9.482,63,77,"12 oz, serving 2.7 oz",,
+7918,SAUSAGE  SMMR  PORK and beef  steakS  with CHEDDAR cheese,426,19.43,37.91,1.82,0.2,0.12,81,2.26,206,1483,0,749,,10.47,89,28.35,1 oz,,
+7919,SAUSAGE  TURKEY breakfast LINKS  MILD,235,15.42,18.09,1.56,0,0,32,1.07,229,639,0.5,0,0.19,3.839,160,56,"2 oz, 2 links",,
+7929,SAUSAGE  TURKEY  HOT  SMOKED,158,15.05,8.75,4.65,0.9,3.2,21,9.6,197,1196,30.4,144,0.09,3.77,53,56,2 oz,,
+7089,"SAUSAGE,ITALIAN,PORK,cooked",344,19.12,27.31,4.27,0.1,0.86,21,1.43,304,1207,0.1,16,0.25,9.655,57,83,"1 link,  4/lb",67,"1 link,  5/lb"
+7036,"SAUSAGE,ITALIAN,PORK,RAW",346,14.25,31.33,0.65,0,,18,1.18,253,731,2,0,,11.27,76,113,"1 link,  4/lb",91,"1 link,  5/lb"
+7075,"SAUSAGE,SMOKED LINK SAUSAGE,PORK and beef",320,12,28.73,2.42,0,0,12,0.75,179,911,0,74,0.13,9.769,58,454,16 oz,,
+7083,"SAUSAGE,VIENNA,canned,chicken,beef,PORK",230,10.5,19.4,2.6,0,0,10,0.88,101,879,0,0,0.22,7.125,87,16,"1 sausage,  (7/8"" dia x 2"" long)",113,"7 sausages,  (drained contents from can, net wt 4 oz)"
+35229,"SEA LION,STELLER,MEAT (ALASKA NATIVE)",120,25.85,1.88,0,,,6,11.48,406,62,0,,,,64,,,,
+35055,"SEAL,BEARDED (OOGRUK),MEAT,DRIED (ALASKA NATIVE)",351,82.6,2.3,0,0,0,,49.6,,,,1310,,0.6,,,,,
+35164,"SEAL,BEARDED (OOGRUK),MEAT,DRIED,IN OIL (ALASKA NATIVE)",367,35.31,25.08,0,0,0,7,17,400,120,0,1947,0.55,3.92,64,,,,
+35170,"SEAL,BEARDED (OOGRUK),MEAT,LO QUADRANT,RAW (ALASKA NATIVE)",186,23.63,10.17,0,0,0,4,17,210,57,,648,0.27,,121,,,,
+35175,"SEAL,BEARDED (OOGRUK),MEAT,PART DRIED (ALASKA NATIVE)",270,62.38,2.31,0,,0,9,33,960,130,0,0,0.07,,,,,,
+35056,"SEAL,BEARDED (OOGRUK),MEAT,RAW (ALASKA NATIVE)",110,26.7,0.4,0,,,10,12.9,,,,1400,,,100,,,,
+35072,"SEAL,RINGED,LIVER (ALASKA NATIVE)",116,18.6,3.3,2.9,,,13,13.5,,,,36600,,1.17,,,,,
+35071,"SEAL,RINGED,MEAT (ALASKA NATIVE)",142,28.4,3.2,0,,,5,19.6,,110,,385,,0.82,90,,,,
+10158,"USDA commodity,PORK,canned",196,19.4,12.95,0.59,0,0,5,1.05,243,213,0,0,0.28,4.225,75,815,1 can,,
+10802,"USDA COMMODITY,PORK,CURED,HAM,boneless,cooked,heated",149,18.84,7.62,0,0,0,6,0.85,281,1155,23.3,0,,1.701,73,28.35,"1 oz, boneless",17,"1 cubic inch, boneless"
+10804,"USDA COMMODITY,PORK,CURED,HAM,boneless,cooked,unheated",133,17.44,6.16,0.69,0,,7,1.07,272,1210,22.7,5,,1.673,71,28.35,"1 oz, boneless",17,"1 cubic inch, boneless"
+10803,"USDA COMMODITY,PORK,GROUND,FINE/COARSE,frozen,cooked",265,23.55,18.19,0,0,,8,1.51,311,76,2.3,15,,5.515,105,28.35,"1 oz, grilled patties",85,"3 oz, grilled patties"
+10805,"USDA COMMODITY,PORK,GROUND,FINE/COARSE,frozen,RAW",221,15.41,17.18,0,0,,14,0.91,297,58,0.6,6,,6.379,58,113,"1 oz, crumbles",,
+35083,"WALRUS,LIVER,RAW (ALASKA NATIVE)",125,21,3,3.5,,,,14.4,,,,81200,,,,,,,
+35079,"WALRUS,MEAT,DRIED (ALASKA NATIVE)",251,57,2.6,0,,,,43,,,,410,,,,,,,
+35081,"WALRUS,MEAT,RAW (ALASKA NATIVE)",199,19.2,13.6,0,,,18,9.4,,,,170,,2.57,80,,,,
+35011,"Whale, beluga, meat, raw (Alaska Native)",111,26.5,0.5,0,0,0,7,25.9,283,78,0,340,,0.092,80,,,,
+35010,"WHALE,BELUGA,EYES (ALASKA NATIVE)",291,19.6,23.3,0,0,0,,,,,0,1870,,,,,,,
+35012,"WHALE,BELUGA,FLIPPER,RAW (ALASKA NATIVE)",271,19,21.7,0,0,0,11,2.8,,,0,930,,,,,,,
+35013,"WHALE,BELUGA,LIVER,RAW (ALASKA NATIVE)",117,18.4,3.9,2,,,11,,,,,22100,,,,,,,
+35009,"WHALE,BELUGA,MEAT,DRIED (ALASKA NATIVE)",327,69.86,5.34,0,0,0,22,72.35,800,220,0,0,0.27,1.204,122,45,1 strip,,
+35085,"WHALE,BOWHEAD,SUBCUTANEOUS FAT (BLUBBER) (ALASKA NATIVE)",870,0.4,96.5,0,,,,0.5,,,,,,,150,,,,
