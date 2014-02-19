@@ -1,3 +1,33 @@
 <main class="group content">
-  <%= render 'shared/food_search' %>
+  <section class="searchInput">
+    Search the food database
+    <form id="foodForm"
+      action="<%= search_foods_url %>"
+      method="get"
+      class="group">
+
+      <%= form_auth %>
+      <input type="text" name="food[name]">
+      <p><input class="button" type="submit" value="Find foods"></p>
+    </form>
+  </section>
+
+  <!-- <section class="right searchDisplay">
+  </section> -->
+
+  <section class="searchMatch">
+    <h3>Matching Foods</h3>
+    <% if @foods %>
+
+      <% if @foods.empty? %>
+      No matches found!
+      <% else %>
+      <ul>
+        <% @foods.each do |food| %>
+          <%= link_to "<li>#{food.name}</li>".html_safe, food_url(food, { food: params[:food] }) %>
+        <% end %>
+      <% end %>
+      </ul>
+    <% end %>
+  </section>
 </main>

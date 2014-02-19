@@ -1,0 +1,35 @@
+<main class="group content">
+Nutrition Facts
+<form id="portion"
+  action="<%= food_url(@food) %>"
+  method="get"
+  class="group">
+
+  <%= form_auth %>
+  <label for="servings">Servings</label>
+  <input id="servings" name="servings[number]" value="<%= @num_servings %>">
+
+  <select name="servings[size]">
+    <option value="100" select>100 grams</option>
+    <option value="1">1 gram</option>
+    <option value="28.35">1 oz</option>
+  </select>
+
+  <input type="submit" class="button" value="Change Serving">
+</form>
+
+  <h6><%= @food.name.capitalize %></h6>
+  <ul>
+    <li>Calories: <%= @calories.round %></li>
+    <li>Fat: <%= @fat.round(1) %>g</li>
+    <li>Carbohydrates: <%= @carbohydrates.round(1) %>g</li>
+    <li>Protein: <%= @protein.round(1) %>g</li>
+  </ul>
+
+  <ul>
+    <li>Vitamin A: <%= @vitamin_a.round %> IU</li>
+    <li>Vitamin C: <%= @vitamin_c.round %>%</li>
+    <li>Calcium: <%= @calcium.round %>mg</li>
+    <li>Iron: <%= @iron.round %>mg</li>
+  </ul>
+</main>
