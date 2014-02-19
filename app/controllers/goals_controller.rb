@@ -27,6 +27,10 @@ class GoalsController < ApplicationController
 
   def edit
     @goal = Goal.find(params[:id])
+    unless @goal.user_id == current_user.id
+      flash[:notices] = ["You can only update your own goals!"]
+      redirect_to goal_url(@goal)
+    end
   end
 end
 

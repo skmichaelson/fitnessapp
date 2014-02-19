@@ -1,4 +1,19 @@
 <main class="group content">
-  <h2>Custom or Guided?</h2>
-  <%= @goal %>
+  <form class="group"
+    action="<%= user_goals_url(current_user) %>"
+    method="POST">
+  <h2>Update your goals</h2>
+
+    <%= form_auth %>
+
+    <%= render 'shared/goal_form' %>
+    <p>
+      <input type="submit" class="button" value="Update goals">
+    </p>
+
+  </form>
+
+  <section>
+    <!-- Or <%= link_to "Customize your goals", "#" %> -->
+  </section>
 </main>
