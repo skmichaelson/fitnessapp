@@ -1,5 +1,7 @@
 <main class="group content">
   <h1>Update your profile</h1>
+
+  <%= render 'shared/flashes' %>
   <form action="<%= user_url(current_user) %>" method="post">
     <%= form_auth %>
     <input type="hidden" name="_method" value="PUT">

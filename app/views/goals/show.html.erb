@@ -1,5 +1,6 @@
 <main class="group content">
   <h2>Your Fitness Goals</h2>
+  <% if @goal %>
   <article class="group">
     <section class="group half left">
       <ul class="group tblHead">
@@ -81,4 +82,7 @@
 
   <%= link_to "<button class='button'>Update your goals!</button>".html_safe,
     edit_goal_url(current_user.goal) %>
+  <% else %>
+    This user does not have any goals yet!
+  <% end %>
 </main>

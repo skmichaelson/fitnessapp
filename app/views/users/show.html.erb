@@ -1,10 +1,41 @@
+<style>
+
+  #profile-top {
+    margin: 20px auto;
+  }
+
+  #profile-top > div {
+    width: 200px;
+  }
+</style>
+
 <main class="group content">
 
 <h1><%= @user.username %>'s Profile</h1>
 
-<% if @user == current_user %>
-  <%= link_to "Update your profile", edit_user_url(current_user) %>
+<article class="group" id="profile-top">
+  <div class="floatLeft">
+    User photo here
+  </div>
 
+  <div class="floatLeft">
+    <ul>
+      <li><%= @user.username %></li>
+      <li><%= @user.age %></li>
+      <li><%= @user.gender %></li>
+      <li><%= @user.city.capitalize %>, <%= @user.state.upcase %></li>
+    </ul>
+  </div>
+
+  <% if @user == current_user %>
+    <div class="floatLeft">
+      <%= link_to "Update your profile", edit_user_url(current_user) %>
+    </div>
+  <% end %>
+
+</article>
+
+<% if @user == current_user %>
   <%= render 'shared/goal_button' %>
 <% end %>
 </main>

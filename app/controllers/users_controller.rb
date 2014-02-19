@@ -40,4 +40,8 @@ class UsersController < ApplicationController
     render :edit
   end
 
+  def goals
+    render 'goals/show'
+  end
+
 end
