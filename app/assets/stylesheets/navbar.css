@@ -3,6 +3,7 @@ html, body, header, nav, h1, ul, li {
   margin: 0;
   padding: 0;
   font: inherit;
+  list-style-type: none;
 }
 
 #mainNav {
@@ -16,33 +17,34 @@ html, body, header, nav, h1, ul, li {
 #navContent {
   width: 650px;
   margin: auto;
-  float: left;
 }
 
 #navContent > ul {
-  list-style-type: none;
-  float: left;
-  margin: auto;
-  display: inline;
-  padding: 5px 20px;
+  margin: 0px;
+  display: block;
 }
 
 #navContent > ul > li {
   float: left;
-  display: inline;
+  margin: 10px 0px 0px 0px;
+  width: 160px;
   position: relative;
-  text-align: center;
-  width: 100px;
 }
 
-.subNav {
-  display: none;
-  background-color: #122499;
-  position: absolute;
+.subContent {
+  margin: 0px;
+  background-color: navy;
+  width: 650px;
 }
 
-.subNav > li {
+.subContent > ul {
+  display: block;
+  padding: 10px;
+}
+
+.subContent > ul > li {
+  float: left;
   display: inline;
-  margin: 0px auto;
-  padding: 5px;
+  width: 75px;
+  margin: 10px auto;
 }

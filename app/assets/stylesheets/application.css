@@ -24,7 +24,7 @@ html, body, header, nav, h1, ul, li {
   display: block;
 }
 
-.container {
+.content {
   width: 650px;
   margin: 0px auto;
   display: float;

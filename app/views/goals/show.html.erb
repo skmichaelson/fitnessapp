@@ -1,3 +1,6 @@
 <main class="group content">
   <%= @goal %>
+
+  <%= link_to "<button class='button'>Update your goals</button>".html_safe,
+    edit_goal_url(current_user.goal) %>
 </main>
