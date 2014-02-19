@@ -1,9 +1,13 @@
 <section class="left searchInput">
   Search the food database
-  <form id="foodForm" action="" method="get" class="group">
+  <form id="foodForm"
+    action="<%= search_foods_url %>"
+    method="get"
+    class="group">
+
     <%= form_auth %>
     <input type="text" name="food[name]">
-    <p><input class="button" type="button" action="submit" value="Find foods"></p>
+    <p><input class="button" type="submit" value="Find foods"></p>
   </form>
 </section>
 
@@ -12,6 +16,18 @@
 </section>
 
 <section class="left searchMatch">
-  Matching Foods
+  <h3>Matching Foods</h3>
+  <% if @foods %>
+
+    <% if @foods.empty? %>
+    No matches found!
+    <% else %>
+    <ul>
+      <% @foods.each do |food| %>
+        <li><%= food.name %></li>
+      <% end %>
+    <% end %>
+    </ul>
+  <% end %>
 </section>
 
