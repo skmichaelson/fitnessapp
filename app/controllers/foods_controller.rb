@@ -24,7 +24,6 @@ class FoodsController < ApplicationController
     @vitamin_c = adjusted_nutrition_values["vitamin_c"]
     @calcium = adjusted_nutrition_values["calcium"]
     @iron = adjusted_nutrition_values["iron"]
-
   end
 
 end

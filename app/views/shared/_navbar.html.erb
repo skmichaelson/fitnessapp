@@ -1,4 +1,4 @@
-<% goal_link = current_goal ? goal_url(current_goal) : new_user_goal_url(current_user) %>
+<% goal_link = current_goal ? goal_url(current_goal) : new_goal_url %>
 
 <nav class="group" id="mainNav">
   <section class="group" id="navContent">
@@ -6,10 +6,10 @@
       <li>My Home
         <div class="group subContent">
           <ul>
-            <%= link_to "<li>Home</li>".html_safe, root_url %>
+            <li><%= link_to "Home", root_url %></li>
             <%= link_to "<li>Goals</li>".html_safe, goal_link %>
             <%= link_to "<li>Check-in</li>".html_safe, root_url %>
-            <%= link_to "<li>Profile</li>".html_safe, user_url(current_user) %>
+            <%= link_to "<li>Profile</li>".html_safe, current_user ? user_url(current_user) : "#"%>
             <%= link_to "<li>Friends</li>".html_safe, root_url %>
             <%= link_to "<li>Settings</li>".html_safe, root_url %>
           </ul>

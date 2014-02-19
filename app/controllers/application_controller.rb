@@ -27,8 +27,6 @@ class ApplicationController < ActionController::Base
       %w(id name usda_id common_weight_1 common_weight_2 common_serving_1 common_serving_2 created_at updated_at).include?(attr)
     end
 
-    p nutrition_attributes
-
     adjusted_attr = {}
 
     nutrition_attributes.each do |attr, val|
