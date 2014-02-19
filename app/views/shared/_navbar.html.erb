@@ -1,4 +1,4 @@
-<% goal_link = current_user.goal && current_user.goal.persisted? ? goal_url(current_user.goal) : new_user_goal_url(current_user) %>
+<% goal_link = current_goal ? goal_url(current_goal) : new_user_goal_url(current_user) %>
 
 <nav class="group" id="mainNav">
   <section class="group" id="navContent">
@@ -16,7 +16,7 @@
         </div>
       </li>
 
-      <li>Food
+      <li><%= link_to "Food", foods_url %>
         <!-- <div class="group subContent">
           <ul>
             <li>Food Diary</li>

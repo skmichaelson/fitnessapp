@@ -1,6 +1,6 @@
-<% if current_user.goal %>
+<% if current_goal %>
   <% button = "<button class='button'>Update your goals!</button>" %>
-  <% url = edit_goal_url(current_user.goal) %>
+  <% url = edit_goal_url(current_goal) %>
 <% else %>
   <% button = "<button class='button'>Create a goal!</button>" %>
   <% url = new_user_goal_url(current_user) %>

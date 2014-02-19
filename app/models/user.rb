@@ -58,7 +58,7 @@ class User < ActiveRecord::Base
   end
 
   def self.find_by_session_token(session_token)
-    User.where("session_token = ?", session_token).first
+    User.where("session_token = ?", session_token).includes("goal").first
   end
 
   private

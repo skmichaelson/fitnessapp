@@ -7,4 +7,5 @@ class FoodsController < ApplicationController
     @foods = Food.where("name LIKE ?", "%#{food_name}%")
     render :index
   end
+
 end
