@@ -19,6 +19,10 @@ class GoalsController < ApplicationController
 
   def show
     @goal = Goal.find(params[:id])
+    @carbs = calculate_goal(@goal.carb_ratio, @goal.calorie_goal) / 4
+    @protein = calculate_goal(@goal.fat_ratio, @goal.calorie_goal) / 4
+    @fat = calculate_goal(@goal.fat_ratio, @goal.calorie_goal) / 9
+    @updated = @goal.updated_at.strftime("%A, %B %-d, %Y")
   end
 
   def edit

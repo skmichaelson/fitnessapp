@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
     redirect_to new_session_url unless current_user
   end
 
+  def calculate_goal(ratio, base)
+    (ratio * base / 100).round
+  end
+
 end

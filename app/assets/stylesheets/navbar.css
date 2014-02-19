@@ -42,7 +42,11 @@ html, body, header, nav, h1, ul, li {
   padding: 10px;
 }
 
-.subContent > ul > li {
+.subContent > ul > a {
+  color: white;
+}
+
+.subContent > ul > a > li {
   float: left;
   display: inline;
   width: 75px;

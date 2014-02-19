@@ -37,8 +37,32 @@ html, body, header, nav, h1, ul, li {
 }
 
 .half {
-  width: 325px;
+  width: 300px;
   border: 1px solid black;
+  margin: 10px auto;
+}
+
+.left {
+  margin-right: 23px;
+  float: left;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.right {
+  margin-left: 23px;
+  float: right;
+}
+
+.floatRight {
+  float: right;
+}
+
+.tblHead {
+  background-color: navy;
+  color: white;
 }
 
 .button {
