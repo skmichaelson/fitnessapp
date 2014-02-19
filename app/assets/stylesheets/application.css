@@ -18,6 +18,16 @@ html, body, header, nav, h1, ul, li {
   font: inherit;
 }
 
+/* General Styling */
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
 .group:after {
   clear:both;
   content: "";
@@ -29,6 +39,27 @@ html, body, header, nav, h1, ul, li {
   margin: 0px auto;
   display: float;
 }
+
+.button {
+  background-color: #31DE48;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid #2C8A39;
+}
+
+.button:hover {
+  background-color: #2DCF43;
+  border: 2px solid #F5F118;
+}
+
+/* General side-by-side display */
+
+.tblHead {
+  background-color: navy;
+  color: white;
+}
+
+/* Symmetric side-by-side display */
 
 .full {
   width: 650px;
@@ -47,32 +78,26 @@ html, body, header, nav, h1, ul, li {
   float: left;
 }
 
-.floatLeft {
-  float: left;
-}
-
 .right {
   margin-left: 23px;
   float: right;
 }
 
-.floatRight {
-  float: right;
+/* Asymmetric side-by-side display */
+
+.searchInput {
+  width: 250px;
+  border: 1px solid black;
 }
 
-.tblHead {
-  background-color: navy;
-  color: white;
+.searchMatch {
+  width: 250px;
+  border: 1px solid black;
+  margin-top: 25px;
 }
 
-.button {
-  background-color: #31DE48;
-  border-radius: 5px;
-  font-size: 15px;
-  border: 2px solid #2C8A39;
-}
+.searchDisplay {
+  width: 350px;
+  border: 1px solid black;
 
-.button:hover {
-  background-color: #2DCF43;
-  border: 2px solid #F5F118;
 }
