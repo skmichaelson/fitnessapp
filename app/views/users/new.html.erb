@@ -7,60 +7,11 @@
 
 <%= render 'shared/errors' %>
 
-  <p>
-  <label for="username">Username</label>
-    <input type="text"
-      name="user[username]"
-      value="<%= @user.username %>"
-      id="username">
-  </p>
-
-  <p>
-  <label for="email">Email</label>
-    <input type="text"
-      name="user[email]"
-      value="<%= @user.email %>"
-      id="email">
-  </p>
-
-  <p>
-  <label for="password">Password</label>
-    <input type="password"
-      name="user[password]"
-      id="password">
-  </p>
-
-  <p>
-    <label for="birthday">Birthday</label>
-      <input type="date"
-        name="user[birthday]"
-        id="birthday">
-  </p>
-
-  <p>
-    <label for="city">City</label>
-      <input type="text"
-        name="user[city]"
-        id="city">
-  </p>
-
-  <p>
-    <label for="state">State</label>
-      <input type="text"
-        name="user[state]"
-        id="state">
-  </p>
-
-  <p>
-    <label for="zipcode">Zip Code</label>
-      <input type="text"
-        name="user[zipcode]"
-        id="zipcode">
-  </p>
+<%= render 'shared/basic_info' %>
 
   <h2>Tell us about yourself</h2>
 
-  <%= render 'shared/user_goal_attr' %>
+  <%= render 'shared/wt_ht_activity' %>
 
   <p>Gender
     <input type="radio" name="user[gender]" value="M" id="male">

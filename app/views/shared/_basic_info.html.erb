@@ -1,0 +1,53 @@
+<p>
+<label for="username">Username</label>
+  <input type="text"
+    name="user[username]"
+    value="<%= @user.username %>"
+    id="username">
+</p>
+
+<p>
+<label for="email">Email</label>
+  <input type="text"
+    name="user[email]"
+    value="<%= @user.email %>"
+    id="email">
+</p>
+
+<% unless current_user %>
+<p>
+<label for="password">Password</label>
+  <input type="password"
+    name="user[password]"
+    id="password">
+</p>
+<% end %>
+
+<p>
+  <label for="birthday">Birthday</label>
+    <input type="date"
+      name="user[birthday]"
+      id="birthday"
+      value="<%= @user.birthday %>">
+</p>
+
+<p>
+  <label for="city">City</label>
+    <input type="text"
+      name="user[city]"
+      id="city">
+</p>
+
+<p>
+  <label for="state">State</label>
+    <input type="text"
+      name="user[state]"
+      id="state">
+</p>
+
+<p>
+  <label for="zipcode">Zip Code</label>
+    <input type="text"
+      name="user[zipcode]"
+      id="zipcode">
+</p>

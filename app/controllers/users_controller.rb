@@ -25,4 +25,19 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def edit
+    @user = current_user
+  end
+
+  def update
+    @user = current_user
+    if @user.update_attributes(params[:user])
+      flash[:notices] = ["Profile updated!"]
+    else
+      flash[:errors] = @user.errors.full_messages
+    end
+
+    render :edit
+  end
+
 end

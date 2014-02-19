@@ -3,7 +3,7 @@
   <% url = edit_goal_url(current_goal) %>
 <% else %>
   <% button = "<button class='button'>Create a goal!</button>" %>
-  <% url = new_user_goal_url(current_user) %>
+  <% url = new_goal_url %>
 <% end %>
 
 <%= link_to button.html_safe, url %>

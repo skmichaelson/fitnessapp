@@ -13,9 +13,11 @@ class ApplicationController < ActionController::Base
   end
 
   def require_logged_in
+    unless current_user
     # TODO set the last page to memory?
-    flash[:errors] = "You must log in first!"
-    redirect_to new_session_url unless current_user
+      flash[:errors] = ["You must log in first!"]
+      redirect_to new_session_url
+    end
   end
 
   def calculate_goal(ratio, base)

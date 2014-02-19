@@ -1,0 +1,16 @@
+<main class="group content">
+  <h1>Update your profile</h1>
+  <form action="<%= user_url(current_user) %>" method="post">
+    <%= form_auth %>
+    <input type="hidden" name="_method" value="PUT">
+
+    <%= render 'shared/errors' %>
+
+    <%= render 'shared/basic_info' %>
+
+    <%= render 'shared/wt_ht_activity' %>
+
+    <p><input class="button" type="submit" value="Continue &rarr;"></p>
+  </form>
+
+</main>
