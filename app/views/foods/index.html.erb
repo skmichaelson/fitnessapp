@@ -1,15 +1,7 @@
 <main class="group content">
   <section class="searchInput">
     Search the food database
-    <form id="foodForm"
-      action="<%= search_foods_url %>"
-      method="get"
-      class="group">
-
-      <%= form_auth %>
-      <input type="text" name="food[name]">
-      <p><input class="button" type="submit" value="Find foods"></p>
-    </form>
+    <%= render 'shared/food_search' %>
   </section>
 
   <!-- <section class="right searchDisplay">

@@ -11,22 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140220151856) do
+ActiveRecord::Schema.define(:version => 20140220155247) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
-    t.integer  "calories_consumed"
-    t.integer  "calories_burned"
-    t.integer  "fat_intake"
-    t.integer  "carbohydrate_intake"
-    t.integer  "protein_intake"
-    t.integer  "calcium_intake"
-    t.integer  "iron_intake"
-    t.integer  "vitamin_a_intake"
-    t.integer  "vitamin_c_intake"
+    t.integer  "calories_consumed",   :default => 0, :null => false
+    t.integer  "calories_burned",     :default => 0, :null => false
+    t.integer  "fat_intake",          :default => 0, :null => false
+    t.integer  "carbohydrate_intake", :default => 0, :null => false
+    t.integer  "protein_intake",      :default => 0, :null => false
+    t.integer  "calcium_intake",      :default => 0, :null => false
+    t.integer  "iron_intake",         :default => 0, :null => false
+    t.integer  "vitamin_a_intake",    :default => 0, :null => false
+    t.integer  "vitamin_c_intake",    :default => 0, :null => false
     t.integer  "diary_id"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
   end
 
   add_index "daily_entries", ["diary_id"], :name => "index_daily_entries_on_diary_id"
@@ -99,9 +99,12 @@ ActiveRecord::Schema.define(:version => 20140220151856) do
     t.integer  "food_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.integer  "meal_id",        :null => false
+    t.float    "quantity",       :null => false
   end
 
   add_index "meal_entries", ["daily_entry_id"], :name => "index_meal_entries_on_daily_entry_id"
+  add_index "meal_entries", ["meal_id"], :name => "index_meal_entries_on_meal_id"
 
   create_table "users", :force => true do |t|
     t.string   "username",        :null => false
