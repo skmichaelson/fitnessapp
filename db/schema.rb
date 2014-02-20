@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140220144416) do
+ActiveRecord::Schema.define(:version => 20140220151856) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20140220144416) do
   end
 
   add_index "daily_entries", ["diary_id"], :name => "index_daily_entries_on_diary_id"
+  add_index "daily_entries", ["entry_date"], :name => "index_daily_entries_on_entry_date"
 
   create_table "diaries", :force => true do |t|
     t.string   "meal0",      :default => "Breakfast"

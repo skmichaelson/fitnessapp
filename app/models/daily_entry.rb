@@ -12,5 +12,6 @@ class DailyEntry < ActiveRecord::Base
     :diary_id
 
   belongs_to :diary
-  has_many :meal_entries
+  has_many :meal_entries, dependent: :destroy
+  has_many :foods, through: :meal_entries, source: :food
 end
