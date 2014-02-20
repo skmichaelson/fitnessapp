@@ -1,0 +1,2 @@
+class DailyEntriesController < ApplicationController
+end

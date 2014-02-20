@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140220013057) do
+ActiveRecord::Schema.define(:version => 20140220143119) do
+
+  create_table "daily_entries", :force => true do |t|
+    t.date     "entry_date"
+    t.integer  "calories_consumed"
+    t.integer  "calories_burned"
+    t.integer  "fat_intake"
+    t.integer  "carbohydrate_intake"
+    t.integer  "protein_intake"
+    t.integer  "calcium_intake"
+    t.integer  "iron_intake"
+    t.integer  "vitamin_a_intake"
+    t.integer  "vitamin_c_intake"
+    t.integer  "diary_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  add_index "daily_entries", ["diary_id"], :name => "index_daily_entries_on_diary_id"
 
   create_table "diaries", :force => true do |t|
     t.string   "meal0",      :default => "Breakfast"

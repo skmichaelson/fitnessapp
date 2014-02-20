@@ -1,0 +1,2 @@
+module DailyEntriesHelper
+end
