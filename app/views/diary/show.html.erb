@@ -1,14 +1,68 @@
+<style>
+
+#diary-entry {
+  border: 1px solid black;
+}
+
+.meal {
+  background-color: #ccc;
+}
+
+#food-entry > div.floatLeft {
+  width: 300px;
+}
+
+#food-entry > div.floatRight {
+  width: 320px;
+}
+
+#food-entry > .floatLeft > li {
+  display: inline;
+  margin: 5px auto;
+}
+
+#food-entry > .floatRight > li {
+  display: inline;
+  margin: 25px;
+}
+
+#food-entry {
+  display: block;
+  padding-top: 2px;
+}
+
+</style>
+
 <main class="group content">
   <h1>Your food diary</h1>
-  <%= @diary %>
 
-  <section id="diary-entry">
+  <section id="diary-entry" class="group">
     <% (0..5).each do |num| %>
       <% if @diary.try("meal#{num}".to_sym) %>
-    <ul class="meal">
-      <li><%= @diary.send("meal#{num}".to_sym) %></li>
-      <li><%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %></li>
+        <h2><%= @diary.send("meal#{num}".to_sym) %></h2>
+        <ul class="group meal">
+          <% @meal_entries.each do |entry| %>
+          <section id="food-entry" class="group">
+            <% if entry.meal_id == num %>
+              <% nutrients = calculate_by_quantity(entry.food, entry.quantity) %>
+              <div class="group floatLeft">
+                <li><%= entry.food.name %></li>
+              </div>
+
+              <div class="group floatRight">
+                <li><%= nutrients["calories"].round %></li>
+                <li><%= nutrients["fat"].round %></li>
+                <li><%= nutrients["carbohydrates"].round %></li>
+                <li><%= nutrients["protein"].round %></li>
+              </div>
+            </section>
+            <% end %>
+          <% end %>
+        </ul>
+
+        <li><%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %></li>
     </ul>
+    </div>
       <% else %>
         <% break %>
       <% end %>

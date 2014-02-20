@@ -11,7 +11,7 @@ class MealEntriesController < ApplicationController
       meal_id: params[:meal][:num])
 
     if @meal.save
-      render :show
+      redirect_to diary_user_url(current_user)
     else
       flash[:errors] = @meal.errors.full_messages
       render :show
