@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   before_validation :ensure_session_token
+  after_create :create_food_diary
 
   validates :username, presence: { message: "Please choose a username" }, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true }
@@ -29,6 +30,7 @@ class User < ActiveRecord::Base
   validates :goal_wt, :height, :activity_level, :birthday, presence: true
 
   has_one :goal, inverse_of: :user, dependent: :destroy
+  has_many :diaries, dependent: :destroy
   # TODO: Fix messages!
 
   def password=(password)
@@ -65,5 +67,9 @@ class User < ActiveRecord::Base
 
   def ensure_session_token
     self.session_token ||= User.generate_session_token
+  end
+
+  def create_food_diary
+    self.diaries.create
   end
 end

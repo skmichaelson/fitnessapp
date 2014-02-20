@@ -1,0 +1,18 @@
+<main class="group container">
+  <h1>Your food diary</h1>
+  <%= @diary %>
+
+  <section id="diary-entry">
+    <% (0..5).each do |num| %>
+      <% if @diary.try("meal#{num}".to_sym) %>
+    <ul class="meal">
+      <li><%= @diary.send("meal#{num}".to_sym) %></li>
+      <li>Add food</li>
+    </ul>
+      <% else %>
+        <% break %>
+      <% end %>
+    <% end %>
+  </section>
+
+</main>

@@ -2,7 +2,11 @@ FitnessApp::Application.routes.draw do
   resources :users do
     resources :goals, only: [:create]
     get "goals", on: :member
+    get "diary", on: :member
+    # get "diary/edit", on: :member
+    # put "diary/update", on: :member
   end
+
   resources :foods, only: [:new, :show, :create, :index] do
     get "search", on: :collection
   end

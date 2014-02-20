@@ -44,4 +44,9 @@ class UsersController < ApplicationController
     render 'goals/show'
   end
 
+  def diary
+    @diary = User.find(params[:id]).diaries.first
+    render 'diary/show'
+  end
+
 end
