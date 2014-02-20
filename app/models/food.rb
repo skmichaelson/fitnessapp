@@ -24,6 +24,8 @@ class Food < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
   validates :calories, :protein, :fat, :carbohydrates, :usda_id, presence: true
 
+  has_many :meal_entries
+
   private
 
   def ensure_default_values

@@ -12,4 +12,5 @@ class DailyEntry < ActiveRecord::Base
     :diary_id
 
   belongs_to :diary
+  has_many :meal_entries
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140220143119) do
+ActiveRecord::Schema.define(:version => 20140220144416) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
@@ -92,6 +92,15 @@ ActiveRecord::Schema.define(:version => 20140220143119) do
   end
 
   add_index "goals", ["user_id"], :name => "index_goals_on_user_id"
+
+  create_table "meal_entries", :force => true do |t|
+    t.integer  "daily_entry_id"
+    t.integer  "food_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "meal_entries", ["daily_entry_id"], :name => "index_meal_entries_on_daily_entry_id"
 
   create_table "users", :force => true do |t|
     t.string   "username",        :null => false

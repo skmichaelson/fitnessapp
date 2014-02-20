@@ -33,4 +33,8 @@ describe Food do
     expect(new_food.saturated_fat).to eq(0)
     expect(new_food.cholesterol).to eq(0)
   end
+
+  describe "associations" do
+    it { should have_many(:meal_entries) }
+  end
 end
