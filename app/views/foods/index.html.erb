@@ -16,7 +16,7 @@
       <% else %>
       <ul>
         <% @foods.each do |food| %>
-          <%= link_to "<li>#{food.name}</li>".html_safe, food_url(food, { food: params[:food] }) %>
+          <li><%= link_to "#{food.name}", food_url(food, { entry: params[:daily_entry_id] }) %></li>
         <% end %>
       <% end %>
       </ul>

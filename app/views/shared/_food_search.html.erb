@@ -1,5 +1,5 @@
 <form id="foodForm"
-  action="<%= search_foods_url %>"
+  action="<%= @entry ? search_daily_entry_foods_url(@entry) : search_foods_url %>"
   method="get"
   class="group">
 

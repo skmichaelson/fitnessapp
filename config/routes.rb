@@ -5,8 +5,16 @@ FitnessApp::Application.routes.draw do
     get "goals", on: :member
   end
 
+  resources :daily_entries, only: [:edit, :update] do
+    resources :meal_entries, only: [:create, :destroy]
+    resources :foods, only: [:show, :index] do
+      get "search", on: :collection
+    end
+  end
+
+  resources :meal_entries, only: [:create, :edit, :update]
   resources :diaries, only: [:edit, :update]
-  resources :daily_entries, only: [:edit, :update]
+
 
   resources :foods, only: [:new, :show, :create, :index] do
     get "search", on: :collection

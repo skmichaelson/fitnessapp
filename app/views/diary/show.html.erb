@@ -7,7 +7,7 @@
       <% if @diary.try("meal#{num}".to_sym) %>
     <ul class="meal">
       <li><%= @diary.send("meal#{num}".to_sym) %></li>
-      <li><%= link_to "Add food", edit_daily_entry_url(@entry, { meal_id: num }) %></li>
+      <li><%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %></li>
     </ul>
       <% else %>
         <% break %>

@@ -1,0 +1,2 @@
+module MealEntriesHelper
+end

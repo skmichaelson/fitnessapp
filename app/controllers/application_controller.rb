@@ -45,4 +45,8 @@ class ApplicationController < ActionController::Base
   def num_servings
     params[:servings] ? params[:servings][:number].to_f : 1
   end
+
+  def calculate_quantity(servings, size)
+    servings.to_f * size.to_f
+  end
 end

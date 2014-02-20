@@ -1,9 +1,10 @@
 <main class="group content">
   Nutrition Facts
   <form id="portion"
-    action="<%= food_url(@food) %>"
-    method="get"
+    action="<%= @entry ? daily_entry_meal_entries_url(@entry) : food_url(@food) %>"
+    method="<%= @entry ? "post" : "get" %>"
     class="group">
+    <input type="hidden" name="food[id]" value="<%= @food.id %>">
 
     <%= form_auth %>
     <label for="servings">Servings</label>
@@ -15,7 +16,14 @@
       <option value="28.35">1 oz</option>
     </select>
 
-    <input type="submit" class="button" value="Change Serving">
+    <label for="meal_num">Add to meal:</label>
+    <select id="meal_num" name="meal[num]">
+      <option value="0">Breakfast</option>
+      <option value="1">Lunch</option>
+      <option value="2">Dinner</option>
+    </select>
+
+    <input type="submit" class="button" value="<%= @entry ? "Add to diary" : "Change Serving" %>">
   </form>
 
     <h6><%= @food.name.capitalize %></h6>
@@ -32,4 +40,7 @@
       <li>Calcium: <%= @nutrition_values["calcium"].round %>mg</li>
       <li>Iron: <%= @nutrition_values["iron"].round %>mg</li>
     </ul>
+
+    <%= params %>
+    <%= @food %>
 </main>

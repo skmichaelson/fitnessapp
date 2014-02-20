@@ -1,7 +1,15 @@
 <main class="group content">
   Add a food to your diary
 
-  <%= render 'shared/food_search' %>
+  <form id="foodForm"
+    action="<%= search_daily_entry_foods_url(@entry) %>"
+    method="get"
+    class="group">
+
+    <%= form_auth %>
+    <input type="text" name="food[name]">
+    <p><input class="button" type="submit" value="Find foods"></p>
+  </form>
 
   <p>Entry ID: <%= @entry %></p>
-</main>
+</main>rout
