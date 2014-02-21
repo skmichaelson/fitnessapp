@@ -38,6 +38,7 @@ html, body, header, nav, h1, ul, li {
   width: 650px;
   margin: 0px auto;
   display: float;
+  font-family: sans-serif;
 }
 
 .button {
