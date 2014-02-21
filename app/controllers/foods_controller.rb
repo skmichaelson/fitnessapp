@@ -8,7 +8,7 @@ class FoodsController < ApplicationController
   def search
     food_name = params[:food][:name]
     @entry = params[:daily_entry_id] ? DailyEntry.find(params[:daily_entry_id]) : nil
-    @foods = Food.where("name LIKE ?", "%#{food_name}%")
+    @foods = Food.where("name LIKE ?", "%#{food_name}%").page
     render :index
   end
 
