@@ -9,20 +9,20 @@
   background-color: #ccc;
 }
 
-#food-entry > div.floatLeft {
+#food-entry > div.float-left {
   width: 300px;
 }
 
-#food-entry > div.floatRight {
+#food-entry > div.float-right {
   width: 320px;
 }
 
-#food-entry > .floatLeft > li {
+#food-entry > .float-left > li {
   display: inline;
   margin: 5px auto;
 }
 
-#food-entry > .floatRight > li {
+#food-entry > .float-right > li {
   display: inline;
   margin: 25px;
 }
@@ -32,9 +32,40 @@
   padding-top: 2px;
 }
 
+#food-diary table {
+  display: block;
+  text-align: center;
+  background-color: #ccc;
+}
+
+#food-diary th {
+  width: 75px;
+  color: #fff;
+  background-color: navy;
+}
+
+.food-name {
+  float: left;
+  width: 349px;
+  font-size: 14px;
+}
+
+.nutrient-table {
+  float: right;
+  width: 299px;
+}
+
+.nutrient-table tbody {
+  background-color: #ccc;
+}
+
+.nutrient-table td {
+  width: 75px;
+}
+
 </style>
 
-<main class="group content">
+<main class="group content" id="food-diary">
   <h1>Your food diary</h1>
 
   <section id="diary-entry" class="group">
@@ -42,29 +73,30 @@
       <% if @diary.try("meal#{num}".to_sym) %>
         <h2><%= @diary.send("meal#{num}".to_sym) %></h2>
 
-        <ul class="group meal">
-          <% @meal_entries.each do |entry| %>
+        <% @meal_entries.each do |entry| %>
+          <% if entry.meal_id == num %>
+            <% nutrients = calculate_by_quantity(entry.food, entry.quantity) %>
 
-          <section id="food-entry" class="group">
-            <% if entry.meal_id == num %>
-
-              <% nutrients = calculate_by_quantity(entry.food, entry.quantity) %>
-
-              <div class="group floatLeft">
-                <li><%= entry.food.name.capitalize %></li>
-              </div>
-
-              <div class="group floatRight">
-                <li><%= nutrients["calories"].round %></li>
-                <li><%= nutrients["fat"].round %></li>
-                <li><%= nutrients["carbohydrates"].round %></li>
-                <li><%= nutrients["protein"].round %></li>
-              </div>
-
-            <% end %>
+        <div class="group meal">
+          <section class="food-name">
+            <%= entry.food.name.capitalize %>
           </section>
+
+          <section class="nutrient-table">
+            <table>
+              <tbody>
+                <tr>
+                  <td><%= nutrients["calories"].round %></td>
+                  <td><%= nutrients["fat"].round %></td>
+                  <td><%= nutrients["carbohydrates"].round %></td>
+                  <td><%= nutrients["protein"].round %></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
           <% end %>
-        </ul>
+        <% end %>
 
         <li><%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %></li>
     </ul>
@@ -77,7 +109,7 @@
 
 <style>
 
-#totals {
+.totals {
   border: 1px solid black;
   display: block;
 }
@@ -87,29 +119,17 @@
   width: 300px;
 }
 
-#diary-totals > table {
-  display: block;
-  text-align: center;
-  background-color: #eee;
-}
-
-#diary-totals th {
-  width: 75px;
-  color: #fff;
-  background-color: navy;
-}
-
 </style>
 
-  <section id="totals" class="group">
+  <section class="group totals">
     <div class="group" id="diary-totals">
       <table>
-        <tr>
+        <tfoot>
           <th>Calories</th>
           <th>Fat</th>
           <th>Carbs</th>
           <th>Protein</th>
-        </tr>
+        </tfoot>
 
         <tr>
           <td><%= @entry.calories_consumed %></td>
