@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   include SessionsHelper
+  include UsersHelper
 
   def new
     @user = User.new
@@ -12,6 +13,7 @@ class SessionsController < ApplicationController
 
     if @user
       login_user!(@user)
+      set_user_age(@user)
       redirect_to root_url # TODO: redirect to the last page the user was on!
     else
       flash.now[:errors] = ["Invalid login credentials. Please try again!"]

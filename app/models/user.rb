@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  include UsersHelper
+
   attr_accessible :username,
                   :password,
                   :email,
@@ -18,6 +20,7 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   before_validation :ensure_session_token
+  after_create :calculate_user_age
   after_create :create_food_diary
 
   validates :username, presence: { message: "Please choose a username" }, uniqueness: true
@@ -71,5 +74,9 @@ class User < ActiveRecord::Base
 
   def create_food_diary
     self.diaries.create
+  end
+
+  def calculate_user_age
+    set_user_age(self)
   end
 end
