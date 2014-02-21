@@ -1,22 +1,20 @@
 <main class="group content">
 
-<h2>Welcome! Please sign in</h2>
 
 <form class="group" id="login" action="<%= session_url %>" method="post">
+  <h1>Welcome! Please sign in</h1>
+
   <%= form_auth %>
-  <p>
+
   <label for="userinfo">Username or E-mail Address</label>
     <input id="userinfo"
       type="text"
       name="user[identifier]">
-  </p>
 
-  <p>
   <label for="password">Password</label>
     <input id="password"
       type="password"
       name="user[password]">
-  </p>
 
   <input class="button" type="submit" value="Sign In!">
 </form>

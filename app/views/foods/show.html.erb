@@ -1,12 +1,15 @@
 <main class="group content">
-  Nutrition Facts
   <form id="portion"
     action="<%= @entry ? daily_entry_meal_entries_url(@entry) : food_url(@food) %>"
     method="<%= @entry ? "post" : "get" %>"
     class="group">
+
+    <h1>Nutrition Facts</h1>
+
     <input type="hidden" name="food[id]" value="<%= @food.id %>">
 
     <%= form_auth %>
+
     <label for="servings">Servings</label>
     <input id="servings" name="servings[number]" value="<%= num_servings %>">
 

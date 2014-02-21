@@ -1,26 +1,25 @@
 <main class="group content">
 
 <form action="<%= users_url %>" method="post">
+  <h1>Create your free account!</h1>
+
   <%= form_auth %>
 
-  <h2>Create your free account!</h2>
+  <%= render 'shared/errors' %>
 
-<%= render 'shared/errors' %>
+  <%= render 'shared/basic_info' %>
 
-<%= render 'shared/basic_info' %>
-
-  <h2>Tell us about yourself</h2>
+  <h1>Tell us about yourself</h1>
 
   <%= render 'shared/wt_ht_activity' %>
 
-  <p>Gender
+  Gender
     <input type="radio" name="user[gender]" value="M" id="male">
     <label class="radio" for="male">Male</label>
     <input type="radio" name="user[gender]" value="F" id="female">
     <label class="radio" for="female">Female</label>
-  </p>
 
-  <p><input class="button" type="submit" value="Continue &rarr;"></p>
+  <input class="button" type="submit" value="Continue &rarr;">
 </form>
 
 </main>

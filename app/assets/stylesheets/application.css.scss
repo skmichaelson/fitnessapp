@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
 html, body, header, nav, h1, ul, li {
   border: 0;
@@ -101,3 +100,5 @@ html, body, header, nav, h1, ul, li {
   border: 1px solid black;
 
 }
+
+@import 'forms';
