@@ -8,7 +8,7 @@ user1 = {username: "lollipopette",
   goal_wt: 105,
   height: 61,
   activity_level: 1,
-  birthday: 19850107,
+  birthday: Date.new(1985, 1, 7),
   age: 29
 }
 
@@ -20,7 +20,7 @@ user2 = {username: "unclebobert",
   goal_wt: 160,
   height: 71,
   activity_level: 1,
-  birthday: 19850101,
+  birthday: Date.new(1985, 1, 1),
   age: 29
 }
 
@@ -32,7 +32,7 @@ user3 = {username: "adager",
   goal_wt: 140,
   height: 66,
   activity_level: 1,
-  birthday: 19510505,
+  birthday: Date.new(1951, 5, 5),
   age: 62
 }
 
@@ -44,7 +44,7 @@ user4 = {username: "imaki",
   goal_wt: 135,
   height: 65,
   activity_level: 2,
-  birthday: 19880416,
+  birthday: Date.new(1988, 4, 16),
   age: 25
 }
 
@@ -56,7 +56,7 @@ user5 = {username: "abbott",
   goal_wt: 170,
   height: 64,
   activity_level: 1,
-  birthday: 19820318,
+  birthday: Date.new(1982, 3, 18),
   age: 31
 }
 
@@ -68,7 +68,7 @@ user6 = {username: "joerock",
   goal_wt: 190,
   height: 72,
   activity_level: 2,
-  birthday: 19941026,
+  birthday: Date.new(1994, 10, 26),
   age: 18
 }
 
@@ -80,7 +80,7 @@ user7 = {username: "chocolatewalnut",
   goal_wt: 130,
   height: 64,
   activity_level: 1,
-  birthday: 19860909,
+  birthday: Date.new(1986, 9, 9),
   age: 27
 }
 
@@ -92,7 +92,7 @@ user8 = {username: "grandpapa",
   goal_wt: 160,
   height: 67,
   activity_level: 0,
-  birthday: 19220430,
+  birthday: Date.new(1922, 4, 30),
   age: 91
 }
 
