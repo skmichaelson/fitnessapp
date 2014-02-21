@@ -45,7 +45,8 @@ class UsersController < ApplicationController
   end
 
   def diary
-    @diary = User.find(params[:id]).diaries.first
+    @user = User.includes(:goal).find(params[:id])
+    @diary = @user.diaries.first
     @entry = @diary.daily_entries.where("entry_date = ?", Date.today).first
     @entry ||= @diary.daily_entries.create(entry_date: Date.today)
     @meal_entries = @entry.meal_entries

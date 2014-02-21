@@ -1,4 +1,5 @@
 class MealEntriesController < ApplicationController
+
   def new
     @daily_entry = DailyEntry.find(params[:daily_entry_id])
     @meal_entry = @daily_entry.meal_entries.new

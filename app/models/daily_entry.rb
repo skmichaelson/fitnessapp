@@ -36,4 +36,7 @@ class DailyEntry < ActiveRecord::Base
     self.vitamin_a_intake ||= 0
     self.vitamin_c_intake ||= 0
   end
+
+  def update_nutrient_counts
+  end
 end

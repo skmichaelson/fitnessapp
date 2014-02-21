@@ -2,6 +2,7 @@
 
 #diary-entry {
   border: 1px solid black;
+  display:block;
 }
 
 .meal {
@@ -46,7 +47,7 @@
             <% if entry.meal_id == num %>
               <% nutrients = calculate_by_quantity(entry.food, entry.quantity) %>
               <div class="group floatLeft">
-                <li><%= entry.food.name %></li>
+                <li><%= entry.food.name.capitalize %></li>
               </div>
 
               <div class="group floatRight">
@@ -67,6 +68,65 @@
         <% break %>
       <% end %>
     <% end %>
+  </section>
+
+<style>
+#totals {
+  border: 1px solid black;
+  display: block;
+}
+
+.table-headers > div.floatLeft {
+  width: 300px;
+}
+
+.table-headers > div.floatRight {
+  width: 320px;
+}
+
+.col-name > ul > li{
+  display: inline;
+  margin: 12px;
+}
+
+</style>
+
+  <section id="totals" class="group">
+    <div class="group table-headers">
+      <div class="group floatLeft">
+      </div>
+
+      <div class="group floatRight col-name">
+        <ul>
+          <li>Calories</li>
+          <li>Fat</li>
+          <li>Carbs</li>
+          <li>Protein</li>
+        </ul>
+
+        <ul>
+          <li><%= @entry.calories_consumed %></li>
+          <li><%= @entry.fat_intake %></li>
+          <li><%= @entry.carbohydrate_intake %></li>
+          <li><%= @entry.protein_intake %></li>
+        </ul>
+
+        <ul>
+          <li><%= @user.goal.calorie_goal %></li>
+          <li><%= %></li>
+          <li><%= %></li>
+          <li><%= %></li>
+        </ul>
+
+        <ul>
+          <li><%= @user.goal.calorie_goal - @entry.calories_consumed %></li>
+          <li><%= %></li>
+          <li><%= %></li>
+          <li><%= %></li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
 </main>
