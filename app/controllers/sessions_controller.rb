@@ -14,10 +14,10 @@ class SessionsController < ApplicationController
     if @user
       login_user!(@user)
       set_user_age(@user)
-      if @user.goal.empty?
-        redirect_to new_goal_url
-      else
+      if @user.goal
         redirect_to root_url # TODO: redirect to the last page the user was on!
+      else
+        redirect_to new_goal_url
       end
     else
       flash.now[:errors] = ["Invalid login credentials. Please try again!"]

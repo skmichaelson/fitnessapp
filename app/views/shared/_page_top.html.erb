@@ -187,7 +187,7 @@ header a {
       <div><li><%= link_to "Goals", goal_link %></li></div>
       <div><li><%= link_to "Check-in", root_url%></li></div>
       <div><li><%= link_to "Profile", current_user ? user_url(current_user) : "#" %></li></div>
-      <div><li><%= link_to "Friends", root_url %></li></div>
+      <div><li><%= link_to "Friends", current_user ? friends_user_url(current_user) : "#" %></li></div>
       <div><li><%= link_to "Setting", root_url %></li></div>
     </ul>
   </nav>

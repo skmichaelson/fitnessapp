@@ -3,6 +3,7 @@ FitnessApp::Application.routes.draw do
     resources :goals, only: [:create]
     get "diary", on: :member
     get "goals", on: :member
+    get "friends", on: :member
   end
 
   resources :daily_entries, only: [:edit, :update] do

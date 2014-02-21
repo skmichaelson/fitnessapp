@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :require_logged_in, only: [:show, :update, :destroy, :find]
+  before_filter :require_logged_in, only: [:index, :show, :update, :destroy, :find]
 
   def new
     @user = User.new
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = User.new
+    @user = current_user
   end
 
   def edit
@@ -53,6 +53,10 @@ class UsersController < ApplicationController
     @meal_entries = @entry.meal_entries
     @foods = @entry.foods
     render 'diary/show'
+  end
+
+  def friends
+    @friends = User.find(params[:id]).friends
   end
 
 end
