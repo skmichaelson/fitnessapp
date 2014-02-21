@@ -1,9 +1,12 @@
 <main class="group content">
-  <h1>Update your profile</h1>
 
   <%= render 'shared/flashes' %>
+
   <form action="<%= user_url(current_user) %>" method="post">
+    <h1>Update your profile</h1>
+
     <%= form_auth %>
+
     <input type="hidden" name="_method" value="PUT">
 
     <%= render 'shared/errors' %>
@@ -12,7 +15,7 @@
 
     <%= render 'shared/wt_ht_activity' %>
 
-    <p><input class="button" type="submit" value="Continue &rarr;"></p>
+    <input class="button" type="submit" value="Continue &rarr;">
   </form>
 
 </main>

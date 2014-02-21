@@ -2,14 +2,14 @@
   <form class="group"
     action="<%= user_goals_url(current_user) %>"
     method="POST">
-  <h2>Update your goals</h2>
+
+  <h1>Update your goals</h1>
 
     <%= form_auth %>
 
     <%= render 'shared/goal_form' %>
-    <p>
+
       <input type="submit" class="button" value="Update goals">
-    </p>
 
   </form>
 
