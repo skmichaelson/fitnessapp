@@ -7,7 +7,7 @@ module MealEntriesHelper
     adjusted_attr = {}
 
     nutrition_attributes.each do |attr, val|
-      adjusted_attr[attr] = (val * quantity / 100)
+      adjusted_attr[attr] = (val * quantity / 100.0)
     end
 
     adjusted_attr

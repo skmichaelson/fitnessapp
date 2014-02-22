@@ -11,22 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140221191829) do
+ActiveRecord::Schema.define(:version => 20140222234210) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
-    t.integer  "calories_consumed",   :default => 0, :null => false
-    t.integer  "calories_burned",     :default => 0, :null => false
-    t.integer  "fat_intake",          :default => 0, :null => false
-    t.integer  "carbohydrate_intake", :default => 0, :null => false
-    t.integer  "protein_intake",      :default => 0, :null => false
-    t.integer  "calcium_intake",      :default => 0, :null => false
-    t.integer  "iron_intake",         :default => 0, :null => false
-    t.integer  "vitamin_a_intake",    :default => 0, :null => false
-    t.integer  "vitamin_c_intake",    :default => 0, :null => false
+    t.integer  "calories_consumed",   :default => 0,   :null => false
+    t.integer  "calories_burned",     :default => 0,   :null => false
+    t.float    "fat_intake",          :default => 0.0, :null => false
+    t.float    "carbohydrate_intake", :default => 0.0, :null => false
+    t.float    "protein_intake",      :default => 0.0, :null => false
+    t.float    "calcium_intake",      :default => 0.0, :null => false
+    t.float    "iron_intake",         :default => 0.0, :null => false
+    t.float    "vitamin_a_intake",    :default => 0.0, :null => false
+    t.float    "vitamin_c_intake",    :default => 0.0, :null => false
     t.integer  "diary_id"
-    t.datetime "created_at",                         :null => false
-    t.datetime "updated_at",                         :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
   end
 
   add_index "daily_entries", ["diary_id"], :name => "index_daily_entries_on_diary_id"

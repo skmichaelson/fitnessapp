@@ -134,10 +134,10 @@
         </tfoot>
 
         <tr>
-          <td><%= @entry.calories_consumed %></td>
-          <td><%= @entry.fat_intake %></td>
-          <td><%= @entry.carbohydrate_intake %></td>
-          <td><%= @entry.protein_intake %></td>
+          <td><%= @entry.calories_consumed.round %></td>
+          <td><%= @entry.fat_intake.round %></td>
+          <td><%= @entry.carbohydrate_intake.round %></td>
+          <td><%= @entry.protein_intake.round %></td>
         </tr>
 
         <% if @user.goal %>

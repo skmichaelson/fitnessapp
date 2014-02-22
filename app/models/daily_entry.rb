@@ -28,13 +28,13 @@ class DailyEntry < ActiveRecord::Base
   def ensure_default_values
     self.calories_consumed ||= 0
     self.calories_burned ||= 0
-    self.fat_intake ||= 0
-    self.carbohydrate_intake ||= 0
-    self.protein_intake ||= 0
-    self.calcium_intake ||= 0
-    self.iron_intake ||= 0
-    self.vitamin_a_intake ||= 0
-    self.vitamin_c_intake ||= 0
+    self.fat_intake ||= 0.0
+    self.carbohydrate_intake ||= 0.0
+    self.protein_intake ||= 0.0
+    self.calcium_intake ||= 0.0
+    self.iron_intake ||= 0.0
+    self.vitamin_a_intake ||= 0.0
+    self.vitamin_c_intake ||= 0.0
   end
 
   def update_nutrient_counts
