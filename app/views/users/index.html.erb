@@ -1,3 +1,78 @@
+<style>
+.user-index {
+	display:block;
+	width:650px;
+	border: 1px solid #bbb;
+	background-color: #ddd;
+	margin: 10px 0px;
+	padding: 5px;
+}
+
+.user-index:hover {
+	background-color: #eee;
+}
+
+.user-info {
+	float: left;
+	width: 499px;
+}
+
+.friend-buttons {
+	float: right;
+	width: 148px;
+}
+
+.user-info > .float-left {
+	float: left;
+	width: 120px;
+}
+
+.user-info > .float-right {
+	float: right;
+	width: 375px;
+}
+</style>
+
 <main class="group content">
   <h1>User Index Page</h1>
+  
+  <% @users.each do |user| %>
+  <section class="group user-index">
+	  
+	  <div class="group user-info">		 
+		<div class="group float-left">
+		  User picture
+		</div>
+	
+		<div class="group float-right">
+	  		<ul>
+				<li><%= user.username %></li>
+				<li><%= user.age %></li>
+				<li><%= user.city%>, <%= user.state %></li>
+	  	  	</ul>
+		</div>  
+	  </div>
+	  
+	  <div class="group friend-buttons">
+		<% if user.friends.include?(current_user) %>
+	  		<div id="remove-friend">
+	  			<input type="button" class="button" value="Remove friend">
+	  		</div>
+		
+		<% else %>
+			<% if current_user.friendships.map(&:user_id).include?(user.id) %>
+				<div id="pending-friend">
+					<input type="button" class="button" value="Request pending">
+				</div>
+			<% else %>
+				<div id="add-friend">
+				  	<input type="button" class="button" value="Add as friend">
+				</div>
+			<% end%>
+		
+		<% end %>	
+	  </div>
+	
+  </section>
+  <% end %>
 </main>

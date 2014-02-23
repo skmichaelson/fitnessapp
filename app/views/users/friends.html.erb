@@ -1,3 +1,23 @@
 <main class="group content">
-  Friend show page
+  
+  <% if @friends.empty? %>
+  No friends to display!
+  
+  <% else %>
+
+	  <% @friends.each do |friend| %>
+	  	<article class="group friend">
+			<div class="float-left">
+				Friend's picture
+			</div>
+		
+			<div class="float-right">
+				<%= friend.username %>
+			</div>
+		</article>
+	  <% end %>
+	 
+  <% end %>
+  
+  <%= link_to "Find friends", users_url %>
 </main>
