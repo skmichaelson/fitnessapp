@@ -37,6 +37,7 @@
   <h1>User Index Page</h1>
   
   <% @users.each do |user| %>
+  <% next if user.id == current_user.id %>
   <section class="group user-index">
 	  
 	  <div class="group user-info">		 
@@ -54,19 +55,20 @@
 	  </div>
 	  
 	  <div class="group friend-buttons">
+			
 		<% if user.friends.include?(current_user) %>
-	  		<div id="remove-friend">
-	  			<input type="button" class="button" value="Remove friend">
-	  		</div>
+	  		<div class="remove-friend">
+				Remove friend
+			</div>
 		
 		<% else %>
-			<% if current_user.friendships.map(&:user_id).include?(user.id) %>
-				<div id="pending-friend">
-					<input type="button" class="button" value="Request pending">
+			<% if current_user.friendships.map(&:friend_id).include?(user.id) %>
+				<div class="pending-friend">
+					Pending request
 				</div>
 			<% else %>
-				<div id="add-friend">
-				  	<input type="button" class="button" value="Add as friend">
+				<div class="add-friend">
+					<%= button_to "Add Friend", friendships_url(friend_id: user.id) %>
 				</div>
 			<% end%>
 		
