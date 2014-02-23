@@ -11,7 +11,7 @@ describe User do
       goal_wt: 130,
       height: 62,
       activity_level: 1,
-      birthday: 19850107
+      birthday: Date.new(1985, 1, 7)
       })
     }
 
@@ -39,7 +39,7 @@ describe User do
       goal_wt: 130,
       height: 62,
       activity_level: 1,
-      birthday: 19850107
+      birthday: Date.new(1985, 1, 7)
     })
 
     user2 = User.new({username: "randomuser",
@@ -50,7 +50,7 @@ describe User do
       goal_wt: 130,
       height: 62,
       activity_level: 1,
-      birthday: 19850107
+      birthday: Date.new(1985, 1, 7)
       })
 
     user3 = User.new({username: "user",
@@ -61,7 +61,7 @@ describe User do
       goal_wt: 130,
       height: 62,
       activity_level: 1,
-      birthday: 19850107
+      birthday: Date.new(1985, 1, 7)
       })
 
         expect(user2).not_to be_valid

@@ -62,13 +62,17 @@
 			</div>
 		
 		<% else %>
-			<% if current_user.friendships.map(&:friend_id).include?(user.id) %>
+			<% if user.pending_friends.include?(current_user) %>
+				<div class="requested-friend">
+					Cancel request
+				</div>
+			<% elsif current_user.pending_friends.include?(user) %>
 				<div class="pending-friend">
-					Pending request
+					Respond to request
 				</div>
 			<% else %>
 				<div class="add-friend">
-					<%= button_to "Add Friend", friendships_url(friend_id: user.id) %>
+					<%= button_to "Add friend", friend_requests_url(friend_id: user.id) %>
 				</div>
 			<% end%>
 		
