@@ -17,6 +17,7 @@ FitnessApp::Application.routes.draw do
     resources :foods, only: [:show, :index] do
       get "search", on: :collection
     end
+    resources :feed_items, only: [:create]
   end
 
   resources :meal_entries, only: [:create, :edit, :update]
