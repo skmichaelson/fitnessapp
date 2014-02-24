@@ -6,7 +6,9 @@ FitnessApp::Application.routes.draw do
     get "goals", on: :member
     get "friends", on: :member
   end
-  
+
+  resources :messages
+
   resources :friendships, only: [:create, :destroy]
   resources :friend_requests, only: [:create, :destroy]
 

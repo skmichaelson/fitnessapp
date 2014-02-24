@@ -1,0 +1,70 @@
+<style>
+.message {
+  background-color: #ddd;
+  border: 1px solid #bbb;
+	margin: 10px 0px;
+	padding: 5px;
+  display: block;
+}
+
+.message:hover {
+  background-color: #eee;
+}
+
+.sender-info {
+  float: left;
+  width: 160px;
+}
+
+.message-info {
+  float: right;
+  width: 460px;
+}
+
+.user-pic {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.user-link {
+  float: right;
+  width: 85px;
+  padding: 5px;
+  margin-top: 17px;
+}
+
+.subject-line {
+  margin-top: 12px;
+  padding: 10px;
+}
+</style>
+
+<main class="group content">
+  <h1>Your inbox</h1>
+  <% if @messages.empty? %>
+    No messages to display
+  <% else %>
+    <% @messages.each do |message| %>
+    <section class="group message">
+      <div class="group sender-info">
+        <div class="user-pic">
+          User picture
+        </div>
+
+        <div class="user-link">
+          <%= link_to "#{message.sender.username}", user_url(message.sender) %>
+        </div>
+      </div>
+
+      <div class="message-info">
+        <div class="subject-line">
+          <%= link_to "#{message.subject}", message_url(message) %>
+        </div>
+      </div>
+    </section>
+    <% end %>
+  <% end %>
+</main>

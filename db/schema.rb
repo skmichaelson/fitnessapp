@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140223162954) do
+ActiveRecord::Schema.define(:version => 20140224153236) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
@@ -125,6 +125,18 @@ ActiveRecord::Schema.define(:version => 20140223162954) do
 
   add_index "meal_entries", ["daily_entry_id"], :name => "index_meal_entries_on_daily_entry_id"
   add_index "meal_entries", ["meal_id"], :name => "index_meal_entries_on_meal_id"
+
+  create_table "messages", :force => true do |t|
+    t.integer  "recipient_id", :null => false
+    t.integer  "sender_id",    :null => false
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "messages", ["recipient_id"], :name => "index_messages_on_recipient_id"
+  add_index "messages", ["sender_id"], :name => "index_messages_on_sender_id"
 
   create_table "users", :force => true do |t|
     t.string   "username",        :null => false

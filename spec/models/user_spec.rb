@@ -75,6 +75,8 @@ describe User do
   describe "associations" do
     it { should have_one(:goal) }
     it { should have_many(:diaries) }
+    it { should have_many(:received_messages) }
+    it { should have_many(:sent_messages) }
   end
 
 end
