@@ -57,6 +57,7 @@ class UsersController < ApplicationController
 
   def friends
     @friends = User.includes(:friendships).find(params[:id]).friends
+    @user = User.includes(:pending_friends).find(current_user)
   end
 
 end

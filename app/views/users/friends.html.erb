@@ -1,22 +1,88 @@
+<style>
+.user-index {
+	display:block;
+	width:650px;
+	border: 1px solid #bbb;
+	background-color: #ddd;
+	margin: 10px 0px;
+	padding: 5px;
+}
+
+.user-index:hover {
+	background-color: #eee;
+}
+
+.user-info {
+	float: left;
+	width: 499px;
+}
+
+.friend-buttons {
+	float: right;
+	width: 148px;
+}
+
+.user-info > .float-left {
+	float: left;
+	width: 120px;
+}
+
+.user-info > .float-right {
+	float: right;
+	width: 375px;
+}
+</style>
+
 <main class="group content">
+  <% if @user == current_user && !@user.pending_friends.empty? %>
+  <h1>Pending requests</h1>
+  
+  	<% @user.pending_friends.each do |friend| %>
+	<section class="group user-index">
+	  <div class="group user-info">
+	  	<div class="group float-left">
+	  	  Friend's picture
+	 	</div>
+      
+	 	<div class="group float-right">
+  	   		<ul>
+	     	   <li><%= friend.username %></li>
+	     	  <li><%= friend.age %></li>
+	    	  <li><%= friend.city%>, <%= friend.state %></li>
+  	  	 	</ul>
+   		</div>
+	  </div>
+	  
+	  <div class="group friend-buttons">
+		  Respond to request
+	  </div>
+  	</section>
+	<% end %>
+  <% end %>
   
   <% if @friends.empty? %>
   No friends to display!
   
   <% else %>
-
-	  <% @friends.each do |friend| %>
-	  	<article class="group friend">
-			<div class="float-left">
-				Friend's picture
-			</div>
+  	<% @friends.each do |friend| %>
+  	  <section class="group user-index">
+	  
+	  	<div class="group user-info">		 
+		  <div class="group float-left">
+		  Friend picture
+		</div>
+	
+		  <div class="group float-right">
+	  		<ul>
+				<li><%= friend.username %></li>
+				<li><%= friend.age %></li>
+				<li><%= friend.city%>, <%= friend.state %></li>
+	  	  	</ul>
+		</div>  
+	  	</div>
 		
-			<div class="float-right">
-				<%= friend.username %>
-			</div>
-		</article>
-	  <% end %>
-	 
+  	  </section>
+  	<% end %>
   <% end %>
   
   <%= link_to "Find friends", users_url %>
