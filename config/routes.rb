@@ -1,10 +1,14 @@
 FitnessApp::Application.routes.draw do
   resources :users do
+    resources :friend_requests, only: [:index]
     resources :goals, only: [:create]
     get "diary", on: :member
     get "goals", on: :member
     get "friends", on: :member
   end
+  
+  resources :friendships, only: [:create, :destroy]
+  resources :friend_requests, only: [:create, :destroy]
 
   resources :daily_entries, only: [:edit, :update] do
     resources :meal_entries, only: [:create, :destroy]

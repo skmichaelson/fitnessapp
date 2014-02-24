@@ -1,0 +1,5 @@
+<div class="group friend-buttons">
+	<% req_id = current_user.friend_requests.where("friend_id = ?", friend.id).first%>
+	<%= button_to "Approve request", friendships_url(friend_id: friend.id)%>
+	<%= button_to "Deny request", friend_request_url(req_id), method: :delete %>
+</div>

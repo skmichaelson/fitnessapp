@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = current_user
+    @users = User.includes(:friends).includes(:friend_requests).includes(:pending_friends).all
   end
 
   def edit
@@ -56,7 +56,8 @@ class UsersController < ApplicationController
   end
 
   def friends
-    @friends = User.find(params[:id]).friends
+    @friends = User.includes(:friendships).find(params[:id]).friends
+    @user = User.includes(:pending_friends).find(current_user)
   end
 
 end
