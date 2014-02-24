@@ -63,17 +63,18 @@
 		
 		<% else %>
 			<% if user.pending_friends.include?(current_user) %>
-				<div class="requested-friend">
-					Cancel request
-				</div>
+			  <div class="requested-friend">
+				<% request = user.friend_requests.where("friend_id = ?", current_user.id).first %>
+				<%= button_to "Cancel request", friend_request_url(request), method: :delete %>
+			  </div>
 			<% elsif current_user.pending_friends.include?(user) %>
-				<div class="pending-friend">
-					Respond to request
-				</div>
+			  <div class="pending-friend">
+				Respond to request
+			  </div>
 			<% else %>
-				<div class="add-friend">
-					<%= button_to "Add friend", friend_requests_url(friend_id: user.id) %>
-				</div>
+			  <div class="add-friend">
+				<%= button_to "Add friend", friend_requests_url(friend_id: user.id) %>
+			  </div>
 			<% end%>
 		
 		<% end %>	
