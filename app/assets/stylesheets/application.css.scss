@@ -10,12 +10,19 @@
  *
  *= require_self
  */
-html, body, header, nav, h1, ul, li {
+
+html, body, header, nav, h1, ul, li, div {
   border: 0;
   margin: 0;
   padding: 0;
-  font: inherit;
+  font-family: sans-serif;
+  list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+}
+
 
 /* General Styling */
 
@@ -103,3 +110,5 @@ html, body, header, nav, h1, ul, li {
 }
 
 @import 'forms';
+@import 'diaries';
+@import 'page_top'
