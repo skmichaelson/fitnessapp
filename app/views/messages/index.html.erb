@@ -32,17 +32,30 @@
 .user-link {
   float: right;
   width: 85px;
-  padding: 5px;
-  margin-top: 17px;
+  padding: 22px 0px;
 }
 
 .subject-line {
-  margin-top: 12px;
-  padding: 10px;
+  padding: 22px 22px 22px 5px;
+  float: left;
+  width: 280px;
 }
+
+.delete-button {
+  width: 148px;
+  float: right;
+  padding: 22px 0px;
+}
+
+.button_to {
+	padding: 0px;
+	margin: 0px;
+}
+
 </style>
 
 <main class="group content">
+  <%= render 'shared/flashes' %>
   <h1>Your inbox</h1>
   <% if @messages.empty? %>
     No messages to display
@@ -62,6 +75,10 @@
       <div class="message-info">
         <div class="subject-line">
           <%= link_to "#{message.subject}", message_url(message) %>
+        </div>
+
+        <div class="delete-button">
+          <%= button_to "Delete", message_url(message), method: :delete %>
         </div>
       </div>
     </section>
