@@ -13,12 +13,12 @@
 
 .sender-info {
   float: left;
-  width: 160px;
+  width: 200px;
 }
 
 .message-info {
   float: right;
-  width: 460px;
+  width: 420px;
 }
 
 .user-pic {
@@ -31,18 +31,18 @@
 
 .user-link {
   float: right;
-  width: 85px;
+  width: 130px;
   padding: 22px 0px;
 }
 
 .subject-line {
   padding: 22px 22px 22px 5px;
   float: left;
-  width: 280px;
+  width: 270px;
 }
 
 .delete-button {
-  width: 148px;
+  width: 120px;
   float: right;
   padding: 22px 0px;
 }
@@ -50,6 +50,22 @@
 .button_to {
 	padding: 0px;
 	margin: 0px;
+}
+
+#new-message {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 10px auto;
+}
+
+#new-message input {
+  width: 550px;
+  padding: 5px 10px;
+}
+
+#message-body > input {
+  height: 100px;
+  vertical-align: baseline;
 }
 
 </style>
@@ -84,4 +100,47 @@
     </section>
     <% end %>
   <% end %>
+
+<style>
+#new-message > div {
+  padding: 10px 0px;
+}
+
+#new-message label {
+  padding: 5px 0px;
+}
+
+</style>
+
+  <h1>Send a message</h1>
+  <form id="new-message" class="group" action="<%= messages_url %>" method="post">
+    <%= form_auth %>
+    <div id="friend-dropdown">
+      <% if @friends[0] %>
+      <label for="friend">Select a friend</label>
+        <select name="message[recipient_id]" id="friend">
+          <% @friends.each do |friend| %>
+            <option value="<%= friend.id %>"><%= friend.username %></option>
+          <% end %>
+        </select>
+      <% end %>
+    </div>
+
+    <div id="subject-line">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name=message[subject]>
+    </div>
+
+    <div id="message-body">
+      <label for="message">Message</label>
+      <input type="textarea" id="message" name="message[body]">
+    </div>
+
+    <div>
+      <input type="submit"
+        class="button"
+        value="Send">
+    </div>
+
+  </form>
 </main>
