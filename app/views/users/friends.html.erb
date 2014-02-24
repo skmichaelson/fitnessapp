@@ -31,9 +31,15 @@
 	float: right;
 	width: 375px;
 }
+
+.button_to {
+	padding: 0px;
+	margin: 0px;
+}
 </style>
 
 <main class="group content">
+<%= render 'shared/flashes'%>
   <% if @user == current_user && !@user.pending_friends.empty? %>
   <h1>Pending requests</h1>
   
@@ -46,7 +52,7 @@
       
 	 	<div class="group float-right">
   	   		<ul>
-	     	   <li><%= friend.username %></li>
+	     	  <li><%= friend.username %></li>
 	     	  <li><%= friend.age %></li>
 	    	  <li><%= friend.city%>, <%= friend.state %></li>
   	  	 	</ul>
@@ -54,8 +60,11 @@
 	  </div>
 	  
 	  <div class="group friend-buttons">
-		  Respond to request
+	  	<% req_id = current_user.friend_requests.where("friend_id = ?", friend.id).first%>
+	  	<%= button_to "Approve request", friendships_url(friend: friend)%>
+	  	<%= button_to "Deny request", friend_request_url(req_id), method: :delete %>
 	  </div>
+	  
   	</section>
 	<% end %>
   <% end %>
@@ -64,13 +73,14 @@
   No friends to display!
   
   <% else %>
+  <h1>Friends</h1>
   	<% @friends.each do |friend| %>
   	  <section class="group user-index">
 	  
-	  	<div class="group user-info">		 
+	  	<div class="group user-info">
 		  <div class="group float-left">
 		  Friend picture
-		</div>
+		  </div>
 	
 		  <div class="group float-right">
 	  		<ul>
@@ -78,8 +88,13 @@
 				<li><%= friend.age %></li>
 				<li><%= friend.city%>, <%= friend.state %></li>
 	  	  	</ul>
-		</div>  
+		  </div>
 	  	</div>
+		
+		<div class="group friend-buttons">
+			<% friendship = current_user.friendships.where("friend_id = ?", friend.id).first %>
+			<%= button_to "Remove friend", friendship_url(friendship.id, friend: friend.id), method: :delete %>
+		</div>
 		
   	  </section>
   	<% end %>

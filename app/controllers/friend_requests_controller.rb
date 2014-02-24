@@ -5,7 +5,7 @@ class FriendRequestsController < ApplicationController
     friend_request = new_friend.friend_requests.new(friend_id: current_user.id)
     
     if friend_request.save
-      flash[:messages] = ["Request sent!"]
+      flash[:notices] = ["Request sent!"]
       redirect_to users_url
     else
       flash.now[:errors] = friend_request.errors.full_messages
@@ -17,6 +17,7 @@ class FriendRequestsController < ApplicationController
   def destroy
     request = FriendRequest.find(params[:id])
     request.destroy
-    redirect_to users_url
+    flash[:notices] = ["Request denied"]
+    redirect_to friends_user_url(current_user)
   end
 end

@@ -31,6 +31,11 @@
 	float: right;
 	width: 375px;
 }
+
+.button_to {
+	padding: 0px;
+	margin: 0px;
+}
 </style>
 
 <main class="group content">
@@ -58,7 +63,8 @@
 			
 		<% if user.friends.include?(current_user) %>
 	  		<div class="remove-friend">
-				Remove friend
+				<% friendship = current_user.friendships.where("friend_id = ?", user.id).first %>
+				<%= button_to "Remove friend", friendship_url(friendship.id, friend: user.id), method: :delete %>
 			</div>
 		
 		<% else %>
@@ -68,9 +74,7 @@
 				<%= button_to "Cancel request", friend_request_url(request), method: :delete %>
 			  </div>
 			<% elsif current_user.pending_friends.include?(user) %>
-			  <div class="pending-friend">
-				Respond to request
-			  </div>
+				<%= button_to "Respond to request", friends_user_url(current_user), method: :get %>
 			<% else %>
 			  <div class="add-friend">
 				<%= button_to "Add friend", friend_requests_url(friend_id: user.id) %>
