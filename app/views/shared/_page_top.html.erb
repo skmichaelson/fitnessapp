@@ -1,73 +1,14 @@
 <style>
 
-html, body, header, nav, h1, ul, li, div {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  list-style-type: none;
-}
-
-body {
-  font-family: sans-serif;
-}
-
 a {
   color: #00F;
   text-decoration: none;
-}
-
-.group:after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-#top-strip {
-  display: block;
-  background-color: white;
 }
 
 header a {
   color: #FFF;
 }
 
-#top-strip-content {
-  width: 650px;
-  margin: 0px auto;
-  height: 79px;
-}
-
-#logo {
-  margin: 0px auto;
-  float: left;
-}
-
-#user-links {
-  margin: 0px auto;
-  float: right;
-}
-
-#user-links > ul > li {
-  float: left;
-  display: block;
-}
-
-#user-links > ul > li > a {
-  padding: 30px 15px;
-  color: black;
-  display: block;
-}
-
-#message-num {
-  background: #333;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 2px 7px;
-  display: inline;
-}
 </style>
 
 <header>
@@ -142,7 +83,7 @@ header a {
     <section id="main-nav" class="group">
       <ul>
         <div class="group"><li><%= link_to "Home", root_url %></li></div>
-        <div class="group"><li><%= link_to "Food", foods_url %></li></div>
+        <div class="group"><li><%= link_to "Food", diary_user_url(current_user) %></li></div>
         <div class="group"><li>Exercise</li></div>
         <div class="group"><li>Reports</li></div>
       </ul>

@@ -22,6 +22,7 @@ class DailyEntry < ActiveRecord::Base
   belongs_to :diary
   has_many :meal_entries, dependent: :destroy
   has_many :foods, through: :meal_entries, source: :food
+  has_many :feed_items, as: :owner, dependent: :destroy
 
   private
 
