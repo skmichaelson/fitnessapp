@@ -12,11 +12,12 @@ FitnessApp::Application.routes.draw do
   resources :friendships, only: [:create, :destroy]
   resources :friend_requests, only: [:create, :destroy]
 
-  resources :daily_entries, only: [:edit, :update] do
+  resources :daily_entries, only: [:edit, :update, :show] do
     resources :meal_entries, only: [:create, :destroy]
     resources :foods, only: [:show, :index] do
       get "search", on: :collection
     end
+    get "search", on: :collection
   end
 
   resources :meal_entries, only: [:create, :edit, :update]

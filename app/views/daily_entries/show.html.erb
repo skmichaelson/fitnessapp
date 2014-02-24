@@ -70,8 +70,9 @@
 </style>
 
 <main class="group content" id="food-diary">
+  <% if @entry %>
   <header class="group">
-      Today's food diary
+      Food diary for <%= @date %>
   </header>
 
   <section id="diary-entry" class="group">
@@ -161,14 +162,8 @@
       </table>
     </div>
   </section>
+  <% else %>
+  No entry found on <%= @date %>
+  <% end %>
 
-  <section>
-    Find an archived entry
-    <form action="<%= search_daily_entries_url %>">
-      <%= form_auth %>
-      <label for="entry-date">Select a date</label>
-      <input id="entry-date" type="date", name="entry[date]">
-      <input type="submit" class="button" value="Search">
-    </form>
-  </section>
 </main>

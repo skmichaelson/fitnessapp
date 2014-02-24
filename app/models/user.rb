@@ -34,6 +34,7 @@ class User < ActiveRecord::Base
 
   has_one :goal, inverse_of: :user, dependent: :destroy
   has_many :diaries, dependent: :destroy
+  has_many :daily_entries, through: :diaries, source: :daily_entries
   has_many :friendships, dependent: :destroy
   has_many :friends, through: :friendships, source: :friend
   has_many :friend_requests, dependent: :destroy
