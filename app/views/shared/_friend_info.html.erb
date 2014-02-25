@@ -1,0 +1,13 @@
+<div class="group user-info">
+	<div class="group float-left">
+	  <%= image_tag friend.profile_picture.url(:thumb) %>
+  </div>
+
+  <div class="group float-right">
+    <ul>
+      <li><%= link_to "#{friend.username}", user_url(friend) %></li>
+      <li><%= friend.age %></li>
+      <li><%= friend.city%>, <%= friend.state %></li>
+    </ul>
+  </div>
+</div>
