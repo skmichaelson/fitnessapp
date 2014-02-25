@@ -1,0 +1,15 @@
+<section class="group message">
+  <div class="group sender-info">
+    <div class="user-pic">
+      <%= image_tag feed_item.user.profile_picture.url(:thumb) %>
+    </div>
+  </div>
+
+  <div class="group message-info">
+    <div class="float-left">
+      <div class="user-link">
+        <%= link_to "#{feed_item.user.username}", user_url(feed_item.user) %>
+        <%= feed_item.body %>
+      </div>
+    </div>
+</section>

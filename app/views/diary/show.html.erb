@@ -1,4 +1,6 @@
 <main class="group content" id="food-diary">
+  <%= render 'shared/errors' %>
+  <%= render 'shared/flashes' %>
   <header class="group">
       Today's food diary
   </header>
@@ -8,7 +10,7 @@
       <% if @diary.try("meal#{num}".to_sym) %>
         <h2><%= @diary.send("meal#{num}".to_sym) %></h2>
 
-        <%= render 'diary/single_meal', meal_entries: @meal_entries %>
+        <%= render 'diary/single_meal', meal_entries: @meal_entries, num: num %>
 
         <% if @user == current_user %>
           <li><%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %></li>
@@ -28,8 +30,10 @@
     <%= render 'diary/archived_entry_form' %>
   </section>
 
-  <section>
-    <% body = "completed a food journal for #{@entry.entry_date}" %>
-  </section>
+  <% if @user == current_user %>
+    <section>
+      <%= button_to "Complete this entry", complete_daily_entry_url(@entry) %>
+    </section>
+  <% end %>
 
 </main>

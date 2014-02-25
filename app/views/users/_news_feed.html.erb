@@ -1,5 +1,96 @@
+<style>
+.message {
+  background-color: #ddd;
+  margin: 10px 0px;
+	padding: 5px;
+  display: block;
+}
+
+.message:hover {
+  background-color: #eee;
+}
+
+.sender-info {
+  float: left;
+}
+
+.message-info {
+  float: right;
+  width: 540px;
+}
+
+.message-info .float-left {
+  float: left;
+  width: 400px;
+}
+
+.message-info .float-right {
+  float: right;
+  border: 1px solid black;
+  margin: 10px 5px 0px 5px;
+}
+
+.user-pic {
+  display: block;
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+}
+
+.user-link {
+  display: block;
+  padding: 5px 0px 5px 5px;
+}
+
+.subject-line {
+  display: block;
+  padding: 5px 0px 5px 5px;
+}
+
+.delete-button {
+  width: 125px;
+  float: right;
+  padding: 22px 0px;
+}
+
+.button_to {
+	padding: 0px;
+	margin: 0px;
+}
+
+#new-message {
+  background-color: #ddd;
+  padding: 10px auto;
+}
+
+#new-message input {
+  width: 550px;
+  padding: 5px 10px;
+}
+
+#message-body > input {
+  height: 100px;
+  vertical-align: baseline;
+}
+
+#new-message > div {
+  padding: 10px 0px;
+}
+
+#new-message label {
+  padding: 5px 0px;
+}
+
+</style>
+
 <article class="group full">
   <header>
     <h1>News Feed</h1>
   </header>
+
+  <div id="news-feed">
+    <% feed_items.each do |feed_item| %>
+      <%= render 'feed_items/feed_item', feed_item: feed_item %>
+    <% end %>
+  </div>
 </article>

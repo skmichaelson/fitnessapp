@@ -13,4 +13,19 @@ class DailyEntriesController < ApplicationController
     end
     render :show
   end
+
+  def complete
+    @feed_item = current_user.feed_items.new
+    @feed_item.feed_update_id = params[:id]
+    @feed_item.feed_update_type = "DailyEntry"
+    @feed_item.body = "completed a food diary for #{Date.today}"
+
+    if @feed_item.save
+      flash[:notices] = ["Entry marked as complete!"]
+    else
+      flash[:errors] = @feed_item.errors.full_messages
+    end
+
+    redirect_to diary_user_url(current_user)
+  end
 end

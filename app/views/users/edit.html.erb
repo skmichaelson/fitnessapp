@@ -2,7 +2,7 @@
 
   <%= render 'shared/flashes' %>
 
-  <form action="<%= user_url(current_user) %>" method="post">
+  <form action="<%= user_url(current_user) %>" method="post" enctype="multipart/form-data">
     <h1>Update your profile</h1>
 
     <%= form_auth %>

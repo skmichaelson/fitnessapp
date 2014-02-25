@@ -7,28 +7,27 @@ FitnessApp::Application.routes.draw do
     get "friends", on: :member
   end
 
-  resources :messages, only: [:create, :destroy, :show, :index]
-
-  resources :friendships, only: [:create, :destroy]
-  resources :friend_requests, only: [:create, :destroy]
-
   resources :daily_entries, only: [:edit, :update, :show] do
     resources :meal_entries, only: [:create, :destroy]
     resources :foods, only: [:show, :index] do
       get "search", on: :collection
     end
     get "search", on: :collection
+    post "complete", on: :member
   end
-
-  resources :meal_entries, only: [:create, :edit, :update]
-  resources :diaries, only: [:edit, :update]
-
 
   resources :foods, only: [:new, :show, :create, :index] do
     get "search", on: :collection
   end
 
+  resources :meal_entries, only: [:create, :edit, :update]
+  resources :diaries, only: [:edit, :update]
+  resources :messages, only: [:create, :destroy, :show, :index]
+  resources :friendships, only: [:create, :destroy]
+  resources :friend_requests, only: [:create, :destroy]
   resources :goals, only: [:new, :edit, :destroy, :show]
+  resources :feed_items, only: [:create, :destroy]
   resource :session, only: [:new, :create, :destroy]
+
   root to: 'users#home'
 end
