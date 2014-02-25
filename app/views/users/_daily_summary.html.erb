@@ -1,0 +1,44 @@
+<article class="group full">
+  <header>
+    <h1>Daily Summary</h1>
+  </header>
+
+  <div id="user-info" class="group">
+    <div id="user-picture">
+      User picture!
+    </div>
+
+    <div id="pounds-lost">
+      Pounds lost!
+    </div>
+  </div>
+
+  <div id="food-info" class="group">
+    <div id="calorie-box" class="group">
+      <div id="calories">
+        <%= @calories_remaining %>
+      </div>
+
+      <div id="calorie-caption">
+        calories remaining
+      </div>
+
+      <div id="calorie-breakdown" class="group">
+        <ul>
+          <li><%= @goal.calorie_goal %></li>
+          <li> - </li>
+          <li><%= @daily_entry ? @daily_entry.calories_consumed : 0 %></li>
+          <li> + </li>
+          <li><%= @daily_entry ? @daily_entry.calories_burned : 0 %></li>
+          <li> = </li>
+          <li><%= @calories_remaining %></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="buttons">
+      <%= button_to "Add Food", diary_user_url(current_user), method: :get %>
+    </div>
+  </div>
+
+</article>
