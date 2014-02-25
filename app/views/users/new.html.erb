@@ -1,6 +1,6 @@
 <main class="group content">
 
-<form action="<%= users_url %>" method="post">
+<form action="<%= users_url %>" method="post" enctype="multipart/form-data">
   <h1>Create your free account!</h1>
 
   <%= form_auth %>
@@ -19,6 +19,12 @@
     <input type="radio" name="user[gender]" value="F" id="female">
     <label class="radio" for="female">Female</label>
 
+    <br>
+    <br>
+    <%= render 'shared/upload_picture' %>
+
+    <br>
+    <br>
   <input class="button" type="submit" value="Continue &rarr;">
 </form>
 

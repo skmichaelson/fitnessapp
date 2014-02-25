@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140224192731) do
+ActiveRecord::Schema.define(:version => 20140225144203) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
@@ -147,24 +147,28 @@ ActiveRecord::Schema.define(:version => 20140224192731) do
   add_index "messages", ["sender_id"], :name => "index_messages_on_sender_id"
 
   create_table "users", :force => true do |t|
-    t.string   "username",        :null => false
-    t.string   "email",           :null => false
-    t.string   "password_digest", :null => false
-    t.string   "gender",          :null => false
-    t.string   "session_token",   :null => false
+    t.string   "username",                     :null => false
+    t.string   "email",                        :null => false
+    t.string   "password_digest",              :null => false
+    t.string   "gender",                       :null => false
+    t.string   "session_token",                :null => false
     t.text     "about_me"
     t.text     "my_inspiration"
-    t.integer  "current_wt",      :null => false
-    t.integer  "goal_wt",         :null => false
-    t.integer  "height",          :null => false
-    t.integer  "activity_level",  :null => false
-    t.date     "birthday",        :null => false
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.integer  "current_wt",                   :null => false
+    t.integer  "goal_wt",                      :null => false
+    t.integer  "height",                       :null => false
+    t.integer  "activity_level",               :null => false
+    t.date     "birthday",                     :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
     t.string   "city"
     t.string   "state"
     t.integer  "zipcode"
     t.integer  "age"
+    t.string   "profile_picture_file_name"
+    t.string   "profile_picture_content_type"
+    t.integer  "profile_picture_file_size"
+    t.datetime "profile_picture_updated_at"
   end
 
 end

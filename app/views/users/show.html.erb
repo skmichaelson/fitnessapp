@@ -2,10 +2,15 @@
 
   #profile-top {
     margin: 20px auto;
+    border: 1px solid black;
   }
 
-  #profile-top > div {
-    width: 200px;
+  #profile-top div {
+    margin-right: 20px;
+  }
+
+  #profile-pic {
+    border: 3px solid black;
   }
 </style>
 
@@ -14,8 +19,8 @@
 <h1><%= @user.username %>'s Profile</h1>
 
 <article class="group" id="profile-top">
-  <div class="floatLeft">
-    User photo here
+  <div class="floatLeft" id="profile-pic">
+    <%= image_tag @user.profile_picture.url(:thumb) %>
   </div>
 
   <div class="floatLeft">

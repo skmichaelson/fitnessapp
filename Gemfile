@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.15'
 gem 'pg'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -36,3 +35,5 @@ gem 'bcrypt-ruby', require: 'bcrypt'
 gem 'backbone-on-rails'
 gem 'ejs'
 gem 'paperclip', '~> 3.5.3'
+gem 'figaro'
+gem 'aws-sdk'

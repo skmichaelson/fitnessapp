@@ -5,7 +5,7 @@
 
   <div id="user-info" class="group">
     <div id="user-picture">
-      User picture!
+      <%= image_tag current_user.profile_picture.url(:thumb) %>
     </div>
 
     <div id="pounds-lost">
