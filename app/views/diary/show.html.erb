@@ -86,7 +86,6 @@
     </form>
   </section>
     <% body = "completed a food journal for #{@entry.entry_date}" %>
-    <%= button_to "Publish this entry!", daily_entry_feed_items_url(@entry.id, owner_type: "DailyEntry", body: body) %>
   </section>
 
 </main>

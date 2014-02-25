@@ -1,0 +1,29 @@
+<h1>Send a message</h1>
+<form id="new-message" class="group" action="<%= messages_url %>" method="post">
+  <%= form_auth %>
+  <div id="friend-dropdown">
+    <label for="friend">Select a friend</label>
+    <select name="message[recipient_id]" id="friend">
+      <% friends.each do |friend| %>
+        <option value="<%= friend.id %>"><%= friend.username %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <div id="subject-line">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name=message[subject]>
+  </div>
+
+  <div id="message-body">
+    <label for="message">Message</label>
+    <input type="textarea" id="message" name="message[body]">
+  </div>
+
+  <div>
+    <input type="submit"
+      class="button"
+      value="Send">
+  </div>
+
+</form>

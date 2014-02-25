@@ -59,7 +59,6 @@
 }
 
 #new-message {
-  border: 1px solid black;
   background-color: #ddd;
   padding: 10px auto;
 }
@@ -87,42 +86,14 @@
 <main class="group content">
   <%= render 'shared/flashes' %>
   <h1>Your inbox</h1>
+
   <% if @messages.empty? %>
     No messages to display
   <% else %>
     <%= render 'messages', messages: @messages %>
   <% end %>
 
-
-  <h1>Send a message</h1>
-  <form id="new-message" class="group" action="<%= messages_url %>" method="post">
-    <%= form_auth %>
-    <div id="friend-dropdown">
-      <% if @friends[0] %>
-      <label for="friend">Select a friend</label>
-        <select name="message[recipient_id]" id="friend">
-          <% @friends.each do |friend| %>
-            <option value="<%= friend.id %>"><%= friend.username %></option>
-          <% end %>
-        </select>
-      <% end %>
-    </div>
-
-    <div id="subject-line">
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name=message[subject]>
-    </div>
-
-    <div id="message-body">
-      <label for="message">Message</label>
-      <input type="textarea" id="message" name="message[body]">
-    </div>
-
-    <div>
-      <input type="submit"
-        class="button"
-        value="Send">
-    </div>
-
-  </form>
+  <% if @friends[0] %>
+    <%= render 'new_message', friends: @friends %>
+  <% end %>
 </main>
