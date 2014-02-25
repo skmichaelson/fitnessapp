@@ -1,0 +1,23 @@
+<% meal_entries.each do |entry| %>
+  <% if entry.meal_id == num %>
+    <% nutrients = calculate_by_quantity(entry.food, entry.quantity) %>
+    <div class="group meal">
+      <section class="food-name">
+        <%= entry.food.name.capitalize %>
+      </section>
+
+      <section class="nutrient-table">
+        <table>
+          <tbody>
+            <tr>
+              <td><%= nutrients["calories"].round %></td>
+              <td><%= nutrients["fat"].round %></td>
+              <td><%= nutrients["carbohydrates"].round %></td>
+              <td><%= nutrients["protein"].round %></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  <% end %>
+<% end %>

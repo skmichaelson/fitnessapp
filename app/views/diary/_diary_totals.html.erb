@@ -1,0 +1,33 @@
+<div class="group" id="diary-totals">
+  <table>
+    <tfoot>
+      <th>Calories</th>
+      <th>Fat</th>
+      <th>Carbs</th>
+      <th>Protein</th>
+    </tfoot>
+
+    <tr>
+      <td><%= entry.calories_consumed.round %></td>
+      <td><%= entry.fat_intake.round %></td>
+      <td><%= entry.carbohydrate_intake.round %></td>
+      <td><%= entry.protein_intake.round %></td>
+    </tr>
+
+    <% if user.goal %>
+    <tr>
+      <td><%= user.goal.calorie_goal %></td>
+      <td><%= %></td>
+      <td><%= %></td>
+      <td><%= %></td>
+    </tr>
+
+    <tr>
+      <td><%= user.goal.calorie_goal - entry.calories_consumed %></td>
+      <td><%= %></td>
+      <td><%= %></td>
+      <td><%= %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
