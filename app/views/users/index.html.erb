@@ -40,50 +40,15 @@
 
 <main class="group content">
   <h1>User Index Page</h1>
-  
+
   <% @users.each do |user| %>
-  <% next if user.id == current_user.id %>
-  <section class="group user-index">
-	  
-	  <div class="group user-info">		 
-		<div class="group float-left">
-		  User picture
-		</div>
-	
-		<div class="group float-right">
-	  		<ul>
-				<li><%= user.username %></li>
-				<li><%= user.age %></li>
-				<li><%= user.city%>, <%= user.state %></li>
-	  	  	</ul>
-		</div>  
-	  </div>
-	  
-	  <div class="group friend-buttons">
-			
-		<% if user.friends.include?(current_user) %>
-	  		<div class="remove-friend">
-				<% friendship = current_user.friendships.where("friend_id = ?", user.id).first %>
-				<%= button_to "Remove friend", friendship_url(friendship.id, friend: user.id), method: :delete %>
-			</div>
-		
-		<% else %>
-			<% if user.pending_friends.include?(current_user) %>
-			  <div class="requested-friend">
-				<% request = user.friend_requests.where("friend_id = ?", current_user.id).first %>
-				<%= button_to "Cancel request", friend_request_url(request), method: :delete %>
-			  </div>
-			<% elsif current_user.pending_friends.include?(user) %>
-				<%= button_to "Respond to request", friends_user_url(current_user), method: :get %>
-			<% else %>
-			  <div class="add-friend">
-				<%= button_to "Add friend", friend_requests_url(friend_id: user.id) %>
-			  </div>
-			<% end%>
-		
-		<% end %>	
-	  </div>
-	
+    <% next if user.id == current_user.id %>
+    <section class="group user-index">
+
+      <%= render 'shared/friend_info', friend: user %>
+
+      <%= render 'shared/friend_buttons', user: user %>
+
   </section>
   <% end %>
 </main>

@@ -1,0 +1,24 @@
+<div class="group friend-buttons">
+  <% if user.friends.include?(current_user) %>
+    <div class="remove-friend">
+      <% friendship = current_user.friendships.where("friend_id = ?", user.id).first %>
+      <%= button_to "Remove friend", friendship_url(friendship.id, friend: user.id), method: :delete %>
+    </div>
+
+  <% else %>
+
+    <% if user.pending_friends.include?(current_user) %>
+      <div class="requested-friend">
+        <% request = user.friend_requests.where("friend_id = ?", current_user.id).first %>
+        <%= button_to "Cancel request", friend_request_url(request), method: :delete %>
+      </div>
+    <% elsif current_user.pending_friends.include?(user) %>
+      <%= button_to "Respond to request", friends_user_url(current_user), method: :get %>
+    <% else %>
+      <div class="add-friend">
+        <%= button_to "Add friend", friend_requests_url(friend_id: user.id) %>
+      </div>
+    <% end%>
+
+  <% end %>
+</div>
