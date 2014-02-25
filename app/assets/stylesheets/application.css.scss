@@ -107,6 +107,22 @@ a {
   border: 1px solid black;
 }
 
+/* Flashes */
+
+#flash-errors {
+  border: 1px solid red;
+  background-color: #fCC;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#flash-notices {
+  border: 1px solid green;
+  padding: 5px;
+  margin-top: 20px;
+  background-color: #cfc;
+}
+
 @import 'forms';
 @import 'diaries';
 @import 'page_top';

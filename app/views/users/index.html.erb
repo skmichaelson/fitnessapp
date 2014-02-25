@@ -39,7 +39,12 @@
 </style>
 
 <main class="group content">
-  <%= render 'shared/flashes' %>
+
+  <% if flash[:errors] %>
+    <%= render 'shared/errors' %>
+  <% elsif flash[:notices] %>
+    <%= render 'shared/flashes' %>
+  <% end %>
 
   <h1>User Index Page</h1>
 

@@ -61,7 +61,13 @@
 </style>
 
 <main class="group content">
-  <%= render 'shared/flashes' %>
+
+  <% if flash[:errors] %>
+    <%= render 'shared/errors' %>
+  <% elsif flash[:notices] %>
+    <%= render 'shared/flashes' %>
+  <% end %>
+
   <h1>Your inbox</h1>
 
   <% if @messages.empty? %>

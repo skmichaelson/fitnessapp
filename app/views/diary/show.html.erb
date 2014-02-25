@@ -1,6 +1,9 @@
 <main class="group content" id="food-diary">
-  <%= render 'shared/errors' %>
-  <%= render 'shared/flashes' %>
+  <% if flash[:errors] %>
+    <%= render 'shared/errors' %>
+  <% elsif flash[:notices] %>
+    <%= render 'shared/flashes' %>
+  <% end %>
 
   <header class="group">
       <h1>Today's food diary</h1>

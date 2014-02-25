@@ -5,7 +5,11 @@
 
   <%= form_auth %>
 
-  <%= render 'shared/errors' %>
+  <% if flash[:errors] %>
+    <%= render 'shared/errors' %>
+  <% elsif flash[:notices] %>
+    <%= render 'shared/flashes' %>
+  <% end %>
 
   <%= render 'shared/basic_info' %>
 
