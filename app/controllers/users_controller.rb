@@ -60,4 +60,10 @@ class UsersController < ApplicationController
     @user = User.includes(:pending_friends).find(current_user)
   end
 
+  def home
+    @daily_entry = current_user.daily_entries.where("entry_date = ?", Date.today).first
+    @goal = current_user.goal
+    @calories_remaining = (@daily_entry && @goal) ? @goal.calorie_goal - @daily_entry.calories_consumed : @goal.calorie_goal
+  end
+
 end

@@ -83,7 +83,8 @@ header a {
     <section id="main-nav" class="group">
       <ul>
         <div class="group"><li><%= link_to "Home", root_url %></li></div>
-        <div class="group"><li><%= link_to "Food", diary_user_url(current_user) %></li></div>
+        <% food_link = current_user ? diary_user_url(current_user) : foods_url %>
+        <div class="group"><li><%= link_to "Food", food_link %></li></div>
         <div class="group"><li>Exercise</li></div>
         <div class="group"><li>Reports</li></div>
       </ul>

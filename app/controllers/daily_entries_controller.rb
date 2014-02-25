@@ -8,7 +8,9 @@ class DailyEntriesController < ApplicationController
     @entry = current_user.daily_entries.includes(:meal_entries).where("entry_date = ?", params[:entry][:date]).first
     @user = current_user
     @diary = current_user.diaries.first
-    @meal_entries = @entry.meal_entries
+    if @entry
+      @meal_entries = @entry.meal_entries
+    end
     render :show
   end
 end
