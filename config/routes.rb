@@ -5,6 +5,7 @@ FitnessApp::Application.routes.draw do
     get "diary", on: :member
     get "goals", on: :member
     get "friends", on: :member
+    resources :check_ins, only: [:new]
   end
 
   resources :daily_entries, only: [:edit, :update, :show] do
@@ -27,6 +28,7 @@ FitnessApp::Application.routes.draw do
   resources :friend_requests, only: [:create, :destroy]
   resources :goals, only: [:new, :edit, :destroy, :show]
   resources :feed_items, only: [:create, :destroy]
+  resources :check_ins, only: [:create]
   resource :session, only: [:new, :create, :destroy]
 
   root to: 'users#home'

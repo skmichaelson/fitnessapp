@@ -27,7 +27,6 @@ describe User do
     invalid_user = User.create
     e = invalid_user.errors.messages
     expect(e[:username]).to include("Please choose a username")
-    expect(e[:current_wt]).to include("Please enter your current weight")
   end
 
   it "checks for uniqueness on username and email" do
