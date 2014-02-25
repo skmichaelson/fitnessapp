@@ -1,3 +1,32 @@
+<style>
+
+#new-message {
+  background-color: #ddd;
+  padding: 10px auto;
+}
+
+#new-message input {
+  width: 550px;
+  padding: 5px 10px;
+}
+
+#message-body textarea {
+  height: 100px;
+  width: 550px;
+  padding: 5px 10px;
+  vertical-align: baseline;
+}
+
+#new-message > div {
+  padding: 10px 0px;
+}
+
+#new-message label {
+  padding: 5px 0px;
+}
+
+</style>
+
 <h1>Send a message</h1>
 <form id="new-message" class="group" action="<%= messages_url %>" method="post">
   <%= form_auth %>
@@ -17,7 +46,7 @@
 
   <div id="message-body">
     <label for="message">Message</label>
-    <input type="textarea" id="message" name="message[body]">
+    <textarea id="message" name="message[body]"></textarea>
   </div>
 
   <div>

@@ -21,9 +21,8 @@
 
 #food-info {
   float: right;
-  width: 525px;
-  border: 1px solid black;
-  margin: 10px 20px 10px 0px;
+  width: 510px;
+  margin: 13px 25px 0px 0px;
 }
 
 .full header {
@@ -59,19 +58,35 @@
   display: inline;
 }
 
+#user-daily-summary {
+  padding-top: 20px;
+}
+
+#user-news-feed {
+  padding-top: 10px;
+}
+
 </style>
 
 <main class="group content">
+  <% if current_user %>
+    <header>
+      <h1>Welcome back, <%= current_user.username %>!</h1>
+    </header>
+  <% end %>
+
 <%= render 'shared/flashes' %>
 
 
 <% if current_user %>
 
-  <%= render 'daily_summary' %>
+  <div id="user-daily-summary">
+    <%= render 'daily_summary' %>
+  </div>
 
-  <%= render 'news_feed', friends: @friends, feed_items: @feed_items %>
-
-  <%= render 'shared/goal_button' %>
+  <div id="user-news-feed">
+    <%= render 'news_feed', friends: @friends, feed_items: @feed_items %>
+  </div>
 
 <% else %>
   Sign in or create a new account!
