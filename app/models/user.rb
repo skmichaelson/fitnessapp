@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   attr_accessible :username,
                   :password,
                   :email,
+                  :starting_wt,
                   :current_wt,
                   :goal_wt,
                   :height,
@@ -21,6 +22,7 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   before_validation :ensure_session_token
+  before_save :set_current_weight
   after_create :calculate_user_age
   after_create :create_food_diary
 
@@ -30,7 +32,7 @@ class User < ActiveRecord::Base
   validates :session_token, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
   validates :gender, presence: true, inclusion: { in: %w(M F), message: nil }
-  validates :current_wt, presence: { message: "Please enter your current weight" }
+  validates :starting_wt, presence: { message: "Please enter your current weight" }
   validates :goal_wt, :height, :activity_level, :birthday, presence: true
 
   has_one :goal, inverse_of: :user, dependent: :destroy
@@ -89,5 +91,9 @@ class User < ActiveRecord::Base
 
   def calculate_user_age
     set_user_age(self)
+  end
+
+  def set_current_weight
+    self.current_wt ||= self.starting_wt
   end
 end
