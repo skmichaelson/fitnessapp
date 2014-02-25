@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140225144203) do
+ActiveRecord::Schema.define(:version => 20140225185122) do
 
   create_table "daily_entries", :force => true do |t|
     t.date     "entry_date"
@@ -47,12 +47,15 @@ ActiveRecord::Schema.define(:version => 20140225144203) do
   add_index "diaries", ["user_id"], :name => "index_diaries_on_user_id"
 
   create_table "feed_items", :force => true do |t|
-    t.string   "body"
-    t.integer  "owner_id"
-    t.string   "owner_type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.text     "body"
+    t.integer  "user_id",          :null => false
+    t.integer  "feed_update_id"
+    t.string   "feed_update_type"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
+
+  add_index "feed_items", ["user_id"], :name => "index_feed_items_on_user_id"
 
   create_table "foods", :force => true do |t|
     t.string   "name",                              :null => false
