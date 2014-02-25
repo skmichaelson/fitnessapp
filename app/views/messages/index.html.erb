@@ -1,8 +1,7 @@
 <style>
 .message {
   background-color: #ddd;
-  border: 1px solid #bbb;
-	margin: 10px 0px;
+  margin: 10px 0px;
 	padding: 5px;
   display: block;
 }
@@ -13,36 +12,43 @@
 
 .sender-info {
   float: left;
-  width: 200px;
 }
 
 .message-info {
   float: right;
-  width: 420px;
+  width: 540px;
+}
+
+.message-info .float-left {
+  float: left;
+  width: 400px;
+}
+
+.message-info .float-right {
+  float: right;
+  border: 1px solid black;
+  margin: 10px 5px 0px 5px;
 }
 
 .user-pic {
-  float: left;
-  width: 50px;
-  height: 50px;
+  display: block;
+  width: 75px;
+  height: 75px;
   padding: 5px;
-  border: 2px solid black;
 }
 
 .user-link {
-  float: right;
-  width: 130px;
-  padding: 22px 0px;
+  display: block;
+  padding: 5px 0px 5px 5px;
 }
 
 .subject-line {
-  padding: 22px 22px 22px 5px;
-  float: left;
-  width: 270px;
+  display: block;
+  padding: 5px 0px 5px 5px;
 }
 
 .delete-button {
-  width: 120px;
+  width: 125px;
   float: right;
   padding: 22px 0px;
 }
@@ -68,40 +74,6 @@
   vertical-align: baseline;
 }
 
-</style>
-
-<main class="group content">
-  <%= render 'shared/flashes' %>
-  <h1>Your inbox</h1>
-  <% if @messages.empty? %>
-    No messages to display
-  <% else %>
-    <% @messages.each do |message| %>
-    <section class="group message">
-      <div class="group sender-info">
-        <div class="user-pic">
-          User picture
-        </div>
-
-        <div class="user-link">
-          <%= link_to "#{message.sender.username}", user_url(message.sender) %>
-        </div>
-      </div>
-
-      <div class="message-info">
-        <div class="subject-line">
-          <%= link_to "#{message.subject}", message_url(message) %>
-        </div>
-
-        <div class="delete-button">
-          <%= button_to "Delete", message_url(message), method: :delete %>
-        </div>
-      </div>
-    </section>
-    <% end %>
-  <% end %>
-
-<style>
 #new-message > div {
   padding: 10px 0px;
 }
@@ -111,6 +83,16 @@
 }
 
 </style>
+
+<main class="group content">
+  <%= render 'shared/flashes' %>
+  <h1>Your inbox</h1>
+  <% if @messages.empty? %>
+    No messages to display
+  <% else %>
+    <%= render 'messages', messages: @messages %>
+  <% end %>
+
 
   <h1>Send a message</h1>
   <form id="new-message" class="group" action="<%= messages_url %>" method="post">

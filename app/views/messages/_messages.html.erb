@@ -1,0 +1,29 @@
+<% messages.each do |message| %>
+<section class="group message">
+  <div class="group sender-info">
+    <div class="user-pic">
+      <%= image_tag message.sender.profile_picture.url(:thumb) %>
+    </div>
+
+  </div>
+
+  <div class="group message-info">
+    <div class="float-left">
+      <div class="user-link">
+        From: <%= link_to "#{message.sender.username}", user_url(message.sender) %>
+      </div>
+
+      <div class="subject-line">
+        Subject: <%= link_to "#{message.subject}", message_url(message) %>
+      </div>
+    </div>
+
+    <div class="float-right">
+      <div class="delete-button">
+        <%= button_to "Delete", message_url(message), method: :delete %>
+      </div>
+    </div>
+
+  </div>
+</section>
+<% end %>
