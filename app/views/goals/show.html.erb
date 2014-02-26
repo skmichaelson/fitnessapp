@@ -12,7 +12,6 @@
 
   .half-left > section {
     margin: 10px 0px;
-    border: 1px solid black;
   }
 
   .half-right {
@@ -25,95 +24,48 @@
     border: 1px solid black;
   }
 
-  .tblHead {
-    display: block;
-  }
-
   .full-width {
     display: block;
   }
 
+  .fitness-goals {
+    width: 315px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+  }
+
+  .fitness-goals thead {
+    text-align: left;
+    background-color: navy;
+    color: white;
+  }
+
+  .fitness-goals th {
+    padding: 5px;
+  }
+
+  .fitness-goals td {
+    padding: 5px;
+  }
+
+  .fitness-goals .first {
+    float: left;
+  }
+
+  .fitness-goals .second {
+    float: right;
+  }
+
   </style>
+
   <% if @goal %>
 
   <div class="group full-width">
-
     <div class="group half-left">
-
       <section>
-        <ul class="group tblHead">
-          <li class="floatLeft">Nutrition Goals</li>
-          <li class="floatRight">Goals</li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Net calories per day</li>
-          <li class="floatRight"><%= @goal.calorie_goal %></li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Carbohydrates</li>
-          <li class="floatRight"><%= @carbs %> g</li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Protein</li>
-          <li class="floatRight"><%= @protein %> g</li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Fat</li>
-          <li class="floatRight"><%= @fat %> g</li>
-        </ul>
-      </section>
-
-      <section>
-        <ul class="group tblHead">
-          <li class="floatLeft">Fitness Goals</li>
-          <li class="floatRight">Goals</li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Calories burned per week</li>
-          <li class="floatRight"></li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Workouts per week</li>
-          <li class="floatRight"</li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Minutes per workout</li>
-          <li class="floatRight"></li>
-        </ul>
+        <%= render 'fitness_goals', goal: @goal, carbs: @carbs, protein: @protein, fat: @fat %>
       </section>
     </div>
-
-    <div class="group half-right">
-      <section>
-        <ul class="group tblHead">
-          <li class="floatLeft">Your Diet Profile</li>
-          <li class="floatRight">Target</li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Calories Burned</li>
-          <li class="floatRight"></li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Net Calories Consumed</li>
-          <li class="floatRight"></li>
-        </ul>
-
-        <ul class="group">
-          <li class="floatLeft">Calorie Deficit</li>
-          <li class="floatRight"></li>
-        </ul>
-      </section>
-    </div>
-
   </div>
   <!-- <% @goal.attributes.each do |attr| %>
     <li><%= attr[0].gsub("_", " ").capitalize %>: <%= attr[1]%></li>

@@ -9,7 +9,11 @@
     </div>
 
     <div id="pounds-lost">
-      Pounds lost!
+      <% if current_user.current_wt < current_user.starting_wt %>
+        <%= current_user.starting_wt - current_user.current_wt %> pounds lost!
+      <% else %>
+        0 pounds lost
+      <% end %>
     </div>
   </div>
 
@@ -24,24 +28,15 @@
       </div>
 
       <div id="calorie-breakdown" class="group">
-        <ul>
-          <li><%= @goal.calorie_goal %></li>
-          <li> - </li>
-          <li><%= @daily_entry ? @daily_entry.calories_consumed : 0 %></li>
-          <li> + </li>
-          <li><%= @daily_entry ? @daily_entry.calories_burned : 0 %></li>
-          <li> = </li>
-          <li><%= @calories_remaining %></li>
-        </ul>
+        <%= @daily_entry ? @daily_entry.calories_consumed : 0 %>
+        calories consumed
       </div>
     </div>
 
     <div id="buttons">
       <%= button_to "Add Food", diary_user_url(current_user), method: :get %>
+      <%= render 'shared/goal_button' %>
     </div>
   </div>
 
-  <div id="update-goal-button">
-    <%= render 'shared/goal_button' %>
-  </div>
 </article>
