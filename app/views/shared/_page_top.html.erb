@@ -86,7 +86,8 @@ header a {
         <% food_link = current_user ? diary_user_url(current_user) : foods_url %>
         <div class="group"><li><%= link_to "Food", food_link %></li></div>
         <div class="group"><li>Exercise</li></div>
-        <div class="group"><li>Reports</li></div>
+        <% report_link = current_user ? new_user_report_url(current_user) : root_url %>
+        <div class="group"><li><%= link_to "Reports", report_link %></li></div>
       </ul>
     </section>
   </nav>
