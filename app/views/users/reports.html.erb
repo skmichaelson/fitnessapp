@@ -1,7 +1,18 @@
 <main class="group content">
-  <h1>Your Report</h1>
+  <h1>Your Reports</h1>
+  <% if @report.report_items.empty? %>
+    No data to report!
+  <% else %>
     <ul>
     <% @report.report_items.each do |item| %>
-      <li><%= item.reportable %></li>
+      <li><%= item.updated_at %>: <%= item.reportable.send(@tracked_attr) %></li>
     <% end %>
+    </ul>
+  <% end %>
+
+  <form action="<%= new_user_report_url(current_user) %>">
+    <%= form_auth %>
+    <input type="submit" class="button" value="Generate a new report">
+  </form>
+
 </main>

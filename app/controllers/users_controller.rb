@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :require_logged_in, only: [:index, :show, :update, :destroy, :find]
+  before_filter :require_logged_in, only: [:index, :show, :update, :destroy, :find, :reports]
 
   def new
     @user = User.new
@@ -72,5 +72,10 @@ class UsersController < ApplicationController
 
   def reports
     @report = current_user.report
+    if @report.report_items.empty?
+    else
+      reportable_type = @report.report_items.first.reportable_type
+      @tracked_attr = reportable_type == "WeighIn" ? "current_wt" : "calories_consumed"
+    end
   end
 end
