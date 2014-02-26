@@ -7,7 +7,7 @@ class WeighInsController < ApplicationController
     if @weigh_in.save
       flash[:notices] = ["Thanks for checking in!"]
 
-      @weigh_in.report_items.create(user_id: current_user)
+      report_item = @weigh_in.report_items.create(user_id: current_user.id)
       lbs_lost = last_weight - @weigh_in.current_wt
       current_user.update_attributes(current_wt: params[:current_wt])
 
