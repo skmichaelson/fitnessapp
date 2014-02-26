@@ -3,4 +3,5 @@ class WeighIn < ActiveRecord::Base
 
   belongs_to :user
   has_many :feed_items, as: :feed_update
+  has_many :report_items, as: :reportable
 end

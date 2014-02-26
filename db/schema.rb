@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140226161126) do
+ActiveRecord::Schema.define(:version => 20140226171316) do
 
   create_table "check_ins", :force => true do |t|
     t.integer  "user_id"
@@ -156,6 +156,22 @@ ActiveRecord::Schema.define(:version => 20140226161126) do
 
   add_index "messages", ["recipient_id"], :name => "index_messages_on_recipient_id"
   add_index "messages", ["sender_id"], :name => "index_messages_on_sender_id"
+
+  create_table "report_items", :force => true do |t|
+    t.integer  "report_id",       :null => false
+    t.integer  "reportable_id"
+    t.string   "reportable_type"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "report_items", ["report_id"], :name => "index_report_items_on_report_id"
+
+  create_table "reports", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username",                                    :null => false

@@ -23,6 +23,7 @@ class DailyEntry < ActiveRecord::Base
   has_many :meal_entries, dependent: :destroy
   has_many :foods, through: :meal_entries, source: :food
   has_many :feed_items, as: :feed_update, dependent: :destroy
+  has_many :report_items, as: :reportable
 
   private
 
