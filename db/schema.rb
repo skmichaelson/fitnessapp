@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140225202459) do
+ActiveRecord::Schema.define(:version => 20140226150003) do
 
   create_table "check_ins", :force => true do |t|
     t.integer  "user_id"
@@ -181,5 +181,15 @@ ActiveRecord::Schema.define(:version => 20140225202459) do
     t.datetime "profile_picture_updated_at"
     t.integer  "starting_wt",                  :default => 0, :null => false
   end
+
+  create_table "weigh_ins", :force => true do |t|
+    t.integer  "user_id",     :null => false
+    t.integer  "current_wt",  :null => false
+    t.integer  "previous_wt", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "weigh_ins", ["user_id"], :name => "index_weigh_ins_on_user_id"
 
 end
