@@ -11,12 +11,41 @@
  *= require_self
  */
 
-html, body, header, nav, h1, ul, li, div {
-  border: 0;
+html, body, header, footer, section, article, div,
+strong, a, img, p, h1, h2, h3, time, ul, li, small,
+form, label {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
   font-family: sans-serif;
-  list-style-type: none;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+button,
+textarea {
+  display: inline-block;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
 }
 
 a {
@@ -24,6 +53,14 @@ a {
 }
 
 /* General Styling */
+
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: white;
+}
 
 .floatLeft {
   float: left;
@@ -43,10 +80,9 @@ a {
   width: 650px;
   margin: 20px auto;
   display: float;
-  font-family: sans-serif;
 }
 
-.button {
+input.button {
   background-color: #31DE48;
   border-radius: 5px;
   font-size: 15px;
@@ -55,10 +91,25 @@ a {
   width: 175px;
 }
 
-.button:hover {
+input.button:hover {
   background-color: #2DCF43;
   border: 2px solid #F5F118;
 }
+
+.button_to input {
+  background-color: #31DE48;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid #2C8A39;
+  text-align: center;
+  width: 175px;
+}
+
+.button_to input:hover {
+  background-color: #2DCF43;
+  border: 2px solid #F5F118;
+}
+
 
 /* General side-by-side display */
 

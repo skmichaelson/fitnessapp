@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140226150003) do
+ActiveRecord::Schema.define(:version => 20140226161126) do
 
   create_table "check_ins", :force => true do |t|
     t.integer  "user_id"
@@ -145,12 +145,13 @@ ActiveRecord::Schema.define(:version => 20140226150003) do
   add_index "meal_entries", ["meal_id"], :name => "index_meal_entries_on_meal_id"
 
   create_table "messages", :force => true do |t|
-    t.integer  "recipient_id", :null => false
-    t.integer  "sender_id",    :null => false
+    t.integer  "recipient_id",                    :null => false
+    t.integer  "sender_id",                       :null => false
     t.string   "subject"
     t.text     "body"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.boolean  "is_read",      :default => false, :null => false
   end
 
   add_index "messages", ["recipient_id"], :name => "index_messages_on_recipient_id"
