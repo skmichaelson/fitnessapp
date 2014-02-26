@@ -36,6 +36,7 @@ class User < ActiveRecord::Base
   validates :goal_wt, :height, :activity_level, :birthday, presence: true
 
   has_one :goal, inverse_of: :user, dependent: :destroy
+  has_one :report, dependent: :destroy
   has_many :diaries, dependent: :destroy
   has_many :daily_entries, through: :diaries, source: :daily_entries
   has_many :friendships, dependent: :destroy
@@ -46,6 +47,7 @@ class User < ActiveRecord::Base
   has_many :sent_messages, class_name: "Message", foreign_key: :sender_id
   has_many :feed_items, dependent: :destroy
   has_many :weigh_ins, dependent: :destroy
+  has_many :report_items, dependent: :destroy
   has_many :friend_feed_items, through: :friends, source: :feed_items, order: "created_at DESC"
   has_attached_file :profile_picture, styles: { thumb: "75x75>" }, default_url: ActionController::Base.helpers.asset_path('missing.png')
   # TODO: Fix messages!

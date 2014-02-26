@@ -70,4 +70,7 @@ class UsersController < ApplicationController
     end
   end
 
+  def reports
+    @report = current_user.report
+  end
 end

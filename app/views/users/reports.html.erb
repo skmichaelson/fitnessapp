@@ -1,0 +1,7 @@
+<main class="group content">
+  <h1>Your Report</h1>
+    <ul>
+    <% @report.report_items.each do |item| %>
+      <li><%= item.reportable %></li>
+    <% end %>
+</main>

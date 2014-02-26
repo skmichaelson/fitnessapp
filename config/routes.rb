@@ -3,6 +3,7 @@ FitnessApp::Application.routes.draw do
     resources :friend_requests, only: [:index]
     resources :goals, only: [:create]
     resources :reports, only: [:new]
+    get "reports", on: :member
     get "diary", on: :member
     get "goals", on: :member
     get "friends", on: :member
@@ -30,6 +31,7 @@ FitnessApp::Application.routes.draw do
   resources :goals, only: [:new, :edit, :destroy, :show]
   resources :feed_items, only: [:create, :destroy]
   resources :weigh_ins, only: [:create]
+  resources :reports, only: [:create, :show]
   resource :session, only: [:new, :create, :destroy]
 
   root to: 'users#home'
