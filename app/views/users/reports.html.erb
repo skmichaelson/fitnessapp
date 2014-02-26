@@ -1,4 +1,7 @@
 <main class="group content">
+  <%= render 'shared/flashes' %>
+  <%= render 'shared/errors' %>
+
   <h1>Your Reports</h1>
   <% if @report.report_items.empty? %>
     No data to report!

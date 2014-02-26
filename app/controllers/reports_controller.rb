@@ -8,6 +8,12 @@ class ReportsController < ApplicationController
     report_items = current_user.report_items
                                .where(updated_at:      date_range,
                                       reportable_type: params[:report][:type])
+    if report_items.empty?
+      flash[:errors] = ["No data available during this timeframe!"]
+    else
+      flash[:notices] = ["Report created!"]
+    end
+
     @report.report_items = report_items
     @report.save
     redirect_to reports_user_url(current_user)

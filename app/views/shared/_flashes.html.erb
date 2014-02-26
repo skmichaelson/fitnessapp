@@ -1,9 +1,9 @@
-<div id="flash-notices">
-  <% if flash[:notices] %>
+<% if flash[:notices] %>
+  <div id="flash-notices">
     <% flash[:notices].each do |notice| %>
       <ul class="notices">
         <li><%= notice %></li>
       </ul>
     <% end %>
-  <% end %>
-</div>
+  </div>
+<% end %>
