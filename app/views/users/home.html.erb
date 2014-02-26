@@ -70,30 +70,99 @@
 </style>
 
 <main class="group content">
-  <% if current_user %>
-    <header>
-      <h1>Welcome back, <%= current_user.username %>!</h1>
-    </header>
-  <% end %>
-
   <% if flash[:errors] %>
     <%= render 'shared/errors' %>
   <% elsif flash[:notices] %>
     <%= render 'shared/flashes' %>
   <% end %>
 
-<% if current_user %>
+  <% if current_user %>
+    <header>
+      <h1>Welcome back, <%= current_user.username %>!</h1>
+    </header>
 
-  <div id="user-daily-summary">
-    <%= render 'daily_summary' %>
+    <div id="user-daily-summary">
+      <%= render 'daily_summary' %>
+    </div>
+
+    <div id="user-news-feed">
+      <%= render 'news_feed', friends: @friends, feed_items: @feed_items %>
+    </div>
+
+  <% else %>
+
+  <style>
+
+  #home-text {
+    float: right;
+    width: 400px;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .home-image {
+    position: absolute;
+    left: -40px;
+  }
+
+  #not-signed-in {
+    position: relative;
+  }
+
+  #home-text h1 {
+    margin-bottom: 10px;
+  }
+
+  #home-text li {
+    padding: 5px 15px;
+  }
+
+  #sign-in-sign-up {
+    display: block;
+    width: 350px;
+  }
+
+  #sign-in-sign-up .link {
+    float: left;
+    margin: auto;
+    padding: 10px;
+    width: 140px;
+    color: black;
+    text-align: center;
+  }
+
+  #sign-in-sign-up .set-dimensions {
+    width: 160px;
+    height: 40px;
+  }
+
+  </style>
+  <div id="not-signed-in" class="group">
+    <div class="home-image">
+      <%= image_tag("applecinnamon.png", size: "300x300") %>
+    </div>
+
+    <div id="home-text">
+      <h1>Welcome to the Apple Cinnamon Fitness App!</h1>
+
+      <ul>
+        <li>Keep a food diary</li>
+        <li>Track your progress</li>
+        <li>Share with friends</li>
+      </ul>
+
+      <div id="sign-in-sign-up" class="group">
+        <div class="button floatLeft set-dimensions group">
+          <%= link_to "Sign in", new_session_url, class: "link" %>
+        </div>
+
+        <div class="button floatRight set-dimensions">
+          <%= link_to "Create an account", new_user_url, class: "link" %>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div id="user-news-feed">
-    <%= render 'news_feed', friends: @friends, feed_items: @feed_items %>
-  </div>
-
-<% else %>
-  Sign in or create a new account!
-<% end %>
+  <% end %>
 
 </main>

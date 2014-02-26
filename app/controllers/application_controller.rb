@@ -20,8 +20,8 @@ class ApplicationController < ActionController::Base
   def require_logged_in
     unless current_user
     # TODO set the last page to memory?
-      flash[:errors] = ["You must log in first!"]
-      redirect_to new_session_url
+      flash[:errors] = ["You must be signed in to view this page!"]
+      redirect_to root_url
     end
   end
 
