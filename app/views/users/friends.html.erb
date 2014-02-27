@@ -27,21 +27,7 @@
   <% else %>
     <div id="friends">
       <h1>Friends</h1>
-    	<% @friends.each do |friend| %>
-    	  <section class="group user-index">
-
-          <%= render 'shared/friend_info', friend: friend %>
-
-          <div class="group friend-buttons">
-  			    <% friendship = current_user.friendships.where("friend_id = ?", friend.id).first %>
-            <form action="<%= friendship_url(friendship.id, friend: friend.id) %>" method:"DELETE">
-              <%= form_auth %>
-              <input type="submit" value="Remove friend" class="button">
-            </form>
-  		    </div>
-
-    	  </section>
-  	  <% end %>
+      <%= render @friends %>
     </div>
   <% end %>
 

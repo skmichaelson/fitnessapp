@@ -8,7 +8,8 @@
   <% if @messages.empty? %>
     No messages to display
   <% else %>
-    <%= render 'messages', messages: @messages %>
+    <%= render @messages %>
+    <%= paginate @messages %>
   <% end %>
 
   <% if @friends[0] %>

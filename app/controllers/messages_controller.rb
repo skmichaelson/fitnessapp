@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
 
   def index
-    @messages = current_user.received_messages
+    @messages = current_user.received_messages.order('created_at DESC').page(params[:page])
     @friends = current_user.friends
   end
 
