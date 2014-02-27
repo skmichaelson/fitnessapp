@@ -1,3 +1,5 @@
+<style>
+</style>
 <main class="group content">
   <div id="search-top" class="group">
     <section class="search-input">
@@ -10,6 +12,22 @@
   </div>
 
   <section class="search-match">
-    <%= render 'shared/food_match', foods: @foods %>
+    <% if @foods %>
+      <% if @foods.empty? %>
+        No matches found!
+      <% else %>
+
+      <h1>Matching Foods</h1>
+
+      <div class="food-matches">
+        <ul>
+          <%= render @foods %>
+        </ul>
+      </div>
+
+      <%= paginate @foods, window: 3 %>
+
+      <% end %>
+    <% end %>
   </section>
 </main>
