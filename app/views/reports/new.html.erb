@@ -1,25 +1,30 @@
 <main class="group content">
-  <h1>Generate a report</h1>
 
   <form action="<%= reports_url %>" method="POST">
     <%= form_auth %>
 
-    <label for="report-type">Select a Category</label>
-    <select name="report[type]" id="report-type">
-      <option value="WeighIn">Weigh Ins</option>
-      <option value="DailyEntry">Calorie Trends</option>
-    </select>
+    <h1>Generate a report</h1>
 
-    <label for="time-span">Select a Range</label>
-    <select name="report[time]" id="time-span">
-      <option value="7">One week</option>
-      <option value="30">One month</option>
-      <option value="180">Six months</option>
-      <option value="365">One year</option>
-    </select>
+    <div>
+      <label for="report-type">Select a Category</label>
+      <select name="report[type]" id="report-type">
+        <option value="WeighIn">Weigh Ins</option>
+        <option value="DailyEntry">Calorie Trends</option>
+      </select>
+    </div>
 
-    <br>
+    <div>
+      <label for="time-span">Select a Range</label>
+      <select name="report[time]" id="time-span">
+        <option value="7">One week</option>
+        <option value="30">One month</option>
+        <option value="180">Six months</option>
+        <option value="365">One year</option>
+      </select>
+    </div>
 
-    <input type="submit" class="button" value="View Report">
+    <div>
+      <input type="submit" class="button" value="View Report">
+    </div>
   </form>
 </main>

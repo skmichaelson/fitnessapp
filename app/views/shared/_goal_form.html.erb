@@ -1,46 +1,52 @@
-<label for="workouts">Workouts per week</label>
-  <select id="workouts" name="goals[workouts_per_week]">
-    <% (1..7).each do |num| %>
-      <option value="<%= num %>"
-        <%= "selected" if @goal.workouts_per_week == num %>>
-        <%= num %>
+<div>
+  <label for="workouts">Workouts per week</label>
+    <select id="workouts" name="goals[workouts_per_week]">
+      <% (1..7).each do |num| %>
+        <option value="<%= num %>"
+          <%= "selected" if @goal.workouts_per_week == num %>>
+          <%= num %>
+        </option>
+      <% end %>
+    </select>
+</div>
+
+<div>
+  <label for="duration">Minutes per workout</label>
+  <input type="text"
+    name="goals[minutes_per_workout]"
+    id="duration"
+    value="<%= @goal.minutes_per_workout %>">
+</div>
+
+<div>
+  <label for="mygoal">I would like to:</label>
+    <select id="mygoal" name="goals[weight_loss_rate]">
+      <option <%= "selected" if @goal.weight_loss_rate == -20 %> value="-20">
+        Gain two pounds per week
       </option>
-    <% end %>
-  </select>
 
-<label for="duration">Minutes per workout</label>
-<input type="text"
-  name="goals[minutes_per_workout]"
-  id="duration"
-  value="<%= @goal.minutes_per_workout %>">
+      <option <%= "selected" if @goal.weight_loss_rate == -10 %> value="-10">
+        Gain one pound per week
+      </option>
 
-<label for="mygoal">I would like to:</label>
-  <select id="mygoal" name="goals[weight_loss_rate]">
-    <option <%= "selected" if @goal.weight_loss_rate == -20 %> value="-20">
-      Gain two pounds per week
-    </option>
+      <option <%= "selected" if @goal.weight_loss_rate == -5 %> value="-5">
+        Gain a half pound per week
+      </option>
 
-    <option <%= "selected" if @goal.weight_loss_rate == -10 %> value="-10">
-      Gain one pound per week
-    </option>
+      <option <%= "selected" if @goal.weight_loss_rate == 0 %> value="0">
+        Maintain my current weight
+      </option>
 
-    <option <%= "selected" if @goal.weight_loss_rate == -5 %> value="-5">
-      Gain a half pound per week
-    </option>
+      <option value="5" <%= "selected" if @goal.weight_loss_rate == 5 %>>
+        Lose a half pound per week
+      </option>
 
-    <option <%= "selected" if @goal.weight_loss_rate == 0 %> value="0">
-      Maintain my current weight
-    </option>
+      <option <%= "selected" if @goal.weight_loss_rate == 10 %> value="10">
+        Lose one pound per week
+      </option>
 
-    <option value="5" <%= "selected" if @goal.weight_loss_rate == 5 %>>
-      Lose a half pound per week
-    </option>
-
-    <option <%= "selected" if @goal.weight_loss_rate == 10 %> value="10">
-      Lose one pound per week
-    </option>
-
-    <option <%= "selected" if @goal.weight_loss_rate == 20 %> value="20">
-      Lose two pounds per week
-    </option>
-  </select>
+      <option <%= "selected" if @goal.weight_loss_rate == 20 %> value="20">
+        Lose two pounds per week
+      </option>
+    </select>
+</div>
