@@ -40,11 +40,8 @@
 
 <main class="group content">
 
-  <% if flash[:errors] %>
-    <%= render 'shared/errors' %>
-  <% elsif flash[:notices] %>
-    <%= render 'shared/flashes' %>
-  <% end %>
+  <%= render 'shared/errors' %>
+  <%= render 'shared/flashes' %>
 
   <% if @user == current_user && !@user.pending_friends.empty? %>
   <h1>Pending requests</h1>

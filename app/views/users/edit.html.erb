@@ -7,11 +7,8 @@
 
     <input type="hidden" name="_method" value="PUT">
 
-    <% if flash[:errors] %>
-      <%= render 'shared/errors' %>
-    <% elsif flash[:notices] %>
-      <%= render 'shared/flashes' %>
-    <% end %>
+    <%= render 'shared/errors' %>
+    <%= render 'shared/flashes' %>
 
     <%= render 'shared/basic_info' %>
 

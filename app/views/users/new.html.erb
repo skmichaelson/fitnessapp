@@ -9,11 +9,8 @@
     <%= image_tag("applecinnamon.png", size: "300x300") %>
   </div>
 
-  <% if flash[:errors] %>
-    <%= render 'shared/errors' %>
-  <% elsif flash[:notices] %>
-    <%= render 'shared/flashes' %>
-  <% end %>
+  <%= render 'shared/errors' %>
+  <%= render 'shared/flashes' %>
 
   <%= render 'shared/basic_info' %>
 
