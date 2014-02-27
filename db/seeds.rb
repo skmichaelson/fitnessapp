@@ -138,8 +138,9 @@ food1 = get_food_from_csv("db/dairy0217.csv")
 food2 = get_food_from_csv("db/fruits0217.csv")
 food3 = get_food_from_csv("db/meat0218.csv")
 food4 = get_food_from_csv("db/cereal0218.csv")
+food5 = get_food_from_csv("db/vegetables0226.csv")
 
-food_list = [food1, food2, food3, food4]
+food_list = [food1, food2, food3, food4, food5]
 
 food_list.each do |list|
   list.each do |food|
