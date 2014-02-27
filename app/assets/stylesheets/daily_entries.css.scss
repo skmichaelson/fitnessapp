@@ -1,36 +1,36 @@
 // Place all the styles related to the DailyEntries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.totals {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;;
+  display: block;
+  margin: 10px 0px;
+}
+
+#food-diary > header {
+  padding: 10px 0px;
+}
+
+#diary-totals {
+  float: right;
+  width: 300px;
+}
+
 #diary-entry {
-  border: 1px solid black;
   display:block;
+}
+
+#diary-entry h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 .meal {
   background-color: #ccc;
-}
-
-#food-entry > div.float-left {
-  width: 300px;
-}
-
-#food-entry > div.float-right {
-  width: 320px;
-}
-
-#food-entry > .float-left > li {
-  display: inline;
-  margin: 5px auto;
-}
-
-#food-entry > .float-right > li {
-  display: inline;
-  margin: 25px;
-}
-
-#food-entry {
-  display: block;
-  padding-top: 2px;
+  margin: 10px 0px;
 }
 
 #food-diary table {
@@ -47,13 +47,14 @@
 
 .food-name {
   float: left;
-  width: 349px;
+  width: 345px;
   font-size: 14px;
+  margin: 5px 0px 5px 5px;
 }
 
 .nutrient-table {
   float: right;
-  width: 299px;
+  width: 297px;
 }
 
 .nutrient-table tbody {
@@ -64,17 +65,20 @@
   width: 75px;
 }
 
-#food-diary > header {
+.add-food {
+  text-align: right;
+  width: 600px;
+  position: absolute;
+  top: -1px;
+}
+
+.one-meal {
+  position: relative;
+  margin: 20px 0px;
   padding: 10px 0px;
+  border: 1px solid #ddd;
 }
 
-.totals {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: block;
-}
-
-#diary-totals {
-  float: right;
-  width: 300px;
+#archive {
+  margin: 40px 0px;
 }
