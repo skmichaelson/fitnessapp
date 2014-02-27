@@ -1,16 +1,3 @@
-<style>
-
-a {
-  color: #00F;
-  text-decoration: none;
-}
-
-header a {
-  color: #FFF;
-}
-
-</style>
-
 <header>
   <div id="top-strip" class="group">
 
@@ -40,44 +27,7 @@ header a {
 
   </div>
 
-<style>
-  #main-nav {
-    float: left;
-  }
-
-  #main-nav > ul {
-    width: 650px;
-    height: 45px;
-  }
-
-  #main-nav > ul > div {
-    display: inline;
-    float: left;
-    height: 45px;
-    width: 125px;
-  }
-
-  #main-nav > ul > div > li {
-    float: left;
-    margin: 15px auto;
-    color: white;
-  }
-
-  #middle-strip {
-    display:block;
-    font-family: sans-serif;
-    background-color: blue;
-  }
-
-  #middle-strip-content {
-    width: 650px;
-    margin: 0px auto;
-    height: 45px;
-  }
-
-</style>
-
-<div id="middle-strip" class="group">
+  <div id="middle-strip" class="group">
 
   <nav id="middle-strip-content" class="group">
     <section id="main-nav" class="group">
@@ -93,46 +43,6 @@ header a {
   </nav>
 
 </div>
-
-<style>
-
-  #sub-nav > li {
-    float: left;
-    display: inline;
-    width: 100px;
-  }
-
-  #bottom-strip {
-    display:block;
-    font-family: sans-serif;
-    background-color: navy;
-  }
-
-  .bottom-strip-content {
-    width: 650px;
-    margin: 0px auto;
-    height: 45px;
-  }
-
-  .sub-nav {
-    color: white;
-    display: inline;
-  }
-
-  .sub-nav > div {
-    float: left;
-    display: inline;
-    height: 45px;
-    width: 100px;
-  }
-
-  .sub-nav > div > li {
-    float: left;
-    display: inline;
-    margin: 15px auto;
-  }
-
-</style>
 
 <div id="bottom-strip" class="group">
   <% goal_link = current_goal ? goal_url(current_goal) : new_goal_url %>
