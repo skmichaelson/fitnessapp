@@ -57,6 +57,16 @@ ul {
   list-style: none;
 }
 
+h1 {
+  display: block;
+  background-color: navy;
+  color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
 .floatLeft {
   float: left;
 }
@@ -130,3 +140,4 @@ ul {
 @import 'diaries';
 @import 'page_top';
 @import 'daily_entries';
+@import 'links';

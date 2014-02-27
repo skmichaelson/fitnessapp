@@ -1,7 +1,7 @@
 <style>
 .user-index {
 	display:block;
-	width:650px;
+	width:638px;
 	border: 1px solid #bbb;
 	background-color: #ddd;
 	margin: 10px 0px;
@@ -14,28 +14,37 @@
 
 .user-info {
 	float: left;
-	width: 499px;
+	width: 450px;
 }
 
 .friend-buttons {
 	float: right;
-	width: 148px;
+	width: 180px;
 }
 
 .user-info > .float-left {
 	float: left;
-	width: 120px;
+	width: 80px;
 }
 
 .user-info > .float-right {
 	float: right;
-	width: 375px;
+	width: 350px;
 }
 
-.button_to {
-	padding: 0px;
-	margin: 0px;
+#no-friends {
+  font-size: 24px;
+  margin: 20px 0px;
 }
+
+#friends {
+  margin: 50px 0px;
+}
+
+#pending-requests {
+  margin: 50px 0px;
+}
+
 </style>
 
 <main class="group content">
@@ -44,42 +53,47 @@
   <%= render 'shared/flashes' %>
 
   <% if @user == current_user && !@user.pending_friends.empty? %>
-  <h1>Pending requests</h1>
+  <div id="pending-requests">
+    <h1>Pending requests</h1>
 
-  	<% @user.pending_friends.each do |friend| %>
+    <% @user.pending_friends.each do |friend| %>
 
       <section class="group user-index">
         <%= render 'shared/friend_info', friend: friend %>
 
-	      <div class="group friend-buttons">
-	  	    <% req_id = current_user.friend_requests.where("friend_id = ?", friend.id).first%>
-	  	    <%= button_to "Approve request", friendships_url(friend: friend)%>
-	  	    <%= button_to "Deny request", friend_request_url(req_id), method: :delete %>
-	      </div>
+        <%= render 'friends/approve_or_deny', friend: friend %>
   	  </section>
-
     <% end %>
+  </div>
 
   <% end %>
 
   <% if @friends.empty? %>
-  No friends to display!
-
+    <div id="no-friends">
+      No friends to display!
+    </div>
   <% else %>
-  <h1>Friends</h1>
-  	<% @friends.each do |friend| %>
-  	  <section class="group user-index">
+    <div id="friends">
+      <h1>Friends</h1>
+    	<% @friends.each do |friend| %>
+    	  <section class="group user-index">
 
-        <%= render 'shared/friend_info', friend: friend %>
+          <%= render 'shared/friend_info', friend: friend %>
 
-        <div class="group friend-buttons">
-			    <% friendship = current_user.friendships.where("friend_id = ?", friend.id).first %>
-			    <%= button_to "Remove friend", friendship_url(friendship.id, friend: friend.id), method: :delete %>
-		    </div>
+          <div class="group friend-buttons">
+  			    <% friendship = current_user.friendships.where("friend_id = ?", friend.id).first %>
+            <form action="<%= friendship_url(friendship.id, friend: friend.id) %>" method:"DELETE">
+              <%= form_auth %>
+              <input type="submit" value="Remove friend" class="button">
+            </form>
+  		    </div>
 
-  	  </section>
-  	<% end %>
+    	  </section>
+  	  <% end %>
+    </div>
   <% end %>
 
-  <%= link_to "Find friends", users_url %>
+  <div class="link-button">
+    <%= link_to "Find friends", users_url %>
+  </div>
 </main>
