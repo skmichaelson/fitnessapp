@@ -32,11 +32,10 @@
   </section>
 
   <% if @user == current_user %>
-    <section>
-      <div class="link-button">
-        <%= link_to "Complete this entry", complete_daily_entry_url(@entry) %>
-      </div>
-    </section>
+    <form action="<%= complete_daily_entry_url(@entry) %>", method="POST">
+        <%= form_auth %>
+        <input type="submit" value="Complete this entry" class="button">
+      </form>
   <% end %>
 
   <section id="archive">
