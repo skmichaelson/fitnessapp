@@ -67,11 +67,11 @@ h1 {
   margin: 10px 0px;
 }
 
-.floatLeft {
+.float-left {
   float: left;
 }
 
-.floatRight {
+.float-right {
   float: right;
 }
 
@@ -84,7 +84,6 @@ h1 {
 .content {
   width: 650px;
   margin: 20px auto;
-  display: float;
 }
 
 /* General side-by-side display */
@@ -137,7 +136,6 @@ h1 {
 }
 
 @import 'forms';
-@import 'diaries';
 @import 'page_top';
 @import 'daily_entries';
 @import 'links';
