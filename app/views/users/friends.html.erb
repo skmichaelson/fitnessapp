@@ -1,52 +1,3 @@
-<style>
-.user-index {
-	display:block;
-	width:638px;
-	border: 1px solid #bbb;
-	background-color: #ddd;
-	margin: 10px 0px;
-	padding: 5px;
-}
-
-.user-index:hover {
-	background-color: #eee;
-}
-
-.user-info {
-	float: left;
-	width: 450px;
-}
-
-.friend-buttons {
-	float: right;
-	width: 180px;
-}
-
-.user-info > .float-left {
-	float: left;
-	width: 80px;
-}
-
-.user-info > .float-right {
-	float: right;
-	width: 350px;
-}
-
-#no-friends {
-  font-size: 24px;
-  margin: 20px 0px;
-}
-
-#friends {
-  margin: 50px 0px;
-}
-
-#pending-requests {
-  margin: 50px 0px;
-}
-
-</style>
-
 <main class="group content">
 
   <%= render 'shared/errors' %>
@@ -63,6 +14,7 @@
 
         <%= render 'friends/approve_or_deny', friend: friend %>
   	  </section>
+
     <% end %>
   </div>
 

@@ -1,13 +1,14 @@
 <div class="group friend-buttons">
   <% req_id = current_user.friend_requests.where("friend_id = ?", friend.id).first%>
 
-  <form action="<%= friendships_url(friend: friend) %>">
+  <form action="<%= friendships_url(friend: friend) %>" method="POST">
     <%= form_auth %>
     <input type="submit" value="Approve request" class="button">
   </form>
 
-  <form action="<%= friend_request_url(req_id) %>" method:"DELETE">
+  <form action="<%= friend_request_url(req_id) %>" method="POST">
     <%= form_auth %>
+    <input type="hidden" name="_method" value="delete">
     <input type="submit" value="Deny request" class="button">
   </form>
 </div>
