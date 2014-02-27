@@ -9,6 +9,8 @@
   </style>
 
 <form class="group" id="login" action="<%= session_url %>" method="post">
+  <%= render 'shared/errors' %>
+
   <h1>Welcome! Please sign in</h1>
 
   <%= form_auth %>
