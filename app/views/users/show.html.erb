@@ -1,48 +1,83 @@
-<style>
-
-  #profile-top {
-    margin: 20px auto;
-    border: 1px solid black;
-  }
-
-  #profile-top div {
-    margin-right: 20px;
-    border: 1px solid black;
-  }
-
-</style>
-
 <main class="group content">
 
-<h1><%= @user.username %>'s Profile</h1>
+  <h1><%= @user.username %>'s Profile</h1>
 
-<article class="group" id="profile-top">
-  <div class="float-left">
-    <%= image_tag @user.profile_picture.url(:thumb) %>
-  </div>
+  <style>
+  #user-profile {
+  	display:block;
+  	width:628px;
+  	border: 1px solid #bbb;
+  	background-color: #ddd;
+  	margin: 10px 0px;
+  	padding: 10px;
+  }
 
-  <div class="float-left">
-    <ul>
-      <li><%= @user.username %></li>
-      <li><%= @user.age %></li>
-      <li><%= @user.gender %></li>
-      <% if @user.city && @user.state %>
-      <li><%= @user.city.capitalize %>, <%= @user.state.upcase %></li>
-      <% end %>
-    </ul>
-  </div>
+  #user-icon {
+    float: left;
+  }
 
-  <% if @user == current_user %>
-    <div class="float-right">
-      <div class="link-button">
-        <%= link_to "Update your profile", edit_user_url(current_user) %>
+  #basic-info {
+    float: right;
+    width: 550px;
+  }
+
+  #user-asl {
+    float: left;
+    padding: 0px 5px;
+  }
+
+  #update-profile-button {
+    float: right;
+    width: 200px;
+  }
+
+  #profile-top {
+    margin-bottom: 20px;
+  }
+
+  #user-details {
+    border: 1px solid black;
+  }
+
+  </style>
+
+  <article class="group">
+
+    <div class="group" id="user-profile">
+      <div class="group" id="profile-top">
+        <div id="user-icon">
+          <%= image_tag @user.profile_picture.url(:thumb) %>
+        </div>
+
+        <div class="group" id="basic-info">
+          <div id="user-asl">
+            <ul>
+              <li><%= @user.username %></li>
+              <li><%= @user.age %></li>
+              <li><%= @user.gender %></li>
+
+              <% if @user.city && @user.state %>
+                <li><%= @user.city.capitalize %>, <%= @user.state.upcase %></li>
+              <% end %>
+            </ul>
+          </div>
+
+          <% if @user == current_user %>
+            <div id="update-profile-button">
+              <%= render 'shared/goal_button' %>
+
+              <div class="link-button">
+                <%= link_to "Update your profile", edit_user_url(current_user) %>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
+
+      <div class="user-details">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
     </div>
-  <% end %>
-
-</article>
-
-<% if @user == current_user %>
-  <%= render 'shared/goal_button' %>
-<% end %>
+  </article>
 </main>

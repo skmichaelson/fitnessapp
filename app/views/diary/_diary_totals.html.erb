@@ -15,19 +15,51 @@
     </tr>
 
     <% if user.goal %>
+      <% total_fat = (user.goal.fat_ratio * user.goal.calorie_goal / 100 / 9) %>
+      <% total_carb = (user.goal.carb_ratio * user.goal.calorie_goal / 100 / 4) %>
+      <% total_protein = (user.goal.protein_ratio * user.goal.calorie_goal / 100 / 4) %>
     <tr>
       <td><%= user.goal.calorie_goal %></td>
-      <td><%= %></td>
-      <td><%= %></td>
-      <td><%= %></td>
+      <td><%= total_fat.round %></td>
+      <td><%= total_carb.round %></td>
+      <td><%= total_protein.round %></td>
     </tr>
 
     <tr>
       <td><%= user.goal.calorie_goal - entry.calories_consumed %></td>
-      <td><%= %></td>
-      <td><%= %></td>
-      <td><%= %></td>
+      <td><%= (total_fat - entry.fat_intake).round %></td>
+      <td><%= (total_carb - entry.carbohydrate_intake).round %></td>
+      <td><%= (total_protein - entry.protein_intake).round %></td>
     </tr>
     <% end %>
   </table>
 </div>
+
+  <div class="group" id="table-labels">
+    <table>
+      <tfoot>
+        <th>Daily totals</th>
+      </tfoot>
+
+      <tr>
+        <td>Total consumed</td>
+      </tr>
+
+      <tr>
+        <td>Daily goals</td>
+      </tr>
+
+      <tr>
+        <td>Remaining</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="complete-button">
+    <% if @user == current_user %>
+      <form action="<%= complete_daily_entry_url(@entry) %>", method="POST">
+          <%= form_auth %>
+          <input type="submit" value="Complete this entry" class="button">
+        </form>
+    <% end %>
+  </div>

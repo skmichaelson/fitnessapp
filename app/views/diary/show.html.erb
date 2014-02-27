@@ -9,6 +9,7 @@
   <section id="diary-entry" class="group">
     <% (0..5).each do |num| %>
       <% if @diary.try("meal#{num}".to_sym) %>
+
       <div class="one-meal">
         <h2><%= @diary.send("meal#{num}".to_sym) %></h2>
 
@@ -22,21 +23,16 @@
         </section>
         <% end %>
       </div>
+
       <% else %>
         <% break %>
       <% end %>
     <% end %>
+  </section>
 
   <section class="group totals">
     <%= render 'diary/diary_totals', user: @user, entry: @entry %>
   </section>
-
-  <% if @user == current_user %>
-    <form action="<%= complete_daily_entry_url(@entry) %>", method="POST">
-        <%= form_auth %>
-        <input type="submit" value="Complete this entry" class="button">
-      </form>
-  <% end %>
 
   <section id="archive">
     <h1>Find an archived entry</h1>

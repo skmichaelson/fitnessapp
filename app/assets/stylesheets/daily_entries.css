@@ -13,11 +13,6 @@
   padding: 10px 0px;
 }
 
-#diary-totals {
-  float: right;
-  width: 300px;
-}
-
 #diary-entry {
   display:block;
 }
@@ -81,4 +76,25 @@
 
 #archive {
   margin: 40px 0px;
+}
+
+#diary-totals {
+  float: right;
+  width: 300px;
+}
+
+#table-labels {
+  float: right;
+}
+
+#table-labels table {
+  text-align: right;
+  border-right: 1px solid black;
+}
+
+#complete-button {
+  float: left;
+  width: 178px;
+  margin-top: 25px;
+  margin-left: 20px;
 }
