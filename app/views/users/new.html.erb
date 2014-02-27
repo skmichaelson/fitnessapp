@@ -5,6 +5,10 @@
 
   <%= form_auth %>
 
+  <div class="sign-up-pic">
+    <%= image_tag("applecinnamon.png", size: "300x300") %>
+  </div>
+
   <% if flash[:errors] %>
     <%= render 'shared/errors' %>
   <% elsif flash[:notices] %>
@@ -17,6 +21,7 @@
 
   <%= render 'shared/wt_ht_activity' %>
 
+  <div>
   Gender
     <input type="radio" name="user[gender]" value="M" id="male">
     <label class="radio" for="male">Male</label>
@@ -26,10 +31,11 @@
     <br>
     <br>
     <%= render 'shared/upload_picture' %>
+  </div>
 
-    <br>
-    <br>
-  <input class="button" type="submit" value="Continue &rarr;">
+  <div>
+    <input class="button" type="submit" value="Continue &rarr;">
+  </div>
 </form>
 
 </main>

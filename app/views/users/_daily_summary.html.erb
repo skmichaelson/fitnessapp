@@ -33,8 +33,11 @@
       </div>
     </div>
 
-    <div id="buttons">
-      <%= button_to "Add Food", diary_user_url(current_user), method: :get %>
+    <div id="buttons" class="group">
+      <form action="<%= diary_user_url(current_user) %>">
+        <%= form_auth %>
+        <input type="submit" class="button" value="Add food">
+      </form>
       <%= render 'shared/goal_button' %>
     </div>
   </div>

@@ -1,22 +1,39 @@
 <main class="group content">
+  <style>
+  form .sign-in-pic {
+    position: absolute;
+    left: 290px;
+    top: 75px;
+  }
 
+  </style>
 
 <form class="group" id="login" action="<%= session_url %>" method="post">
   <h1>Welcome! Please sign in</h1>
 
   <%= form_auth %>
 
+  <div class="sign-in-pic">
+    <%= image_tag("fajita.png", size: "300x161") %>
+  </div>
+
+  <div>
   <label for="userinfo">Username or E-mail Address</label>
     <input id="userinfo"
       type="text"
       name="user[identifier]">
+  </div>
 
+  <div>
   <label for="password">Password</label>
     <input id="password"
       type="password"
       name="user[password]">
+  </div>
 
-  <input class="button" type="submit" value="Sign In!">
+  <div>
+    <input class="button" type="submit" value="Sign In!">
+  </div>
 </form>
 
 <main class="group content">

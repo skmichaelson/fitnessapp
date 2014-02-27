@@ -1,12 +1,61 @@
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 0 .2em navy;
+}
+
+input.button {
+  background-color: #31DE48;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 2px solid #2C8A39;
+  width: 175px;
+  padding: 5px 0px;
+}
+
+input.button:hover {
+  background-color: #2DCF43;
+  border: 2px solid #F5F118;
+}
+
 form {
-  margin: 20px auto;
-  font-family: sans-serif;
+  width: 650px;
+  position: relative;
 }
 
-label {
+form > div {
+  padding: 10px;
+}
+
+form h1 {
   display: block;
+  background-color: navy;
+  color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px 0px;
 }
 
-.radio {
-  display: inline;
+form .sign-up-pic {
+  position: absolute;
+  left: 300px;
+  top: 125px;
+}
+
+form .sign-in-pic {
+  position: absolute;
+  left: 300px;
 }

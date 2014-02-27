@@ -1,25 +1,58 @@
+<style>
+
+#food-form {
+  width: 300px;
+}
+.search-input {
+  float: left;
+  width: 300px;
+}
+
+.search-match {
+  margin-top: 25px;
+}
+
+.search-match h1 {
+  display: block;
+  background-color: navy;
+  color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.search-match li {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.search-match li:hover {
+  background-color: #eee;
+}
+
+.right-search-display {
+  float: right;
+  width: 325px;
+}
+
+#search-top {
+}
+
+</style>
+
 <main class="group content">
-  <section class="searchInput">
-    Search the food database
-    <%= render 'shared/food_search' %>
-  </section>
+  <div id="search-top" class="group">
+    <section class="search-input">
+      <%= render 'shared/food_search' %>
+    </section>
 
-  <!-- <section class="right searchDisplay">
-  </section> -->
+    <section class="right-search-display">
+      <%= image_tag "veggiebasket.png", size: "300x227" %>
+    </section>
+  </div>
 
-  <section class="searchMatch">
-    <h3>Matching Foods</h3>
-    <% if @foods %>
-
-      <% if @foods.empty? %>
-      No matches found!
-      <% else %>
-      <ul>
-        <% @foods.each do |food| %>
-          <li><%= link_to "#{food.name}", food_url(food, { entry: params[:daily_entry_id] }) %></li>
-        <% end %>
-      <% end %>
-      </ul>
-    <% end %>
+  <section class="search-match">
+    <%= render 'shared/food_match', foods: @foods %>
   </section>
 </main>

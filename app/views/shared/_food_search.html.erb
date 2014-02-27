@@ -1,11 +1,16 @@
-<form id="foodForm"
+<form id="food-form"
   action="<%= @entry ? search_daily_entry_foods_url(@entry) : search_foods_url %>"
   method="get"
   class="group">
+  <h1>Search the food database</h1>
 
   <%= form_auth %>
+  <div>
+    <label for="food-name">Enter a food</label>
+    <input id="food-name" type="text" name="food[name]">
+  </div>
 
-  <input type="text" name="food[name]">
-
-  <input class="button" type="submit" value="Find foods">
+  <div>
+    <input class="button" type="submit" value="Find foods">
+  </div>
 </form>

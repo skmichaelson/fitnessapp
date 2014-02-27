@@ -1,20 +1,20 @@
-<p>
+<div>
 <label for="current_wt">Current Weight</label>
   <input type="text"
     name="user[starting_wt]"
-    value="<%= @user.starting_wt %>"
+    value="<%= @user.current_wt %>"
     id="current_wt">
-</p>
+</div>
 
-<p>
+<div>
 <label for="goal_wt">Goal Weight</label>
   <input type="text"
     name="user[goal_wt]"
     value="<%= @user.goal_wt %>"
     id="goal_wt">
-</p>
+</div>
 
-<p>
+<div>
 <label>Height: &nbsp
   <select name="user[height]">
     <% (24..99).each do |num| %>
@@ -23,9 +23,9 @@
     <% end %>
   </select>
 </label>
-</p>
+</div>
 
-<p>Activity Level
+<div>Activity Level
   <br>
   <input type="radio"
     name="user[activity_level]"
@@ -57,4 +57,4 @@
     id="very_active"
     <%= 'checked' if @user.activity_level == 3 %>>
   <label class="radio" for="very_active">Very Active: heavy exercise or sports 6-7 days per week</label>
-</p>
+</div>
