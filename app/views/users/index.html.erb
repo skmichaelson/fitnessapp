@@ -5,12 +5,7 @@
 
   <h1>User Index Page</h1>
 
-  <% @users.each do |user| %>
-    <% next if user.id == current_user.id %>
-    <section class="group user-index">
-      <%= render 'shared/friend_info', friend: user %>
+  <%= render @users %>
+  <%= paginate @users %>
 
-      <%= render 'shared/friend_buttons', user: user %>
-    </section>
-  <% end %>
 </main>

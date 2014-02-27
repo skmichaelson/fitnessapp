@@ -1,0 +1,7 @@
+<% if user != current_user %>
+  <section class="group user-index">
+    <%= render 'shared/friend_info', friend: user %>
+
+    <%= render 'shared/friend_buttons', user: user %>
+  </section>
+<% end %>
