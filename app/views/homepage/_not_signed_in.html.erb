@@ -1,0 +1,31 @@
+<div id="not-signed-in" class="group">
+  <div class="home-image">
+    <%= image_tag("applecinnamon.png", size: "300x300") %>
+  </div>
+
+  <div id="home-text">
+    <h1>Welcome to Apple Cinnamon!</h1>
+
+    <ul>
+      <li>Keep a food diary</li>
+      <li>Track your progress</li>
+      <li>Share with friends</li>
+    </ul>
+
+    <div id="sign-in-sign-up" class="group">
+      <div class="button floatLeft set-dimensions group">
+        <form action="<%= new_session_url %>">
+          <%= form_auth %>
+          <input type="submit" class="button" value="Sign in">
+        </form>
+      </div>
+
+      <div class="button floatRight set-dimensions">
+        <form action="<%= new_user_url %>">
+          <%= form_auth %>
+          <input type="submit" class="button" value="Create an account">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+/* Signed in user homepage */
+#user-info {
+  float: left;
+  width: 100px;
+}
+
+#user-picture {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+#pounds-lost {
+  display: block;
+  padding: 0px 3px;
+  width: 75px;
+  margin: 10px;
+}
+
+#food-info {
+  float: right;
+  width: 520px;
+  margin: 10px 25px 0px 0px;
+}
+
+#calorie-box {
+  float: left;
+  width: 325px;
+}
+
+#buttons {
+  float: right;
+  text-align: right;
+  width: 180px;
+}
+
+#calories {
+  font-size: 24px;
+  display: block;
+}
+
+#calorie-caption {
+  display: block;
+}
+
+#calorie-breakdown {
+  display: block;
+  padding: 10px 0px;
+}
+
+#calorie-breakdown li {
+  display: inline;
+}
+
+#user-daily-summary {
+  padding-top: 20px;
+}
+
+#user-news-feed {
+  padding-top: 20px;
+}
+
+/* Splash pages for non-signed-in users */
+
+#home-text {
+  float: right;
+  width: 400px;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.home-image {
+  position: absolute;
+  left: -40px;
+}
+
+#not-signed-in {
+  position: relative;
+}
+
+#home-text h1 {
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+#home-text li {
+  padding: 5px 15px;
+}
+
+#sign-in-sign-up {
+  display: block;
+  width: 380px;
+}
+
+#sign-in-sign-up .set-dimensions {
+  width: 160px;
+  height: 40px;
+}
