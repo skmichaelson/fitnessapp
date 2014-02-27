@@ -1,35 +1,7 @@
-<style>
-
-#new-message {
-  background-color: #ddd;
-  padding: 10px auto;
-}
-
-#new-message input {
-  width: 550px;
-  padding: 5px 10px;
-}
-
-#message-body textarea {
-  height: 100px;
-  width: 550px;
-  padding: 5px 10px;
-  vertical-align: baseline;
-}
-
-#new-message > div {
-  padding: 10px 0px;
-}
-
-#new-message label {
-  padding: 5px 0px;
-}
-
-</style>
-
-<h1>Send a message</h1>
 <form id="new-message" class="group" action="<%= messages_url %>" method="post">
   <%= form_auth %>
+  <h1>Send a message</h1>
+
   <div id="friend-dropdown">
     <label for="friend">Select a friend</label>
     <select name="message[recipient_id]" id="friend">

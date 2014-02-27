@@ -19,7 +19,11 @@
     </div>
 
     <div class="float-right">
-      <%= button_to "Delete", message_url(message), method: :delete %>
+      <form action="<%= message_url(message) %>" method="POST">
+        <%= form_auth %>
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete" class="button">
+      </form>
     </div>
 
   </div>

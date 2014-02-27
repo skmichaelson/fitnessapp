@@ -1,0 +1,73 @@
+#new-message {
+  background-color: #ddd;
+  padding: 10px auto;
+  margin: 40px 0px;
+}
+
+#new-message input {
+  width: 550px;
+  padding: 5px 10px;
+}
+
+#message-body textarea {
+  height: 100px;
+  width: 550px;
+  padding: 5px 10px;
+  vertical-align: baseline;
+}
+
+#new-message > div {
+  padding: 10px 35px;
+}
+
+#new-message label {
+  padding: 5px 0px;
+  display: block;
+}
+
+.message {
+  background-color: #ddd;
+  margin: 10px 0px;
+	padding: 5px;
+  display: block;
+}
+
+.message:hover {
+  background-color: #eee;
+}
+
+.sender-info {
+  float: left;
+}
+
+.message-info {
+  float: right;
+  width: 540px;
+}
+
+.message-info .float-left {
+  float: left;
+  width: 340px;
+}
+
+.message-info .float-right {
+  float: right;
+  width: 185px;
+}
+
+.user-pic {
+  display: block;
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+}
+
+.user-link {
+  display: block;
+  padding: 5px 0px 5px 5px;
+}
+
+.subject-line {
+  display: block;
+  padding: 5px 0px 5px 5px;
+}
