@@ -25,6 +25,21 @@
   display: block;
 }
 
+#show-message {
+  background: #ddd;
+}
+#message-text {
+  border: 1px solid #aaa;
+  margin: 25px;
+  background: #fff;
+  padding: 10px;
+}
+
+#message-sender {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
 .message {
   background-color: #ddd;
   margin: 10px 0px;

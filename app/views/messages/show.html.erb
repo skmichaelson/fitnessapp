@@ -1,5 +1,14 @@
 <main class="group content">
-  <%= @message.subject %>
-  <%= @message.body %>
-  <%= @message.sender.username %>
+  <article id="show-message">
+    <h1>Subject: <%= @message.subject %></h1>
+
+    <div id="message-text">
+      <%= @message.body %>
+    </div>
+
+    <div id="message-sender">
+      <%= @message.created_at.strftime("Sent on %m/%d/%Y at %I:%M %p") %>
+      from <%= link_to "#{@message.sender.username}", user_url(@message.sender) %>
+    </div>
+  </article>
 </main>
