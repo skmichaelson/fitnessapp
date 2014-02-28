@@ -18,7 +18,7 @@ class WeighInsController < ApplicationController
       if lbs_lost > 0
         pound_unit = lbs_lost == 1 ? "pound" : "pounds"
         feed_item = @weigh_in.feed_items.new(user_id: current_user.id)
-        feed_item.body = "lost #{lbs_lost} #{pound_unit} since the last weigh in!"
+        feed_item.body = "lost #{lbs_lost} #{pound_unit} since #{current_user.gender == "F" ? "her" : "his"} last weigh in!"
         feed_item.save
       end
 
