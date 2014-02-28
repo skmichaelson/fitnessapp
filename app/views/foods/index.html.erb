@@ -1,6 +1,7 @@
 <style>
 </style>
 <main class="group content">
+  <%= render 'shared/errors' %>
   <div id="search-top" class="group">
     <section class="search-input">
       <%= render 'shared/food_search' %>
@@ -22,11 +23,11 @@
           <li>No matches found!</li>
         <% else %>
           <%= render @foods %>
+          <%= paginate @foods, window: 3 %>
         <% end %>
         </ul>
       </div>
 
-      <%= paginate @foods, window: 3 %>
 
     <% end %>
   </section>

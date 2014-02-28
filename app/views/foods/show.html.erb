@@ -10,21 +10,27 @@
 
     <%= form_auth %>
 
-    <label for="servings">Servings</label>
-    <input id="servings" name="servings[number]" value="<%= num_servings %>">
+    <div>
+      <label for="servings">Servings</label>
+      <input id="servings" name="servings[number]" value="<%= num_servings %>">
 
-    <select name="servings[size]">
-      <option value="100" select>100 grams</option>
-      <option value="1">1 gram</option>
-      <option value="28.35">1 oz</option>
-    </select>
+      <select name="servings[size]">
+        <option value="100" select>100 grams</option>
+        <option value="1">1 gram</option>
+        <option value="28.35">1 oz</option>
+      </select>
+    </div>
 
-    <label for="meal_num">Add to meal:</label>
-    <select id="meal_num" name="meal[num]">
-      <option value="0">Breakfast</option>
-      <option value="1">Lunch</option>
-      <option value="2">Dinner</option>
-    </select>
+    <% if @entry %>
+    <div>
+      <label for="meal_num">Add to meal:</label>
+      <select id="meal_num" name="meal[num]">
+        <option value="0">Breakfast</option>
+        <option value="1">Lunch</option>
+        <option value="2">Dinner</option>
+      </select>
+    </div>
+    <% end %>
 
     <input type="submit" class="button" value="<%= @entry ? "Add to diary" : "Change Serving" %>">
   </form>

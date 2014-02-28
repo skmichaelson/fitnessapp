@@ -35,6 +35,11 @@ form {
   position: relative;
 }
 
+form select {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
 form > div {
   padding: 10px;
 }

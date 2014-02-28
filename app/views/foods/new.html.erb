@@ -1,3 +1,151 @@
+<style>
+
+#serving_size label {
+  display: block;
+}
+#serving_size input {
+  display: inline;
+}
+
+</style>
 <main class="group content">
-  <h1>Create a new food</h1>
+
+  <form action="<%= foods_url %>" method="POST">
+    <h1>Create a new food</h1>
+    <%= form_auth %>
+
+    <div>
+      <label for="name">Name</label>
+      <input type="text"
+        name="food[name]"
+        value="<%= @food.name %>"
+        id="name">
+    </div>
+
+    <div id="serving_size">
+      <label for="serving">Serving size</label>
+      <input type="text" name="serving[size]" id="serving">
+      <select name="serving[unit]">
+        <option value="1">grams</option>
+        <option value="28.35">ounces</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="calorie">Calories per serving</label>
+      <input type="text"
+        name="food[calories]"
+        value="<%= @food.calories %>"
+        id="calorie">
+    </div>
+
+    <div>
+      <label for="fat">Fat (g)</label>
+      <input type="text"
+        name="food[fat]"
+        value="<%= @food.fat %>"
+        id="fat">
+    </div>
+
+    <div>
+      <label for="saturated_fat">Saturated Fat (g)</label>
+      <input type="text"
+        name="food[saturated_fat]"
+        value="<%= @food.saturated_fat %>"
+        id="saturated_fat">
+    </div>
+
+    <div>
+      <label for="cholesterol">Cholesterol (mg)</label>
+      <input type="text"
+        name="food[cholesterol]"
+        value="<%= @food.cholesterol %>"
+        id="cholesterol">
+    </div>
+
+    <div>
+      <label for="sodium">Sodium (mg)</label>
+      <input type="text"
+        name="food[sodium]"
+        value="<%= @food.sodium %>"
+        id="sodium">
+    </div>
+
+    <div>
+      <label for="potassium">Potassium (mg)</label>
+      <input type="text"
+        name="food[potassium]"
+        value="<%= @food.potassium %>"
+        id="potassium">
+    </div>
+
+    <div>
+      <label for="carbohydrates">Carbohydrates (g)</label>
+      <input type="text"
+        name="food[carbohydrates]"
+        value="<%= @food.carbohydrates %>"
+        id="carbohydrates">
+    </div>
+
+    <div>
+      <label for="fiber">Fiber (g)</label>
+      <input type="text"
+        name="food[fiber]"
+        value="<%= @food.fiber %>"
+        id="fiber">
+    </div>
+
+    <div>
+      <label for="protein">Protein (g)</label>
+      <input type="text"
+        name="food[protein]"
+        value="<%= @food.protein %>"
+        id="protein">
+    </div>
+
+    <div>
+      <label for="calcium">Calcium (mg)</label>
+      <input type="text"
+        name="food[calcium]"
+        value="<%= @food.calcium %>"
+        id="calcium">
+    </div>
+
+    <div>
+      <label for="iron">Iron (mg)</label>
+      <input type="text"
+        name="food[iron]"
+        value="<%= @food.iron %>"
+        id="iron">
+    </div>
+
+    <div>
+      <label for="vitamin_a">Vitamin A (IU)</label>
+      <input type="text"
+        name="food[vitamin_a]"
+        value="<%= @food.vitamin_a %>"
+        id="vitamin_a">
+    </div>
+
+    <div>
+      <label for="vitamin_c">Vitamin C (mg)</label>
+      <input type="text"
+        name="food[vitamin_c]"
+        value="<%= @food.vitamin_c %>"
+        id="vitamin_c">
+    </div>
+
+    <div>
+      <label for="vitamin_e">Vitamin E (IU)</label>
+      <input type="text"
+        name="food[vitamin_e]"
+        value="<%= @food.vitamin_e %>"
+        id="vitamin_e">
+    </div>
+
+    <br>
+
+    <input type="submit" class="button" value="Continue &rarr;">
+  </form>
+
 </main>
