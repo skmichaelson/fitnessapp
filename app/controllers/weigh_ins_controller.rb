@@ -1,4 +1,8 @@
 class WeighInsController < ApplicationController
+  before_filter :require_logged_in
+
+  def index
+  end
 
   def create
     last_weight = current_user.current_wt

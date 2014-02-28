@@ -1,5 +1,11 @@
 class ReportsController < ApplicationController
-  def new
+  before_filter :require_logged_in
+
+  def index
+    redirect_to new_user_report_url(current_user)
+  end
+
+  def show
   end
 
   def create

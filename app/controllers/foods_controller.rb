@@ -7,8 +7,11 @@ class FoodsController < ApplicationController
 
   def search
     food_name = params[:food][:name]
+    if food_name.strip.empty? || food_name.length < 2
+      @foods = []
+    end
     @entry = params[:daily_entry_id] ? DailyEntry.find(params[:daily_entry_id]) : nil
-    @foods = Food.where("name LIKE ?", "%#{food_name}%").page(params[:page])
+    @foods ||= Food.where("name LIKE ?", "%#{food_name}%").page(params[:page])
     render :index
   end
 
@@ -18,4 +21,7 @@ class FoodsController < ApplicationController
     @nutrition_values = calculate_by_serving(@food, serving_size, num_servings)
   end
 
+  def new
+    @food = Food.new
+  end
 end

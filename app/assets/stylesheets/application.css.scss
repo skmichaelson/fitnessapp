@@ -83,7 +83,7 @@ h1 {
 
 .content {
   width: 650px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 /* General side-by-side display */
@@ -122,17 +122,19 @@ h1 {
 /* Flashes */
 
 #flash-errors {
-  border: 1px solid red;
-  background-color: #fCC;
-  padding: 5px;
+  border: 1px solid #F22;
+  background-color: #FCC;
+  padding: 10px;
   margin: 20px 0px;
+  color: #333;
 }
 
 #flash-notices {
-  border: 1px solid green;
-  padding: 5px;
+  border: 1px solid #2F2;
+  padding: 10px;
   margin: 20px 0px;
-  background-color: #cfc;
+  background-color: #CFC;
+  color: #333;
 }
 
 @import 'daily_entries';

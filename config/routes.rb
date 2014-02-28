@@ -30,8 +30,8 @@ FitnessApp::Application.routes.draw do
   resources :friend_requests, only: [:create, :destroy]
   resources :goals, only: [:new, :edit, :destroy, :show]
   resources :feed_items, only: [:create, :destroy]
-  resources :weigh_ins, only: [:create]
-  resources :reports, only: [:create, :show]
+  resources :weigh_ins, only: [:create, :index]
+  resources :reports, only: [:create, :show, :index]
   resource :session, only: [:new, :create, :destroy]
 
   root to: 'users#home'

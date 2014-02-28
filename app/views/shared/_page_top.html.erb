@@ -36,7 +36,7 @@
         <% food_link = current_user ? diary_user_url(current_user) : foods_url %>
         <div class="group"><li><%= link_to "Food", food_link %></li></div>
         <div class="group"><li>Exercise</li></div>
-        <% report_link = current_user ? new_user_report_url(current_user) : root_url %>
+        <% report_link = current_user ? new_user_report_url(current_user) : reports_url %>
         <div class="group"><li><%= link_to "Reports", report_link %></li></div>
       </ul>
     </section>
@@ -50,7 +50,7 @@
   <nav class="group bottom-strip-content">
     <ul class="group sub-nav">
       <div><li><%= link_to "Goals", goal_link %></li></div>
-      <div><li><%= link_to "Check-in", current_user ? new_user_weigh_in_url(current_user) : "#" %></li></div>
+      <div><li><%= link_to "Check-in", current_user ? new_user_weigh_in_url(current_user) : weigh_ins_url %></li></div>
       <div><li><%= link_to "Profile", current_user ? user_url(current_user) : "#" %></li></div>
       <div><li><%= link_to "Friends", current_user ? friends_user_url(current_user) : "#" %></li></div>
       <div><li><%= link_to "Settings", root_url %></li></div>
