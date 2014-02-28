@@ -17,7 +17,7 @@ class DailyEntriesController < ApplicationController
   def complete
     daily_entry = DailyEntry.find(params[:id])
     @feed_item = daily_entry.feed_items.new(user_id: current_user.id)
-    @feed_item.body = "completed a food diary for #{Date.today}"
+    @feed_item.body = "completed #{current_user.gender == "F" ? "her" : "his"} food diary for #{Date.today.strftime("%m-%d-%Y")}"
 
     if @feed_item.save
       flash[:notices] = ["Entry marked as complete!"]

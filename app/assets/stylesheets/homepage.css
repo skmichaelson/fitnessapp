@@ -57,6 +57,11 @@
   padding-top: 20px;
 }
 
+.feed-data {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
 /* Splash pages for non-signed-in users */
 
 #home-text {

@@ -5,11 +5,10 @@
     </div>
   </div>
 
-  <div class="group message-info">
-    <div class="float-left">
-      <div class="user-link">
-        <%= link_to "#{feed_item.user.username}", user_url(feed_item.user) %>
-        <%= feed_item.body %>
-      </div>
+  <div class="float-left">
+    <div class="feed-data">
+      <%= link_to "#{feed_item.user.username}", user_url(feed_item.user) %>
+      <%= feed_item.body %>
     </div>
+  </div>
 </section>
