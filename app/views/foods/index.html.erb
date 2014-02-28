@@ -1,7 +1,6 @@
-<style>
-</style>
 <main class="group content">
   <%= render 'shared/errors' %>
+
   <div id="search-top" class="group">
     <section class="search-input">
       <%= render 'shared/food_search' %>
@@ -14,7 +13,6 @@
 
   <section class="search-match">
     <% if @foods %>
-
       <h1>Matching Foods</h1>
 
       <div class="food-matches">
@@ -27,7 +25,6 @@
         <% end %>
         </ul>
       </div>
-
 
     <% end %>
   </section>

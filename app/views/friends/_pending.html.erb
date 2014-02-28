@@ -1,0 +1,11 @@
+<div id="pending-requests">
+  <h1>Pending requests</h1>
+
+  <% pending_friends.each do |friend| %>
+    <section class="group user-index">
+      <%= render 'shared/friend_info', friend: friend %>
+
+      <%= render 'friends/approve_or_deny', friend: friend %>
+    </section>
+  <% end %>
+</div>

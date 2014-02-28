@@ -3,21 +3,8 @@
   <%= render 'shared/errors' %>
   <%= render 'shared/flashes' %>
 
-  <% if @user == current_user && !@user.pending_friends.empty? %>
-  <div id="pending-requests">
-    <h1>Pending requests</h1>
-
-    <% @user.pending_friends.each do |friend| %>
-
-      <section class="group user-index">
-        <%= render 'shared/friend_info', friend: friend %>
-
-        <%= render 'friends/approve_or_deny', friend: friend %>
-  	  </section>
-
-    <% end %>
-  </div>
-
+  <% if @user == current_user && !@pending_friends.empty? %>
+    <%= render 'friends/pending', pending_friends: @pending_friends %>
   <% end %>
 
   <% if @friends.empty? %>

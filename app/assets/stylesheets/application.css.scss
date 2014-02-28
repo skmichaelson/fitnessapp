@@ -86,37 +86,11 @@ h1 {
   margin: 40px auto;
 }
 
-/* General side-by-side display */
-
 .tblHead {
   background-color: navy;
   color: white;
   display: block;
   padding: 5px;
-}
-
-/* Symmetric side-by-side display */
-
-.full {
-  width: 650px;
-  margin-bottom: 25px;
-  border: 1px solid black;
-}
-
-.half {
-  width: 300px;
-  border: 1px solid black;
-  margin: 10px auto;
-}
-
-.left {
-  margin-right: 23px;
-  float: left;
-}
-
-.right {
-  margin-left: 23px;
-  float: right;
 }
 
 /* Flashes */
@@ -141,9 +115,11 @@ h1 {
 @import 'food_search';
 @import 'forms';
 @import 'friends';
+@import 'goals';
 @import 'header';
 @import 'homepage';
 @import 'links';
 @import 'messages';
+@import 'profile';
 @import 'reports';
 @import 'weigh_ins';

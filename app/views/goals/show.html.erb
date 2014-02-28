@@ -1,62 +1,6 @@
 <main class="group content">
 
-  <header>
-    <h1>Your Fitness Goals</h1>
-  </header>
-
-  <style>
-  .half-left {
-    float: left;
-    width: 315px;
-  }
-
-  .half-left > section {
-    margin: 10px 0px;
-  }
-
-  .half-right {
-    float: right;
-    width: 315px;
-  }
-
-  .half-right > section {
-    margin: 10px 0px;
-    border: 1px solid black;
-  }
-
-  .full-width {
-    display: block;
-  }
-
-  .fitness-goals {
-    width: 315px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-  }
-
-  .fitness-goals thead {
-    text-align: left;
-    background-color: navy;
-    color: white;
-  }
-
-  .fitness-goals th {
-    padding: 5px;
-  }
-
-  .fitness-goals td {
-    padding: 5px;
-  }
-
-  .fitness-goals .first {
-    float: left;
-  }
-
-  .fitness-goals .second {
-    float: right;
-  }
-
-  </style>
+  <h1>Your Fitness Goals</h1>
 
   <% if @goal %>
 
@@ -67,9 +11,7 @@
       </section>
     </div>
   </div>
-  <!-- <% @goal.attributes.each do |attr| %>
-    <li><%= attr[0].gsub("_", " ").capitalize %>: <%= attr[1]%></li>
-  <% end %> -->
+
     <% if current_user.goal == @goal %>
     <form action="<%= edit_goal_url(current_user.goal) %>">
       <%= form_auth %>

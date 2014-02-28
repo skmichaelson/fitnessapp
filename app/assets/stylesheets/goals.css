@@ -1,0 +1,42 @@
+.half-left {
+  float: left;
+  width: 315px;
+}
+
+.half-right {
+  float: right;
+  width: 315px;
+}
+
+.half-right > section {
+  margin: 10px 0px;
+  border: 1px solid black;
+}
+
+.fitness-goals {
+  width: 315px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.fitness-goals thead {
+  text-align: left;
+  background-color: navy;
+  color: white;
+}
+
+.fitness-goals th {
+  padding: 5px;
+}
+
+.fitness-goals td {
+  padding: 5px;
+}
+
+.fitness-goals .first {
+  float: left;
+}
+
+.fitness-goals .second {
+  float: right;
+}

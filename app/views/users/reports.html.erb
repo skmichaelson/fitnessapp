@@ -7,9 +7,7 @@
     No data to report!
   <% else %>
     <ul>
-    <% @report.report_items.each do |item| %>
-      <li><%= item.updated_at %>: <%= item.reportable.send(@tracked_attr) %></li>
-    <% end %>
+      <%= render @report.report_items %>
     </ul>
   <% end %>
 
