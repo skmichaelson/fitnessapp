@@ -13,21 +13,23 @@
 
   <section class="search-match">
     <% if @foods %>
-      <% if @foods.empty? %>
-        No matches found!
-      <% else %>
 
       <h1>Matching Foods</h1>
 
+
+
       <div class="food-matches">
         <ul>
+        <% if @foods.empty? %>
+          <li>No matches found!</li>
+        <% else %>
           <%= render @foods %>
+        <% end %>
         </ul>
       </div>
 
       <%= paginate @foods, window: 3 %>
 
-      <% end %>
     <% end %>
   </section>
 </main>
