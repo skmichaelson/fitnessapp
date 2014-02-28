@@ -1,5 +1,5 @@
 <main class="group content">
-  <article id="show-message">
+  <article id="show-message" class="group">
     <h1>Subject: <%= @message.subject %></h1>
 
     <div id="message-text">
@@ -9,6 +9,20 @@
     <div id="message-sender">
       <%= @message.created_at.strftime("Sent on %m/%d/%Y at %I:%M %p") %>
       from <%= link_to "#{@message.sender.username}", user_url(@message.sender) %>
+    </div>
+
+    <div id="message-options">
+      <form action="<%= message_url(@message) %>" method="POST">
+        <%= form_auth %>
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete" class="button">
+      </form>
+
+      <form action="<%= mark_unread_message_url(@message) %>" method="POST">
+        <%= form_auth %>
+        <input type="hidden" name="_method" value="put">
+        <input type="submit" value="Mark unread" class="button">
+      </form>
     </div>
   </article>
 </main>

@@ -28,6 +28,7 @@
 #show-message {
   background: #ddd;
 }
+
 #message-text {
   border: 1px solid #aaa;
   margin: 25px;
@@ -38,6 +39,14 @@
 #message-sender {
   margin: 10px;
   padding-bottom: 10px;
+  float: left;
+}
+
+#message-options {
+  width: 175px;
+  float: right;
+  padding-right: 40px;
+  padding-bottom: 20px;
 }
 
 .message {
