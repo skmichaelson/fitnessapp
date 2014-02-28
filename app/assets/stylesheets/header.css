@@ -1,3 +1,46 @@
+/* Top white strip */
+#top-strip {
+  display: block;
+  background-color: white;
+}
+
+#top-strip-content {
+  width: 650px;
+  margin: 0px auto;
+  height: 79px;
+}
+
+#logo {
+  margin: 0px auto;
+  float: left;
+}
+
+#user-links {
+  margin: 0px auto;
+  float: right;
+}
+
+#user-links > ul > li {
+  float: left;
+  display: block;
+}
+
+#user-links > ul > li > a {
+  padding: 30px 15px;
+  color: black;
+  display: block;
+}
+
+#message-num {
+  background: #333;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 7px;
+  display: inline;
+}
+
 /* Middle blue strip */
 
   #main-nav {
@@ -17,7 +60,7 @@
     display: inline;
     float: left;
     height: 45px;
-    width: 125px;
+    width: 150px;
   }
 
   #main-nav > ul > div > li {
@@ -71,7 +114,7 @@
   float: left;
   display: inline;
   height: 45px;
-  width: 100px;
+  width: 125px;
 }
 
 .sub-nav > div > li {

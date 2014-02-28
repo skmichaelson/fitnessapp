@@ -32,12 +32,13 @@
   <nav id="middle-strip-content" class="group">
     <section id="main-nav" class="group">
       <ul>
+        <% goal_link = current_goal ? goal_url(current_goal) : new_goal_url %>
         <div class="group"><li><%= link_to "Home", root_url %></li></div>
         <% food_link = current_user ? diary_user_url(current_user) : foods_url %>
         <div class="group"><li><%= link_to "Food", food_link %></li></div>
-        <div class="group"><li>Exercise</li></div>
         <% report_link = current_user ? new_user_report_url(current_user) : reports_url %>
         <div class="group"><li><%= link_to "Reports", report_link %></li></div>
+        <div class="group"><li><%= link_to "Goals", goal_link %></li></div>
       </ul>
     </section>
   </nav>
@@ -45,15 +46,12 @@
 </div>
 
 <div id="bottom-strip" class="group">
-  <% goal_link = current_goal ? goal_url(current_goal) : new_goal_url %>
 
   <nav class="group bottom-strip-content">
     <ul class="group sub-nav">
-      <div><li><%= link_to "Goals", goal_link %></li></div>
       <div><li><%= link_to "Check-in", current_user ? new_user_weigh_in_url(current_user) : weigh_ins_url %></li></div>
       <div><li><%= link_to "Profile", current_user ? user_url(current_user) : "#" %></li></div>
       <div><li><%= link_to "Friends", current_user ? friends_user_url(current_user) : "#" %></li></div>
-      <div><li><%= link_to "Settings", root_url %></li></div>
     </ul>
   </nav>
 
