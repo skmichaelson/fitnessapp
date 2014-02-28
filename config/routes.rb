@@ -23,9 +23,12 @@ FitnessApp::Application.routes.draw do
     get "search", on: :collection
   end
 
+  resources :messages, only: [:create, :destroy, :show, :index] do
+    put "mark_unread", on: :member
+  end
+
   resources :meal_entries, only: [:create, :edit, :update]
   resources :diaries, only: [:edit, :update]
-  resources :messages, only: [:create, :destroy, :show, :index]
   resources :friendships, only: [:create, :destroy]
   resources :friend_requests, only: [:create, :destroy]
   resources :goals, only: [:new, :edit, :destroy, :show]

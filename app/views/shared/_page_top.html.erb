@@ -11,7 +11,7 @@
         <% if current_user %>
           <li><%= link_to "Hi, #{current_user.username}!", user_url(current_user) %></li>
           <li>
-            <% num = "#{current_user.received_messages.count}" %>
+            <% num = "#{current_user.received_messages.where("is_read = ?", false).count}" %>
             <%= link_to "Messages <div id='message-num'>#{num}</div>".html_safe, messages_url %>
             <%=  %>
           </li>

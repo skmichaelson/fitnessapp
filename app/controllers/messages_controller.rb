@@ -7,6 +7,7 @@ class MessagesController < ApplicationController
 
   def show
     @message = Message.find(params[:id])
+    @message.update_attributes(is_read: true)
   end
 
   def destroy
@@ -29,5 +30,11 @@ class MessagesController < ApplicationController
       flash.now[:errors] = @message.errors.full_messages
       render :index
     end
+  end
+
+  def mark_unread
+    @message = Message.find(params[:id])
+    @message.update_attributes(is_read: false)
+    redirect_to messages_url
   end
 end

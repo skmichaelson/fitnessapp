@@ -23,6 +23,14 @@
         <input type="hidden" name="_method" value="delete">
         <input type="submit" value="Delete" class="button">
       </form>
+
+      <% if message.is_read %>
+        <form action="<%= mark_unread_message_url(message) %>" method="POST">
+          <%= form_auth %>
+          <input type="hidden" name="_method" value="put">
+          <input type="submit" value="Mark unread" class="button">
+        </form>
+      <% end %>
     </div>
 
   </div>
