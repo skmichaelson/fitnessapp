@@ -67,7 +67,7 @@ class UsersController < ApplicationController
       @daily_entry = @user.daily_entries.where("entry_date = ?", Date.today).first
       @goal = @user.goal
       @calories_remaining = (@daily_entry && @goal) ? @goal.calorie_goal - @daily_entry.calories_consumed : @goal.calorie_goal
-      @feed_items = @user.friend_feed_items
+      @feed_items = @user.friend_feed_items.page(params[:page])
     end
   end
 
