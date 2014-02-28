@@ -1,85 +1,16 @@
 <main class="group content" id="food-diary">
   <% if @entry %>
-  <header class="group">
-      Food diary for <%= @date %>
-  </header>
+  <h1>Food diary for <%= @date %></h1>
 
-  <section id="diary-entry" class="group">
-    <% (0..5).each do |num| %>
-      <% if @diary.try("meal#{num}".to_sym) %>
-        <h2><%= @diary.send("meal#{num}".to_sym) %></h2>
-        <% @meal_entries.each do |entry| %>
-          <% if entry.meal_id == num %>
-            <% nutrients = calculate_by_quantity(entry.food, entry.quantity) %>
-            <div class="group meal">
-              <section class="food-name">
-                <%= entry.food.name.capitalize %>
-              </section>
+    <%= render 'shared/diary_entry', date: @date %>
 
-              <section class="nutrient-table">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><%= nutrients["calories"].round %></td>
-                      <td><%= nutrients["fat"].round %></td>
-                      <td><%= nutrients["carbohydrates"].round %></td>
-                      <td><%= nutrients["protein"].round %></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
-            </div>
-          <% end %>
-        <% end %>
+    <%= render 'diary/diary_totals', user: @user, entry: @entry, date: @date %>
 
-        <% if @user == current_user %>
-          <li><%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %></li>
-        <% end %>
-
-      <% else %>
-        <% break %>
-      <% end %>
-    <% end %>
-
-  <section class="group totals">
-    <div class="group" id="diary-totals">
-      <table>
-        <tfoot>
-          <th>Calories</th>
-          <th>Fat</th>
-          <th>Carbs</th>
-          <th>Protein</th>
-        </tfoot>
-
-        <tr>
-          <td><%= @entry.calories_consumed.round %></td>
-          <td><%= @entry.fat_intake.round %></td>
-          <td><%= @entry.carbohydrate_intake.round %></td>
-          <td><%= @entry.protein_intake.round %></td>
-        </tr>
-
-        <% if @user.goal %>
-        <tr>
-          <td><%= @user.goal.calorie_goal %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-        </tr>
-
-        <tr>
-          <td><%= @user.goal.calorie_goal - @entry.calories_consumed %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-          <td><%= %></td>
-        </tr>
-        <% end %>
-      </table>
-    </div>
-  </section>
   <% else %>
-  No entry found on <%= @date %>
+    No entry found on <%= @date %>
   <% end %>
 
-  <%= link_to "<< Return to food diary", diary_user_url(current_user) %>
-
+  <div class="link-button">
+    <%= link_to "<< Return to food diary", diary_user_url(current_user) %>
+  </div>
 </main>

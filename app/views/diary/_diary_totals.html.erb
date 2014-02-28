@@ -1,3 +1,4 @@
+<section class="group totals">
 <div class="group" id="diary-totals">
   <table>
     <tfoot>
@@ -56,10 +57,11 @@
   </div>
 
   <div id="complete-button">
-    <% if @user == current_user %>
+    <% if @user == current_user && date == Date.today %>
       <form action="<%= complete_daily_entry_url(@entry) %>", method="POST">
           <%= form_auth %>
           <input type="submit" value="Complete this entry" class="button">
         </form>
     <% end %>
   </div>
+</section>

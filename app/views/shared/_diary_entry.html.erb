@@ -1,0 +1,23 @@
+<section id="diary-entry" class="group">
+  <% (0..5).each do |num| %>
+    <% if @diary.try("meal#{num}".to_sym) %>
+
+    <div class="one-meal">
+      <h2><%= @diary.send("meal#{num}".to_sym) %></h2>
+
+      <%= render 'diary/single_meal', meal_entries: @meal_entries, num: num %>
+
+      <% if @user == current_user && date == Date.today %>
+      <section class="add-food">
+        <div class="link-button">
+          <%= link_to "Add food", daily_entry_foods_url(@entry, { meal_num: num }) %>
+        </div>
+      </section>
+      <% end %>
+    </div>
+
+    <% else %>
+      <% break %>
+    <% end %>
+  <% end %>
+</section>
