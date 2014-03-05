@@ -16,3 +16,9 @@ Skills:
 * Testing with RSPEC
 * Semantic HTML
 * CSS
+
+TODO:
+* Use Backbone.js for adding foods and searching for foods
+* Create graphs for user reports
+* Allow users to have favorite foods
+* Build models for recipes and custom meals
