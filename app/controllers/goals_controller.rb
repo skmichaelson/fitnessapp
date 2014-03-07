@@ -10,6 +10,12 @@ class GoalsController < ApplicationController
     @goal.update_attributes(params[:goals])
 
     if @goal.save
+      if current_user.is_demo
+        flash[:demo] = ["Great! We used the Harris-Benedict equation to calculate your nutrient needs"]
+        flash[:demo] << "Feel free to explore on your own, but may we suggest:"
+        flash[:demo] << "Checking out your <a href=#{diary_user_url(current_user)}>food diary</a>".html_safe
+        flash[:demo] << "Seeing the <a href=#{users_url}>other users</a> on this site".html_safe
+      end
       redirect_to goal_url(@goal)
     else
       flash.now[:errors] = @goal.errors.full_messages

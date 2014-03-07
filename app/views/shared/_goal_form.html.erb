@@ -37,7 +37,7 @@
         Maintain my current weight
       </option>
 
-      <option value="5" <%= "selected" if @goal.weight_loss_rate == 5 %>>
+      <option <%= "selected" if @goal.weight_loss_rate == 5 %> value="5">
         Lose a half pound per week
       </option>
 

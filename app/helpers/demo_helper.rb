@@ -15,4 +15,8 @@ module DemoHelper
              gender: "F",
              is_demo: true)
   end
+  
+  def create_demo_goal
+    current_user.build_goal(workouts_per_week: 3, minutes_per_workout: 30, weight_loss_rate: 10)
+  end
 end

@@ -8,7 +8,7 @@ class DemoController < ApplicationController
   end
   
   def new_goal
-    @goal = current_user.build_goal
+    @goal = create_demo_goal
     flash.now[:demo] = ["We selected a goal for you, but feel free to change it!"]
     render 'goals/new'
   end
