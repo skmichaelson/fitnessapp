@@ -11,11 +11,9 @@ class GoalsController < ApplicationController
 
     if @goal.save
       if current_user.is_demo
-        demo_message = "Click on the 'Add Friend' button to submit a friend request!"
         flash[:demo] = ["Great! We used the Harris-Benedict equation to calculate your nutrient needs."]
-        flash[:demo] << "Feel free to explore on your own, but we suggest you start \
-                        by <a href=#{users_url(demo_message: demo_message)}>\
-                        making friends</a> with other users on this site".html_safe
+        flash[:demo] << "Feel free to explore on your own, but we suggest you start by
+        <a href=#{users_url}>making friends</a> with other users on this site".html_safe
       end
       redirect_to goal_url(@goal)
     else

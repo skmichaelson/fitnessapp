@@ -26,9 +26,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    if params[:demo_message]
-      flash[:demo] = [params[:demo_message]]
-    end
+    flash[:demo] ||= ["Click on the 'Add Friend' button to submit a friend request!"]
     @users = User.includes(:friends).includes(:friend_requests).includes(:pending_friends).page(params[:page])
   end
 
@@ -52,6 +50,10 @@ class UsersController < ApplicationController
   end
 
   def diary
+    if current_user.is_demo
+      flash[:demo] ||= ["Try adding a food to your diary. Click on the 'Add Food' button to start."]
+    end
+    
     @user = User.includes(:goal).find(params[:id])
     @diary = @user.diaries.first
     @diary ||= @user.diaries.create

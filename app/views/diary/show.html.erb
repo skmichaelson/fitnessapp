@@ -1,3 +1,5 @@
+<%= render 'demo/flashes' %>
+
 <main class="group content" id="food-diary">
   <%= render 'shared/errors' %>
   <%= render 'shared/flashes' %>
@@ -8,9 +10,10 @@
 
   <%= render 'diary/diary_totals', user: @user, entry: @entry, date: Date.today %>
 
+<% unless current_user.is_demo %>
   <section id="archive">
     <h1>Find an archived entry</h1>
     <%= render 'diary/archived_entry_form' %>
   </section>
-
+<% end %>
 </main>

@@ -1,3 +1,4 @@
+<%= render 'demo/flashes' %>
 <main class="group content">
   <form id="portion"
     action="<%= @entry ? daily_entry_meal_entries_url(@entry) : food_url(@food) %>"
@@ -25,9 +26,9 @@
     <div>
       <label for="meal_num">Add to meal:</label>
       <select id="meal_num" name="meal[num]">
-        <option value="0">Breakfast</option>
-        <option value="1">Lunch</option>
-        <option value="2">Dinner</option>
+        <option value="0" <%= 'selected' if @meal_num == "0" %>>Breakfast</option>
+        <option value="1" <%= 'selected' if @meal_num == "1" %>>Lunch</option>
+        <option value="2" <%= 'selected' if @meal_num == "2" %>>Dinner</option>
       </select>
     </div>
     <% end %>
