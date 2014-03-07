@@ -15,6 +15,12 @@ class DailyEntriesController < ApplicationController
   end
 
   def complete
+    if current_user.is_demo
+      # TODO: automatically make the user friends with another existing user
+      # TODO: automatically send messages when a user has new friend requests and/or new friends
+      flash[:demo] = ["Wonderful! Your food journal for the day has been recorded."]
+      flash[:demo] << "And look - we have a message. Let's <a href='#{messages_url}'>go to our inbox.</a>".html_safe
+    end
     daily_entry = DailyEntry.find(params[:id])
     @feed_item = daily_entry.feed_items.new(user_id: current_user.id)
     @feed_item.body = "completed #{current_user.gender == "F" ? "her" : "his"} food diary for #{Date.today.strftime("%m-%d-%Y")}"
