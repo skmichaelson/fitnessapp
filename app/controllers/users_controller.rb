@@ -26,6 +26,9 @@ class UsersController < ApplicationController
   end
 
   def index
+    if params[:demo_message]
+      flash[:demo] = [params[:demo_message]]
+    end
     @users = User.includes(:friends).includes(:friend_requests).includes(:pending_friends).page(params[:page])
   end
 
