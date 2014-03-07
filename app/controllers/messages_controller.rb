@@ -3,9 +3,16 @@ class MessagesController < ApplicationController
   def index
     @messages = current_user.received_messages.order('created_at DESC').page(params[:page])
     @friends = current_user.friends
+    
+    if !@messages.empty? && current_user.is_demo
+      flash[:demo] = ["Click on a message to open it!"]
+    end
   end
 
   def show
+    if current_user.is_demo
+      flash[:demo] = ["Thanks for completing the demo. Feel free to explore on your own!"]
+    end
     @message = Message.find(params[:id])
     @message.update_attributes(is_read: true)
   end

@@ -26,8 +26,13 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:session_token] = nil
     current_user.try(:reset_session_token!)
+    
+    if current_user && current_user.is_demo
+      current_user.destroy
+    end
+    
+    session[:session_token] = nil    
     redirect_to new_session_url
   end
 end
