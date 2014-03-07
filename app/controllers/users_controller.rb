@@ -6,7 +6,18 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(params[:user])
+    @user = User.new(params[:user])
+    if @user.is_demo
+      possible_dup = User.where("email = ?", @user.email).first
+      if possible_dup && possible_dup.is_demo && possible_dup.persisted?
+        possible_dup.destroy
+      end
+      
+      possible_dup = User.where("username = ?", @user.username).first
+      if possible_dup && possible_dup.is_demo && possible_dup.persisted?
+        possible_dup.destroy
+      end
+    end
 
     if @user.save
       session[:session_token] = @user.session_token
