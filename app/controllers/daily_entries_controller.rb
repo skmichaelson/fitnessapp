@@ -16,6 +16,8 @@ class DailyEntriesController < ApplicationController
 
   def complete
     if current_user.is_demo
+      current_user.friends << User.first
+      
       # TODO: automatically make the user friends with another existing user
       # TODO: automatically send messages when a user has new friend requests and/or new friends
       flash[:demo] = ["Wonderful! Your food journal for the day has been recorded."]

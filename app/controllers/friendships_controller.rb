@@ -6,9 +6,6 @@ class FriendshipsController < ApplicationController
     new_friend = User.find(params[:friend])
     new_friend.friendships.create(friend_id: current_user.id)
     
-    req = current_user.friend_requests.where("friend_id = ?", params[:friend]).first
-    req.destroy
-    
     flash[:notices] = ["#{new_friend.username} added as a friend!"]
     redirect_to friends_user_url(current_user)
   end
