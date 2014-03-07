@@ -18,7 +18,8 @@ class User < ActiveRecord::Base
                   :state,
                   :zipcode,
                   :age,
-                  :profile_picture
+                  :profile_picture,
+                  :is_demo
   attr_reader :password
 
   before_validation :ensure_session_token

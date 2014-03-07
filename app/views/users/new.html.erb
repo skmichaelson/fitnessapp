@@ -1,11 +1,12 @@
-<main class="group content">
-	
 <%= render 'demo/flashes' %>
+
+<main class="group content">	
 
 <form action="<%= users_url %>" method="post" enctype="multipart/form-data">
   <h1>Create your free account!</h1>
 
   <%= form_auth %>
+  <input type="hidden" name="user[is_demo]" value="<%= @user.is_demo %>">
 
   <div class="sign-up-pic">
     <%= image_tag("applecinnamon.png", size: "300x300") %>

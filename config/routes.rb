@@ -29,6 +29,7 @@ FitnessApp::Application.routes.draw do
   
   namespace :demo do
     get "new_user"
+    get "new_goal"
   end
 
   resources :meal_entries, only: [:create, :edit, :update]

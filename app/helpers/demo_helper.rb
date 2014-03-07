@@ -12,6 +12,7 @@ module DemoHelper
              goal_wt: 140,
              height: 64,
              activity_level: 1,
-             gender: "F")
+             gender: "F",
+             is_demo: true)
   end
 end

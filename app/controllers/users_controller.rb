@@ -10,7 +10,11 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:session_token] = @user.session_token
-      redirect_to new_goal_url
+      if @user.is_demo
+        redirect_to demo_new_goal_url
+      else
+        redirect_to new_goal_url
+      end
     else
       flash.now[:errors] = @user.errors.full_messages
       render :new
