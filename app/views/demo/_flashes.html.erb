@@ -1,0 +1,26 @@
+<style>
+#flash-demo {
+	border: 1px solid gold;
+	padding: 10px;
+	margin: 20px 0px;
+	background-color: #ECF5BC;
+	color: #333;
+	text-align: center;
+}
+
+#flash-demo h1 {
+	background-color: #ECF5BC;
+	color: black;
+	border: 0px;
+}
+
+</style>
+<% if flash[:demo] %>
+	<div id="flash-demo">
+		<ul>
+			<% flash[:demo].each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		<ul>
+	</div>
+<% end %>
