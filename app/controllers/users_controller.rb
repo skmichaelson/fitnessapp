@@ -26,7 +26,9 @@ class UsersController < ApplicationController
   end
 
   def index
-    flash[:demo] ||= ["Click on the 'Add Friend' button to submit a friend request!"]
+    if current_user.is_demo
+      flash[:demo] ||= ["Click on the 'Add Friend' button to submit a friend request!"]
+    end
     @users = User.includes(:friends).includes(:friend_requests).includes(:pending_friends).page(params[:page])
   end
 
