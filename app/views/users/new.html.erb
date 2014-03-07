@@ -20,9 +20,16 @@
 
   <div>
   Gender
-    <input type="radio" name="user[gender]" value="M" id="male">
+    <input type="radio" 
+		name="user[gender]" 
+		value="M" id="male"
+		<%= 'checked' if @user.gender == "M" %>>
     <label class="radio" for="male">Male</label>
-    <input type="radio" name="user[gender]" value="F" id="female">
+    
+	<input type="radio" 
+		name="user[gender]" 
+		value="F" id="female"
+		<%= 'checked' if @user.gender == "F" %>>
     <label class="radio" for="female">Female</label>
 
     <br>

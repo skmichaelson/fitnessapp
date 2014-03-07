@@ -26,6 +26,10 @@ FitnessApp::Application.routes.draw do
   resources :messages, only: [:create, :destroy, :show, :index] do
     put "mark_unread", on: :member
   end
+  
+  namespace :demo do
+    get "new_user"
+  end
 
   resources :meal_entries, only: [:create, :edit, :update]
   resources :diaries, only: [:edit, :update]
