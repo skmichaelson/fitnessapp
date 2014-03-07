@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_filter :require_logged_in, only: [:index, :show, :update, :destroy, :find, :reports]
 
   def new
+    flash[:demo] = ["Want a tour? Head over to the <a href='/demo/new_user'>demo account</a>!".html_safe]
     @user = User.new
   end
 
@@ -91,6 +92,8 @@ class UsersController < ApplicationController
       @calories_remaining = (@daily_entry && @goal) ? @goal.calorie_goal - @daily_entry.calories_consumed : @goal.calorie_goal
       @feed_items = @user.friend_feed_items.page(params[:page])
     end
+    
+    flash[:demo] = ["Click here for a guided tour!"]
   end
 
   def reports

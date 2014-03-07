@@ -1,4 +1,6 @@
-<%= render 'demo/flashes' %>
+<% if current_user %>
+	<%= render 'demo/flashes' %>
+<% end %>
 
 <main class="group content">
   <%= render 'shared/errors' %>

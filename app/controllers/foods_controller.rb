@@ -4,7 +4,7 @@ class FoodsController < ApplicationController
   before_filter :require_logged_in, only: [:new, :create]
 
   def index
-    if current_user.is_demo
+    if current_user && current_user.is_demo
       flash[:demo] = ["We parsed the raw CSV from the USDA food database.", "Enter a search term to find a food. If you're at a loss, try searching for 'Alaska'."]
     end
     @entry = params[:daily_entry_id] ? DailyEntry.find(params[:daily_entry_id]) : nil

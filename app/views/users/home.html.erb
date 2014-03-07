@@ -1,3 +1,10 @@
+<style>
+
+#homepage-demo div:hover {
+	background-color: #E8F797;
+}
+
+</style>
 <main class="group content">
   <%= render 'shared/errors' %>
   <%= render 'shared/flashes' %>
@@ -7,9 +14,14 @@
     <%= render 'homepage/signed_in_user', friends: @friends, feed_items: @feed_items %>
 
   <% else %>
-
+  	<div id="homepage-demo">
+		<a href="<%= demo_new_user_url %>">
+			<%= render 'demo/flashes' %>
+		</a>
+	</div>
+	
     <%= render 'homepage/not_signed_in' %>
-
+  
   <% end %>
 
 </main>
