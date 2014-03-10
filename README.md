@@ -1,6 +1,8 @@
-App Academy Final Project: A clone of myfitnesspal (http://www.myfitnesspal.com/).
+# App Academy Final Project #
+### A clone of myfitnesspal (http://www.myfitnesspal.com/). ###
 
 Features:
+* Comprehensive walk-through with a pre-populated demo account
 * Food database uses data imported from the USDA
 * Appropriate redirects for users who are not logged in
 * Calculates BMR and calorie goals based on user-provided attributes
