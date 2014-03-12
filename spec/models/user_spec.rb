@@ -2,18 +2,7 @@ require 'spec_helper'
 
 describe User do
 
-  let(:user1) {
-    User.create!({username: "randomuser",
-      password: "password",
-      email: "randomuser@example.com",
-      current_wt: 150,
-      gender: "F",
-      goal_wt: 130,
-      height: 62,
-      activity_level: 1,
-      birthday: Date.new(1985, 1, 7)
-      })
-    }
+  let(:user1) { FactoryGirl.create(:user) }
 
   it { should validate_presence_of(:password_digest) }
   it { should validate_presence_of(:email) }
