@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+/* Resets */
+
+html, body, header, footer, section, article, div,
+strong, a, img, p, h1, h2, h3, time, ul, li, small,
+form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="file"],
+button,
+textarea {
+  display: block;
+  box-sizing: content-box;
+  margin: 5px 0px 0px 0px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+/* General Styling */
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  display: block;
+  background-color: navy;
+  color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.group:after {
+  clear:both;
+  content: "";
+  display: block;
+}
+
+.content {
+  width: 650px;
+  margin: 40px auto;
+}
+
+.tblHead {
+  background-color: navy;
+  color: white;
+  display: block;
+  padding: 5px;
+}
+
+/* Flashes */
+
+#flash-errors {
+  border: 1px solid #F22;
+  background-color: #FCC;
+  padding: 10px;
+  margin: 20px 0px;
+  color: #333;
+}
+
+#flash-notices {
+  border: 1px solid #2F2;
+  padding: 10px;
+  margin: 20px 0px;
+  background-color: #CFC;
+  color: #333;
+}
+
+@import 'daily_entries';
+@import 'food_search';
+@import 'forms';
+@import 'friends';
+@import 'goals';
+@import 'header';
+@import 'homepage';
+@import 'links';
+@import 'messages';
+@import 'profile';
+@import 'reports';
+@import 'weigh_ins';

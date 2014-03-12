@@ -43,6 +43,7 @@ class User < ActiveRecord::Base
   has_many :friendships, dependent: :destroy
   has_many :friends, through: :friendships, source: :friend
   has_many :friend_requests, dependent: :destroy
+  has_many :pending_friends, through: :friend_requests, source: :friend
   has_many :received_messages, class_name: "Message", foreign_key: :recipient_id
   has_many :sent_messages, class_name: "Message", foreign_key: :sender_id
   has_many :feed_items, dependent: :destroy
