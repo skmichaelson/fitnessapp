@@ -1,5 +1,4 @@
 class FoodsController < ApplicationController
-  include FoodsHelper
 
   before_filter :require_logged_in, only: [:new, :create]
 

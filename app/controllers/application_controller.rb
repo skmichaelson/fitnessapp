@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  helper_method :current_user, :require_logged_in, :current_goal, :current_user_diary, :calculate_by_quantity
+  helper_method :current_user, :require_logged_in, :current_goal, :current_user_diary, :calculate_by_quantity, :calculate_by_serving
 
   def current_user
     return nil unless session[:session_token]

@@ -1,5 +1,4 @@
 class MealEntry < ActiveRecord::Base
-  include MealEntriesHelper
 
   attr_accessible :food_id, :daily_entry_id, :meal_id, :quantity
 
