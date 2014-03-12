@@ -4,9 +4,8 @@ class DailyEntriesController < ApplicationController
   end
 
   def search
-    @date = params[:entry][:date]
     @entry = current_user.daily_entries.includes(:meal_entries).where("entry_date = ?", params[:entry][:date]).first
-    @user = current_user
+    @date = @entry.entry_date.strftime("%A, %B %-d, %Y")
     @diary = current_user.diaries.first
     if @entry
       @meal_entries = @entry.meal_entries
@@ -17,7 +16,7 @@ class DailyEntriesController < ApplicationController
   def complete
     if current_user.is_demo && current_user.friends.empty?
       current_user.friends << User.first
-      
+
       flash[:demo] = ["Wonderful! Your food journal for the day has been recorded."]
       flash[:demo] << "And look - we have a message. Let's <a href='#{messages_url}'>go to our inbox.</a>".html_safe
     end

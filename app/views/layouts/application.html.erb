@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FitnessApp</title>
+  <title><%= yield :title %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,8 +10,8 @@
   <%= render 'shared/page_top' %>
 
   <%= yield %>
-  
-<script type="application/javascript" 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+
+<script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 </script>
 
 </body>
