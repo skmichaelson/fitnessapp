@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
     (ratio * base / 100).round
   end
 
-  def calculate_by_serving(food, serving_size, num_servings)
+  def calculate(food, *params)
     nutrition_attributes = food.attributes.reject do |attr|
       %w(id name usda_id common_weight_1 common_weight_2 common_serving_1 common_serving_2 created_at updated_at).include?(attr)
     end
@@ -37,24 +37,18 @@ class ApplicationController < ActionController::Base
     adjusted_attr = {}
 
     nutrition_attributes.each do |attr, val|
-      adjusted_attr[attr] = (val * serving_size * num_servings / 100)
+      adjusted_attr[attr] = val * params.reduce(:*) / 100
     end
 
     adjusted_attr
   end
 
+  def calculate_by_serving(food, serving_size, num_servings)
+    calculate(food, serving_size, num_servings)
+  end
+
   def calculate_by_quantity(food, quantity)
-    nutrition_attributes = food.attributes.reject do |attr|
-      %w(id name usda_id common_weight_1 common_weight_2 common_serving_1 common_serving_2 created_at updated_at).include?(attr)
-    end
-
-    adjusted_attr = {}
-
-    nutrition_attributes.each do |attr, val|
-      adjusted_attr[attr] = (val * quantity / 100)
-    end
-
-    adjusted_attr
+    calculate(food, quantity)
   end
 
   def serving_size

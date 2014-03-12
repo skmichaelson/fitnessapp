@@ -12,7 +12,7 @@ class FoodsController < ApplicationController
   end
 
   def search
-    if current_user.is_demo
+    if current_user && current_user.is_demo
       flash[:demo] = ["Click on a food to pull up more information about its nutritional values."]
     end
     food_name = params[:food][:name].downcase
@@ -29,10 +29,10 @@ class FoodsController < ApplicationController
   end
 
   def show
-    if current_user.is_demo
+    if current_user && current_user.is_demo
       flash[:demo] = ["How much did you eat? We'll calculate the number of calories consumed based on that serving size."]
       flash[:demo] << "You chose which meal to add the food to, but you can change it here if you made a mistake."
-    end    
+    end
 
     @food = Food.find(params[:id])
     @meal_num = params[:meal_num]
