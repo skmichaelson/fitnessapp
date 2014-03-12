@@ -1,3 +1,4 @@
+<%= render 'shared/title', page_title: "Friends" %>
 <main class="group content">
 
   <%= render 'shared/errors' %>
@@ -13,7 +14,7 @@
     </div>
   <% else %>
     <div id="friends">
-      <h1>Friends</h1>
+      <h1>Your Friends</h1>
       <%= render @friends %>
     </div>
   <% end %>

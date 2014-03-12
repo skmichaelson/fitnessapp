@@ -1,10 +1,12 @@
+<%= render 'shared/title', page_title: "Archives" %>
+
 <main class="group content" id="food-diary">
   <% if @entry %>
   <h1>Food diary for <%= @date %></h1>
 
     <%= render 'shared/diary_entry', date: @date %>
 
-    <%= render 'diary/diary_totals', user: @user, entry: @entry, date: @date %>
+    <%= render 'diary/diary_totals', user: current_user, entry: @entry, date: @date %>
 
   <% else %>
     No entry found on <%= @date %>

@@ -22,7 +22,8 @@ class ReportsController < ApplicationController
 
     @report.report_items = report_items
     @report.save
-    redirect_to reports_user_url(current_user)
+
+    redirect_to reports_user_url(current_user, reportable: params[:report][:type])
   end
 
 end

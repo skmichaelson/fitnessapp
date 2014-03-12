@@ -5,6 +5,8 @@
 }
 
 </style>
+<%= render 'shared/title', page_title: "Welcome" %>
+
 <main class="group content">
   <%= render 'shared/errors' %>
   <%= render 'shared/flashes' %>
@@ -19,9 +21,9 @@
 			<%= render 'demo/flashes' %>
 		</a>
 	</div>
-	
+
     <%= render 'homepage/not_signed_in' %>
-  
+
   <% end %>
 
 </main>

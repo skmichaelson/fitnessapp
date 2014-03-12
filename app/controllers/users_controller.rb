@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       if possible_dup && possible_dup.is_demo && possible_dup.persisted?
         possible_dup.destroy
       end
-      
+
       possible_dup = User.where("username = ?", @user.username).first
       if possible_dup && possible_dup.is_demo && possible_dup.persisted?
         possible_dup.destroy
@@ -67,7 +67,7 @@ class UsersController < ApplicationController
     if current_user.is_demo
       flash[:demo] ||= ["Try adding a food to your diary. Click on the 'Add Food' button to start."]
     end
-    
+
     @user = User.includes(:goal).find(params[:id])
     @diary = @user.diaries.first
     @diary ||= @user.diaries.create
@@ -91,17 +91,19 @@ class UsersController < ApplicationController
       @goal = @user.goal
       @calories_remaining = (@daily_entry && @goal) ? @goal.calorie_goal - @daily_entry.calories_consumed : @goal.calorie_goal
       @feed_items = @user.friend_feed_items.page(params[:page])
+    else
+      flash[:demo] = ["Click here for a guided tour!"]
     end
-    
-    flash[:demo] = ["Click here for a guided tour!"]
+
   end
 
   def reports
     @report = current_user.report
+    @tracked_attr = params[:reportable].pluralize
+
     if @report.report_items.empty?
     else
       reportable_type = @report.report_items.first.reportable_type
-      @tracked_attr = reportable_type == "WeighIn" ? "current_wt" : "calories_consumed"
     end
   end
 end
