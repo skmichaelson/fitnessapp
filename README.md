@@ -1,6 +1,8 @@
 # App Academy Final Project #
 ### A clone of myfitnesspal (http://www.myfitnesspal.com/). ###
 
+[![Code Climate](https://codeclimate.com/github/skmichaelson/fitnessapp.png)](https://codeclimate.com/github/skmichaelson/fitnessapp)
+
 Features:
 * Comprehensive walk-through with a pre-populated demo account
 * Food database uses data imported from the USDA
@@ -20,6 +22,7 @@ Skills:
 * CSS
 
 TODO:
+* Reduce bloat and complexity to bump code climate score
 * Use Backbone.js for adding foods and searching for foods
 * Create graphs for user reports
 * Allow users to have favorite foods
