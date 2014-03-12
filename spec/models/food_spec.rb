@@ -14,13 +14,7 @@ describe Food do
   end
 
   it "assigns defaults if they are not provided" do
-    new_food = Food.create!({
-      usda_id: 12061,
-      name: "almonds",
-      calories: 575,
-      protein: 21.22,
-      fat: 49.42,
-      carbohydrates: 21.67})
+    new_food = FactoryGirl.create(:food)
 
     expect(new_food.fiber).to eq(0)
     expect(new_food.calcium).to eq(0)
