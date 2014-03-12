@@ -43,7 +43,6 @@ class User < ActiveRecord::Base
   has_many :friendships, dependent: :destroy
   has_many :friends, through: :friendships, source: :friend
   has_many :friend_requests, dependent: :destroy
-  has_many :pending_friends, through: :friend_requests, source: :friend
   has_many :received_messages, class_name: "Message", foreign_key: :recipient_id
   has_many :sent_messages, class_name: "Message", foreign_key: :sender_id
   has_many :feed_items, dependent: :destroy
@@ -51,7 +50,6 @@ class User < ActiveRecord::Base
   has_many :report_items, dependent: :destroy
   has_many :friend_feed_items, through: :friends, source: :feed_items, order: "created_at DESC"
   has_attached_file :profile_picture, styles: { thumb: "75x75>" }, default_url: ActionController::Base.helpers.asset_path('missing.png')
-  # TODO: Fix messages!
 
   def password=(password)
     @password = password
