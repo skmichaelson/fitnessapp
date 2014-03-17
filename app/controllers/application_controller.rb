@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include FoodsHelper
   protect_from_forgery
   helper_method :current_user, :require_logged_in, :current_goal, :current_user_diary, :calculate_by_quantity, :calculate_by_serving
 
@@ -49,14 +50,6 @@ class ApplicationController < ActionController::Base
 
   def calculate_by_quantity(food, quantity)
     calculate(food, quantity)
-  end
-
-  def serving_size
-    params[:servings] ? params[:servings][:size].to_f : 100
-  end
-
-  def num_servings
-    params[:servings] ? params[:servings][:number].to_f : 1
   end
 
   def calculate_quantity(servings, size)

@@ -14,17 +14,19 @@ class FoodsController < ApplicationController
     if current_user && current_user.is_demo
       flash[:demo] = ["Click on a food to pull up more information about its nutritional values."]
     end
-    food_name = params[:food][:name].downcase
 
-    if food_name.strip.empty? || food_name.length < 2
+    food_name = params[:food][:name].downcase
+    if invalid_search?(food_name)
       @foods = []
       flash.now[:errors] = ["Please enter a valid search string!"]
     end
 
-    @meal_num = params[:meal_num]
-    @entry = params[:daily_entry_id] ? DailyEntry.find(params[:daily_entry_id]) : nil
     @foods ||= Food.where("name LIKE ?", "%#{food_name}%").page(params[:page])
-    render :index
+
+    respond_to do |format|
+      format.html { render show }
+      format.json { render json: @foods }
+    end
   end
 
   def show
@@ -49,11 +51,7 @@ class FoodsController < ApplicationController
     if params[:serving][:size].empty? || params[:serving][:size] == 0
       flash.now[:errors] = ["Please enter a serving size!"]
       render new
-      return
-    end
-
-    if @food.valid?
-      multiplier = 100 / (params[:serving][:size].to_f * params[:serving][:unit].to_f)
+    elsif @food.save
       @food.calories *= multiplier
       @food.save
       flash[:notices] = "#{@food.name} successfully added to the database!"

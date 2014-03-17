@@ -1,10 +1,5 @@
-<form id="food-form"
-  action="<%= @entry ? search_daily_entry_foods_url(@entry) : search_foods_url %>"
-  method="get"
-  class="group">
+<form id="food-form" class="group">
   <h1>Search the food database</h1>
-  
-  <input type="hidden" name="meal_num" value="<%= @meal_num %>">
 
   <div>
     <label for="food-name">Enter a food</label>
@@ -21,3 +16,35 @@
     </div>
   <% end %>
 </form>
+
+<style>
+.search-match {
+  display: block;
+}
+</style>
+
+<script>
+$('#food-form').on('submit', function (event) {
+  event.preventDefault();
+
+  var formData = $(this).serialize();
+  console.log("form:" + formData);
+
+  $.ajax({
+    url: "foods/search.json",
+    type: "GET",
+    data: formData,
+    success: function (res) {
+      var $ul = $('#food-matches');
+      $ul.empty();
+      if (res.length === 0) {
+        $ul.prepend("<li>No matches found!</li>");
+      } else {
+        res.forEach(function(item) {
+          $ul.prepend("<li>" + item.name + "</li>");
+        });
+      }
+    }
+  });
+});
+</script>

@@ -18,20 +18,11 @@
   </div>
 
   <section class="search-match">
-    <% if @foods %>
-      <h1>Matching Foods</h1>
+    <h1>Matching Foods</h1>
+    <div>
+      <ul id="food-matches"></ul>
+    </div>
 
-      <div class="food-matches">
-        <ul>
-        <% if @foods.empty? %>
-          <li>No matches found!</li>
-        <% else %>
-          <%= render @foods %>
-          <%= paginate @foods, window: 3 %>
-        <% end %>
-        </ul>
-      </div>
-
-    <% end %>
   </section>
+
 </main>
