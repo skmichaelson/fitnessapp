@@ -9,7 +9,11 @@
 
   <div id="search-top" class="group">
     <section class="search-input">
-      <%= render 'shared/food_search' %>
+      <% if current_user %>
+        <%= render 'diary_food_search' %>
+      <% else %>
+        <%= render 'food_search' %>
+      <% end %>
     </section>
 
     <section class="right-search-display">
@@ -22,7 +26,11 @@
     <div>
       <ul id="food-matches"></ul>
     </div>
-
   </section>
 
+  <section>
+    <h1>Food</h1>
+    <div id="food-display">
+    </div>
+  </section>
 </main>

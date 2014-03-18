@@ -1,0 +1,50 @@
+<form id="food-form" class="group">
+  <h1>Search the food database</h1>
+
+  <div>
+    <label for="food-name">Enter a food</label>
+    <input id="food-name" type="text" name="food[name]">
+  </div>
+
+  <div>
+    <input class="button" type="submit" value="Find foods">
+  </div>
+
+  <% if current_user %>
+    <div class="link-button">
+      <%= link_to "Create a food", new_food_url %>
+    </div>
+  <% end %>
+</form>
+
+<style>
+.search-match {
+  display: block;
+}
+</style>
+
+<script>
+$('#food-form').on('submit', function (event) {
+  event.preventDefault();
+
+  var formData = $(this).serialize();
+
+  $.ajax({
+    url: "foods/search.json",
+    type: "GET",
+    data: formData,
+    success: function (res) {
+      var $ul = $('#food-matches');
+      $ul.empty();
+      if (res.length === 0) {
+        $ul.prepend("<li>No matches found!</li>");
+      } else {
+        res.forEach(function(item) {
+          var urlString = "/foods/" + item.id;
+          $ul.prepend("<li><a href=" + urlString + ">" + item.name + "</a></li>");
+        });
+      }
+    }
+  });
+});
+</script>

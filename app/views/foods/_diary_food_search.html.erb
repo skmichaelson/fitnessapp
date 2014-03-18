@@ -1,6 +1,8 @@
 <form id="food-form" class="group">
   <h1>Search the food database</h1>
 
+  <input type="hidden" value="<%= @meal_num %>">
+
   <div>
     <label for="food-name">Enter a food</label>
     <input id="food-name" type="text" name="food[name]">
@@ -10,11 +12,9 @@
     <input class="button" type="submit" value="Find foods">
   </div>
 
-  <% if current_user %>
-    <div class="link-button">
-      <%= link_to "Create a food", new_food_url %>
-    </div>
-  <% end %>
+  <div class="link-button">
+    <%= link_to "Create a food", new_food_url %>
+  </div>
 </form>
 
 <style>
@@ -28,10 +28,9 @@ $('#food-form').on('submit', function (event) {
   event.preventDefault();
 
   var formData = $(this).serialize();
-  console.log("form:" + formData);
 
   $.ajax({
-    url: "foods/search.json",
+    url: "search.json",
     type: "GET",
     data: formData,
     success: function (res) {
@@ -41,7 +40,8 @@ $('#food-form').on('submit', function (event) {
         $ul.prepend("<li>No matches found!</li>");
       } else {
         res.forEach(function(item) {
-          $ul.prepend("<li>" + item.name + "</li>");
+          var urlString = "/foods/" + item.id;
+          $ul.prepend("<li><a href='" + urlString + "'>" + item.name + "</a></li>");
         });
       }
     }
