@@ -18,8 +18,7 @@ Skills:
 * before_filter on controllers
 * before_validation on models
 * Testing with RSPEC
-* Semantic HTML
-* CSS
+* Semantic HTML and CSS
 
 TODO:
 * Reduce bloat and complexity to bump code climate score
